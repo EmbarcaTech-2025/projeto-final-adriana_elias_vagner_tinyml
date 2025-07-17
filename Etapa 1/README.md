@@ -13,7 +13,8 @@ A logística de contêineres marítimos é um componente crítico da cadeia de s
 
 A **concepção** deste projeto é criar um sistema embarcado de baixo custo e alta autonomia, embarcado no próprio contêiner, que utilize sensores inerciais e inteligência artificial na borda (edge) para resolver esse problema. A ideia é "dar inteligência" ao contêiner, permitindo que ele "entenda" seu próprio estado de movimento e comunique essa informação em tempo real. A solução se baseia no campo emergente de Tiny Machine Learning (TinyML), que foca na implementação de modelos de aprendizado de máquina em microcontroladores com recursos limitados.    
 
-TinyML permite a execução de modelos de aprendizado de máquina em microcontroladores com recursos limitados, como o RP2040 da plataforma BitDogLab. Este projeto propõe um sistema embarcado que utiliza o acelerômetro MPU6500, a plataforma Edge Impulse para treinamento de modelos, e o protocolo MQTT para transmissão de dados, classificando automaticamente os movimentos de contêineres em quatro classes: (i) parado (armazenado ou em espera), (ii) subindo/descendo (movimentação por empilhadeira ou guindaste), (iii) esquerda/direita (transporte terrestre), e (iv) ziguezague (transporte marítimo). O sistema opera com baixo consumo energético, exibe resultados localmente em um display SSD1306 e transmite dados via Wi-Fi, alinhando-se aos objetivos do curso Embarcatech de criar soluções embarcadas inovadoras para desafios reais.     
+TinyML permite a execução de modelos de aprendizado de máquina em microcontroladores com recursos limitados, como o RP2040 da plataforma BitDogLab. Este projeto propõe um sistema embarcado que utiliza o acelerômetro MPU6500, a plataforma Edge Impulse para treinamento de modelos, e o protocolo MQTT para transmissão de dados, classificando automaticamente os movimentos de contêineres em quatro classes: (i) parado (armazenado ou em espera), (ii) subindo/descendo (movimentação por empilhadeira ou guindaste), (iii) esquerda/direita (transporte terrestre), e (iv) ziguezague (transporte marítimo). O sistema opera com baixo consumo energético, exibe resultados localmente em um display SSD1306 e transmite dados via Wi-Fi, alinhando-se aos objetivos do curso Embarcatech de criar soluções embarcadas inovadoras para desafios reais.  
+
 # 2. Usuários
 O sistema proposto oferece utilidade direta para múltiplos atores da cadeia logística, gerando valor econômico e operacional.    
 **Os usuários-alvo do sistema incluem:**    
@@ -21,9 +22,11 @@ O sistema proposto oferece utilidade direta para múltiplos atores da cadeia log
 - **Gestores de armazéns e portos:** Necessitam de monitoramento preciso para prevenir danos durante o manuseio e melhorar a segurança (a detecção de padrões de vibração anômalos pode indicar manuseio incorreto ou tentativa de violação, disparando alertas imediatos).
 - **Desenvolvedores de sistemas embarcados:** Podem usar o projeto como base para soluções escaláveis, integrando novos sensores ou funcionalidades.    
 - **Empresas de transporte marítimo:** Interessadas em rastreabilidade detalhada para detectar anomalias e melhorar a eficiência operacional.    
-- **Para o Ecossistema de Cidades Inteligentes:** A coleta de dados em massa sobre o fluxo de contêineres pode alimentar sistemas de gerenciamento de tráfego e planejamento urbano, otimizando as rotas de veículos pesados.   
+- **Para o Ecossistema de Cidades Inteligentes:** A coleta de dados em massa sobre o fluxo de contêineres pode alimentar sistemas de gerenciamento de tráfego e planejamento urbano, otimizando as rotas de veículos pesados.  
+
 # 3. Objetivo Geral  
 Desenvolver um sistema embarcado baseado na plataforma BitDogLab, utilizando TinyML e o acelerômetro MPU6500, para classificar automaticamente os movimentos de contêineres marítimos em quatro classes (parado, subindo/descendo, esquerda/direita, ziguezague), com visualização local em um display SSD1306, transmissão de dados via MQTT para monitoramento remoto, e operação otimizada para baixo consumo energético, alcançando autonomia mínima de 30 dias.
+
 # 4. Objetivos Específicos
 - 1.Coletar dados do acelerômetro MPU6500 (eixos X, Y, Z) a 60 Hz para capturar padrões de movimento.    
 - 2.Pré-processar os dados com filtro passa-baixa, normalização e janelamento para preparar os sinais para o modelo TinyML.    
@@ -56,8 +59,7 @@ Desenvolver um sistema embarcado baseado na plataforma BitDogLab, utilizando Tin
 # 6. Abordagem
 O projeto segue a metodologia CUGNASA, estruturada em quatro etapas, com atividades divididas em duas frentes: desenvolvimento do sistema embarcado e desenvolvimento do modelo TinyML. A abordagem é iterativa, com ciclos de projeto, prototipagem, teste e refinamento, utilizando ferramentas como Pico-SDK, FreeRTOS e Edge Impulse.   
 
-## 6.1 Etapa 1: Definição de Requisitos e Lista de Materiais (Entrega: 16/07/2025)  
-
+## 6.1 Etapa 1: Definição de Requisitos e Lista de Materiais (Entrega: 17/07/2025)  
 **Objetivo:** Consolidar o problema, definir requisitos e listar materiais necessários.   
 **Atividades:**   
 - **Documentando o problema:** O rastreamento de contêineres carece de granularidade para identificar tipos de movimento, impactando eficiência e segurança. A solução baseada em TinyML e IoT permite monitoramento detalhado e em tempo real.   
@@ -186,7 +188,7 @@ O projeto segue a metodologia CUGNASA, estruturada em quatro etapas, com ativida
 # 9. Cronograma
 |Etapa|Objetivo|Entregável|Data|   
 |---|---|---|---|  
-|1|Definição de Requisitos e Materiais|Documento em Markdown|16/07/2025|    
+|1|Definição de Requisitos e Materiais|Documento em Markdown|17/07/2025|    
 |2|Arquitetura e Modelagem|Diagramas de hardware e software|04/08/2025|     
 |3|Prototipagem e Ajustes|Vídeo/fotos do protótipo, relatório|25/08/2025|      
 |4|Entrega Final e Documentação|Sistema funcional, documentação, GitHub|a definir|     
@@ -203,4 +205,32 @@ O projeto integra sistemas embarcados, TinyML e IoT para resolver um problema cr
 [3]: AIoT: Artificial Intelligence of Thing é a integração de IA com a IoT, combinando a capacidade de coleta de dados de dispositivos IoT com técnicas avançadas de processamento, como ML e deep learning (DL), para permitir análise em tempo real, tomada de decisão autônoma e otimização de sistemas embarcados.
 
 **Referencias**
+https://www.objective.com.br/insights/tinyml/
+
+https://ichi.pro/pt/o-que-e-tinyml-e-por-que-isso-importa-270142243498102
+
+https://www.geeksforgeeks.org/machine-learning/what-is-tinyml-tiny-machine-learning/
+
+https://www.tinyml.com/
+
+https://zlib.pub/book/tinyml-machine-learning-with-tensorflow-lite-on-arduino-and-ultra-low-power-microcontrollers-vshhregc28o0
+
+https://github.com/dhruvmsheth/Oreilly-tinyml-book/blob/master/OReilly.TinyML.1492052043.pdf
+
+https://edgeimpulse.com/
+
+https://www.bing.com/videos/riverview/relatedvideo?q=edge+impulse&mid=7EEE774837E1F7D3C6837EEE774837E1F7D3C683&FORM=VIRE
+
+https://www.bing.com/videos/riverview/relatedvideo?q=edge+impulse&mid=41C8C11509B60E3C360B41C8C11509B60E3C360B&FORM=VIRE
+
+https://aidude.info/pt/ferramentas/edge-impulse
+
+https://digital.futurecom.com.br/artigos/aiot-o-que-e-inteligencia-artificial-das-coisas/
+
+https://www.bosch.com.br/noticias-e-historias/aiot/
+
+https://www.bing.com/videos/riverview/relatedvideo?q=AIoT&mid=9671E43B51A222DB9F229671E43B51A222DB9F22&FORM=VIRE
+
+https://cienciaembarcada.com.br/publicacoes/o-que-e-iot-iiot-e-aiot/
+
 
