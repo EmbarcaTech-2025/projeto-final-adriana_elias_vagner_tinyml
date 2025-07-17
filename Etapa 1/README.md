@@ -1,6 +1,7 @@
 <h1 align = "center"> Classificação de Movimentos em Contêineres Marítimos com TinyML na BitDogLab </h1> 
 
-<h1 align = "center"> Projeto: Embarcatech - Fase 2 </h1> 
+<h2 align = "center"> Projeto: Embarcatech - Fase 2 </h2>   
+
 ----
 - Adriana R. Castro de Paula    
 - Elias Kento Tomiyama    
