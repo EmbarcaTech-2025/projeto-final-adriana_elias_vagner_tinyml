@@ -10,9 +10,9 @@ Vagner Sanches Vasconcelos
 
 A logística de contêineres marítimos envolve diferentes etapas de transporte, incluindo movimentação por empilhadeiras, transporte terrestre em caminhões e transporte marítimo em navios. Identificar automaticamente em qual etapa um contêiner se encontra pode melhorar a rastreabilidade, segurança e eficiência operacional de sistemas logísticos.
 
-Este projeto propõe um sistema embarcado baseado em TinyML<sup>1<sup>, utilizando a placa BitDogLab equipada com um acelerômetro MPU6500, para classificar movimentos em quatro classes, sendo elas:  i) Parado (armazenado ou espera); ii) Subindo/Descendo (movimentação por empilhadeira/guindastes); iii) Esquerda/Direita (transporte terrestre) ; e iv) Zig/Zag (transporte marítimo).
+Este projeto propõe um sistema embarcado baseado em TinyML^1^, utilizando a placa BitDogLab equipada com um acelerômetro MPU6500, para classificar movimentos em quatro classes, sendo elas:  i) Parado (armazenado ou espera); ii) Subindo/Descendo (movimentação por empilhadeira/guindastes); iii) Esquerda/Direita (transporte terrestre) ; e iv) Zig/Zag (transporte marítimo).
 
-A classificação é realizada por um modelo de aprendizado de máquina (Machine Learning - ML) treinado na plataforma Edge Impulse<sup>2 e executado localmente (borda) na BitDogLab. Os resultados serão exibidos em um display SSD1306 e transmitidos via MQTT para um broker em nuvem, permitindo monitoramento remoto. 
+A classificação é realizada por um modelo de aprendizado de máquina (Machine Learning - ML) treinado na plataforma Edge Impulse^2^ e executado localmente (borda) na BitDogLab. Os resultados serão exibidos em um display SSD1306 e transmitidos via MQTT para um broker em nuvem, permitindo monitoramento remoto. 
 
 # 2 Descrição do Problema
 
@@ -20,7 +20,7 @@ O rastreamento de contêineres marítimos muitas vezes depende de sistemas GPS e
 
 ## 2.1 Objetivo Geral  
 
-Desenvolver um sistema embarcado capaz de classificar automaticamente o movimento de um contêiner em função dos sinais de acelerômetro em um modelo de machine learning embarcado na BitDogLab (AIoT<sup>3), permitindo: 
+Desenvolver um sistema embarcado capaz de classificar automaticamente o movimento de um contêiner em função dos sinais de acelerômetro em um modelo de machine learning embarcado na BitDogLab (AIoT^3^), permitindo: 
 
 * Identificação em tempo real da etapa logística;  
 * Visualização local no display;  
