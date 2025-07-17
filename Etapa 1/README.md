@@ -67,10 +67,10 @@ RNF05:  Código modular e documentado para manutenibilidade.
 
 # 6 Metodologia
 
-	O trabalho envolve duas grandes atividades, sendo elas;  
-	1ª) O desenvolvimento do sistema embarcado, com as configurações das tarefas no RTOS: i) Aquisição dos sinais do acelerômetro; ii) Conexão ao wi-fi; iii) Envio dos sinais por meio do protocolo mqttt; e  iv) Acesso ao display.  
-	Nesta atividade, serão utilizados o pico-sdk e o FreeRTOs; e  
-	2ª) O desenvolvimento do modelo de classificação de movimentos do contêiner, em função dos sinais do acelerômetro. Essa atividade ocorrerá na plataforma Edge Impulse, e, de forma geral, envolve as seguintes etapas: i) coleta dos dados;  ii) Pré Processamento dos dado; iii) Design do modelo de ML; iv) Treinamento do modelo de ML; v) Avaliação do modelo de ML; vi) Conversão do modelo de ML para a BitDogLab (RP2040); vii) Incorporação do modelo convertido na BitDogLab (Deploy); e viii) Inferência do modelo.
+O trabalho envolve duas grandes atividades, sendo elas;  
+1ª) O desenvolvimento do sistema embarcado, com as configurações das tarefas no RTOS: i) Aquisição dos sinais do acelerômetro; ii) Conexão ao wi-fi; iii) Envio dos sinais por meio do protocolo mqttt; e  iv) Acesso ao display.    
+Nesta atividade, serão utilizados o pico-sdk e o FreeRTOs; e  
+2ª) O desenvolvimento do modelo de classificação de movimentos do contêiner, em função dos sinais do acelerômetro. Essa atividade ocorrerá na plataforma Edge Impulse, e, de forma geral, envolve as seguintes etapas: i) coleta dos dados;  ii) Pré Processamento dos dado; iii) Design do modelo de ML; iv) Treinamento do modelo de ML; v) Avaliação do modelo de ML; vi) Conversão do modelo de ML para a BitDogLab (RP2040); vii) Incorporação do modelo convertido na BitDogLab (Deploy); e viii) Inferência do modelo.
 
 # 
 
