@@ -20,7 +20,7 @@ O rastreamento de contêineres marítimos muitas vezes depende de sistemas GPS e
 
 ## 2.1 Objetivo Geral  
 
-Desenvolver um sistema embarcado capaz de classificar automaticamente o movimento de um contêiner em função dos sinais de acelerômetro em um modelo de machine learning embarcado na BitDogLab (AIoT<sup>3</sup)), permitindo: 
+Desenvolver um sistema embarcado capaz de classificar automaticamente o movimento de um contêiner em função dos sinais de acelerômetro em um modelo de machine learning embarcado na BitDogLab (AIoT<sup>3</sup) ), permitindo: 
 
 * Identificação em tempo real da etapa logística;  
 * Visualização local no display;  
