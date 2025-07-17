@@ -1,6 +1,6 @@
 <h1 align = "center"> Classificação de Movimentos em Contêineres Marítimos com TinyML na BitDogLab </h1> 
 
-Projeto: Embarcatech - Fase 2
+<h1 align = "center"> Projeto: Embarcatech - Fase 2 </h1> 
 ----
 - Adriana R. Castro de Paula    
 - Elias Kento Tomiyama    
@@ -29,7 +29,7 @@ Desenvolver um sistema embarcado baseado na plataforma BitDogLab, utilizando Tin
 - 3.Desenvolver, treinar e avaliar um modelo de aprendizado de máquina na plataforma Edge Impulse, alcançando acurácia superior a 80%.    
 - 4.Implementar o modelo TinyML na BitDogLab para inferência em tempo real com latência inferior a 200 ms.    
 - 5.Exibir a classe de movimento detectada em um display OLED SSD1306.   
-- 6.Transmitir os resultados via Wi-Fi para um broker MQTT com qualidade de serviço (QoS) 2.   
+- 6.Transmitir os resultados via Wi-Fi para um broker MQTT com qualidade de serviço (QoS) 2 e e estampa de tempo (dia/mês/ano - hora:minuto: segundo);
 - 7.Garantir operação em modo de baixo consumo para autonomia mínima de 30 dias com bateria.   
 - 8.Utilizar FreeRTOS para gerenciar tarefas concorrentes, assegurando estabilidade e escalabilidade.    
 
@@ -65,8 +65,7 @@ O projeto segue a metodologia CUGNASA, estruturada em quatro etapas, com ativida
     - Hardware:
         - BitDogLab (RP2040): Microcontrolador principal.    
         - MPU6500: Acelerômetro de 6 eixos (I2C).   
-        - SSD1306: Display OLED 128x64 (I2C).   
-        - Módulo Wi-Fi: ESP8266 ou integrado à BitDogLab (SPI).   
+        - SSD1306: Display OLED 128x64 (I2C).     
         - Bateria: LiPo 3.7V, capacidade ~2000 mAh (a ser confirmada).   
     - Software:   
         - Pico-SDK: Framework para programação do RP2040.   
@@ -82,9 +81,8 @@ O projeto segue a metodologia CUGNASA, estruturada em quatro etapas, com ativida
 - Desenvolvendo diagrama de hardware:  
     - Conexões:   
         1.MPU6500: I2C (SDA: GPIO4, SCL: GPIO5).   
-        2.SSD1306: I2C (mesmo barramento, endereços distintos).   
-        3.Módulo Wi-Fi: SPI (MOSI: GPIO7, MISO: GPIO8, SCK: GPIO6, CS: GPIO9).   
-        4.Bateria: Conectada ao regulador de tensão da BitDogLab.    
+        2.SSD1306: I2C (mesmo barramento, endereços distintos).      
+        3.Bateria: Conectada ao regulador de tensão da BitDogLab.    
 
 - Diagrama de software:    
 ![diagrama](etapa_1_diagrama.png)  
@@ -104,8 +102,8 @@ O projeto segue a metodologia CUGNASA, estruturada em quatro etapas, com ativida
         - Configurar Edge Impulse para coleta e treinamento de dados.    
 
     - **Definindo arquitetura do modelo TinyML:**    
-        - Pré-processamento: Filtro passa-baixa (média móvel, frequência de corte 10 Hz), normalização [0,1], janelamento (1s, 50% sobreposição).    
-        - Modelo: Rede neural densa (2 camadas de 32 neurônios, ReLU, softmax para 4 classes).    
+        - Pré-processamento;        
+        - Modelo: Rede neural densa;   
         - Saída: Probabilidades para as classes: parado, subindo/descendo, esquerda/direita, ziguezague.   
 - **Entregável:** Arquivo com diagramas de hardware e software, acompanhado de explicações detalhando a lógica e estrutura do sistema.   
 
@@ -120,7 +118,7 @@ O projeto segue a metodologia CUGNASA, estruturada em quatro etapas, com ativida
     - **Otimizando energia:** Ativar modo sleep do RP2040 quando parado, reduzindo frequência de amostragem e desativando Wi-Fi.   
 
 - **Modelo TinyML:**
-    - **Coletando dados:** Simular movimentos em laboratório (parado, subindo/descendo com elevação manual, esquerda/direita com deslocamento linear, ziguezague com oscilações). Coletar 100 amostras por classe (1 min cada, 60 Hz).
+    - **Coletando dados:**    
     - **Pré-processando no Edge Impulse:**
     - **Projetando modelo:**   
     - **Treinando e avaliando:**   
@@ -185,10 +183,11 @@ O projeto segue a metodologia CUGNASA, estruturada em quatro etapas, com ativida
     - Simular falhas Wi-Fi para verificar reconexão.
 
 # 9. Cronograma
-|Etapa|Objetivo                            |Entregável           |Data|    
-|1|Definição de Requisitos e Materiais |Documento em Markdown|16/07/2025|    
-|2|Arquitetura e Modelagem             |Diagramas de hardware e software|04/08/2025|     
-|3|Prototipagem e Ajustes              |Vídeo/fotos do protótipo, relatório|	25/08/2025|      
+|Etapa|Objetivo|Entregável|Data|   
+|---|---|---|---|  
+|1|Definição de Requisitos e Materiais|Documento em Markdown|16/07/2025|    
+|2|Arquitetura e Modelagem|Diagramas de hardware e software|04/08/2025|     
+|3|Prototipagem e Ajustes|Vídeo/fotos do protótipo, relatório|25/08/2025|      
 |4|Entrega Final e Documentação|Sistema funcional, documentação, GitHub|a definir|     
 
 # 10. Considerações Finais
