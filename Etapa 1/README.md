@@ -9,51 +9,48 @@ Projeto: Embarcatech - Fase 2
 
 # 1. Contexto
 A logística de contêineres marítimos é um componente crítico da cadeia de suprimentos global, envolvendo etapas como movimentação por empilhadeiras ou guindastes, transporte terrestre em caminhões e transporte marítimo em navios. A rastreabilidade precisa dessas etapas é essencial para otimizar rotas, reduzir custos operacionais, prevenir danos causados por vibrações excessivas e detectar anomalias em tempo real. No entanto, sistemas tradicionais baseados em GPS e registros manuais carecem de granularidade para identificar o tipo de movimento do contêiner, limitando a capacidade de resposta proativa.    
+
 A **concepção** deste projeto é criar um sistema embarcado de baixo custo e alta autonomia, embarcado no próprio contêiner, que utilize sensores inerciais e inteligência artificial na borda (edge) para resolver esse problema. A ideia é "dar inteligência" ao contêiner, permitindo que ele "entenda" seu próprio estado de movimento e comunique essa informação em tempo real. A solução se baseia no campo emergente de Tiny Machine Learning (TinyML), que foca na implementação de modelos de aprendizado de máquina em microcontroladores com recursos limitados.    
+
 TinyML permite a execução de modelos de aprendizado de máquina em microcontroladores com recursos limitados, como o RP2040 da plataforma BitDogLab. Este projeto propõe um sistema embarcado que utiliza o acelerômetro MPU6500, a plataforma Edge Impulse para treinamento de modelos, e o protocolo MQTT para transmissão de dados, classificando automaticamente os movimentos de contêineres em quatro classes: (i) parado (armazenado ou em espera), (ii) subindo/descendo (movimentação por empilhadeira ou guindaste), (iii) esquerda/direita (transporte terrestre), e (iv) ziguezague (transporte marítimo). O sistema opera com baixo consumo energético, exibe resultados localmente em um display SSD1306 e transmite dados via Wi-Fi, alinhando-se aos objetivos do curso Embarcatech de criar soluções embarcadas inovadoras para desafios reais.     
- 
 # 2. Usuários
-O sistema proposto oferece utilidade direta para múltiplos atores da cadeia logística, gerando valor econômico e operacional.      
+O sistema proposto oferece utilidade direta para múltiplos atores da cadeia logística, gerando valor econômico e operacional.    
 **Os usuários-alvo do sistema incluem:**    
 - **Operadores logísticos:** Gerenciam cadeias de suprimentos e se beneficiam de dados em tempo real para otimizar rotas e reduzir custos (a automação do registro de etapas (ex: início do transporte terrestre) elimina a necessidade de apontamentos manuais, reduzindo erros e custos administrativos).      
 - **Gestores de armazéns e portos:** Necessitam de monitoramento preciso para prevenir danos durante o manuseio e melhorar a segurança (a detecção de padrões de vibração anômalos pode indicar manuseio incorreto ou tentativa de violação, disparando alertas imediatos).
 - **Desenvolvedores de sistemas embarcados:** Podem usar o projeto como base para soluções escaláveis, integrando novos sensores ou funcionalidades.    
 - **Empresas de transporte marítimo:** Interessadas em rastreabilidade detalhada para detectar anomalias e melhorar a eficiência operacional.    
 - **Para o Ecossistema de Cidades Inteligentes:** A coleta de dados em massa sobre o fluxo de contêineres pode alimentar sistemas de gerenciamento de tráfego e planejamento urbano, otimizando as rotas de veículos pesados.   
-
 # 3. Objetivo Geral  
-
 Desenvolver um sistema embarcado baseado na plataforma BitDogLab, utilizando TinyML e o acelerômetro MPU6500, para classificar automaticamente os movimentos de contêineres marítimos em quatro classes (parado, subindo/descendo, esquerda/direita, ziguezague), com visualização local em um display SSD1306, transmissão de dados via MQTT para monitoramento remoto, e operação otimizada para baixo consumo energético, alcançando autonomia mínima de 30 dias.
-
 # 4. Objetivos Específicos
-1.	Coletar dados do acelerômetro MPU6500 (eixos X, Y, Z) a 60 Hz para capturar padrões de movimento.    
-2.	Pré-processar os dados com filtro passa-baixa, normalização e janelamento para preparar os sinais para o modelo TinyML.    
-3.	Desenvolver, treinar e avaliar um modelo de aprendizado de máquina na plataforma Edge Impulse, alcançando acurácia superior a 80%.    
-4.	Implementar o modelo TinyML na BitDogLab para inferência em tempo real com latência inferior a 200 ms.    
-5.	Exibir a classe de movimento detectada em um display OLED SSD1306.   
-6.	Transmitir os resultados via Wi-Fi para um broker MQTT com qualidade de serviço (QoS) 2.   
-7.	Garantir operação em modo de baixo consumo para autonomia mínima de 30 dias com bateria.   
-8.	Utilizar FreeRTOS para gerenciar tarefas concorrentes, assegurando estabilidade e escalabilidade.    
+- 1.Coletar dados do acelerômetro MPU6500 (eixos X, Y, Z) a 60 Hz para capturar padrões de movimento.    
+- 2.Pré-processar os dados com filtro passa-baixa, normalização e janelamento para preparar os sinais para o modelo TinyML.    
+- 3.Desenvolver, treinar e avaliar um modelo de aprendizado de máquina na plataforma Edge Impulse, alcançando acurácia superior a 80%.    
+- 4.Implementar o modelo TinyML na BitDogLab para inferência em tempo real com latência inferior a 200 ms.    
+- 5.Exibir a classe de movimento detectada em um display OLED SSD1306.   
+- 6.Transmitir os resultados via Wi-Fi para um broker MQTT com qualidade de serviço (QoS) 2.   
+- 7.Garantir operação em modo de baixo consumo para autonomia mínima de 30 dias com bateria.   
+- 8.Utilizar FreeRTOS para gerenciar tarefas concorrentes, assegurando estabilidade e escalabilidade.    
 
 # 5. Requisitos
-
 ## 5.1 Requisitos Funcionais
 
-RF01: Coletar dados do acelerômetro MPU6500 (eixos X, Y, Z) a 60Hz;     
-RF02: Pré-processar os dados (filtro passa-baixa, normalização e janelamento);     
-RF03: Executar modelo TinyML para classificação em tempo real;     
-RF04: Exibir a classe detectada no display SSD1306;     
-RF05: Transmitir resultados via Wi-Fi para um broker MQTT em nuvem, com QoS 2 e estampa de tempo (dia/mês/ano - hora:minuto: segundo);     
-RF06: Operar em modo de baixo consumo quando parado;     
-RF07: Utilizar Sistema Operacional de Tempo Real (RTOS).    
+- RF01: Coletar dados do acelerômetro MPU6500 (eixos X, Y, Z) a 60Hz;     
+- RF02: Pré-processar os dados (filtro passa-baixa, normalização e janelamento);     
+- RF03: Executar modelo TinyML para classificação em tempo real;     
+- RF04: Exibir a classe detectada no display SSD1306;     
+- RF05: Transmitir resultados via Wi-Fi para um broker MQTT em nuvem, com QoS 2 e estampa de tempo (dia/mês/ano - hora:minuto: segundo);     
+- RF06: Operar em modo de baixo consumo quando parado;     
+- RF07: Utilizar Sistema Operacional de Tempo Real (RTOS).    
 
 ## 5.2 Requisitos Não Funcionais 
 
-RNF01: Taxa de acerto ≥ 90% em condições reais (dados de testes);  
-RNF02: Latência de inferência ≤ 200ms;  
-RNF03: Autonomia mínima de 30 dias com bateria;  
-RNF04: Funcionamento estável em temperaturas de 0°C a 50°C;  
-RNF05:  Código modular e documentado para manutenibilidade. 
+- RNF01: Taxa de acerto ≥ 90% em condições reais (dados de testes);  
+- RNF02: Latência de inferência ≤ 200ms;  
+- RNF03: Autonomia mínima de 30 dias com bateria;  
+- RNF04: Funcionamento estável em temperaturas de 0°C a 50°C;  
+- RNF05:  Código modular e documentado para manutenibilidade. 
 
 # 6. Abordagem
 O projeto segue a metodologia CUGNASA, estruturada em quatro etapas, com atividades divididas em duas frentes: desenvolvimento do sistema embarcado e desenvolvimento do modelo TinyML. A abordagem é iterativa, com ciclos de projeto, prototipagem, teste e refinamento, utilizando ferramentas como Pico-SDK, FreeRTOS e Edge Impulse.   
@@ -181,7 +178,7 @@ Criar repositório com estrutura:
     test_data.csv
 
 Incluir README com instruções de compilação, execução e uso.
-**Entregável:** Sistema funcional, documentação completa (relatório, diagramas, código), repositório GitHub.
+**Entregável:** Sistema funcional, documentação completa (relatório, diagramas, código), repositório GitHub.  
 
 # 7. Solução
 ## 7.1 Hardware
