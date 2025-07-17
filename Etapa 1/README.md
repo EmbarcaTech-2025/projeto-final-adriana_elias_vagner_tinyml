@@ -63,7 +63,7 @@ RNF05:  Código modular e documentado para manutenibilidade.
 
 # 5 Diagrama 
 
-![][etapa_1_diagrama.png]
+![diagrama](etapa_1_diagrama.png)
 
 # 6 Metodologia
 
