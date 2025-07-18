@@ -22,7 +22,8 @@ TinyML permite a execução de modelos de aprendizado de máquina em microcontro
     - (iii) esquerda/direita (transporte terrestre); e    
     - (iv) ziguezague (transporte marítimo).    
 O sistema opera com baixo consumo energético, exibe resultados localmente em um display SSD1306 e transmite dados via Wi-Fi, alinhando-se aos objetivos do curso Embarcatech de criar soluções embarcadas inovadoras para desafios reais.     
-
+![diagrama](estudoCaso.png)    
+<h4 align = "right"> Fonte: Prof. Marcelo Rovai </h4>  
 
 # 2. Usuários
 O sistema proposto oferece utilidade direta para múltiplos atores da cadeia logística, gerando valor econômico e operacional.    
