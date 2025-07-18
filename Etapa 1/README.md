@@ -1,6 +1,8 @@
 <h1 align = "center"> Classificação de Movimentos em Contêineres Marítimos com TinyML na BitDogLab </h1> 
 
-<h2 align = "center"> Projeto: Embarcatech - Fase 2 </h2>   
+<h2 align = "center"> Projeto: Embarcatech - Fase 2 </h2> 
+<h3 align = "center"> Instituto Hardware BR - HBr </h3>  
+<h3 align = "center"> Campinas-SP </h3>  
 
 ----
 ### Time:   
@@ -14,7 +16,14 @@ A logística de contêineres marítimos é um componente crítico da cadeia de s
 
 A **concepção** deste projeto é criar um sistema embarcado de baixo custo e alta autonomia, embarcado no próprio contêiner, que utilize sensores inerciais e inteligência artificial na borda (edge) para resolver esse problema. A ideia é "dar inteligência" ao contêiner, permitindo que ele "entenda" seu próprio estado de movimento e comunique essa informação em tempo real. A solução se baseia no campo emergente de Tiny Machine Learning (TinyML<sup>1</sup>), que foca na implementação de modelos de aprendizado de máquina em microcontroladores com recursos limitados.    
 
-TinyML permite a execução de modelos de aprendizado de máquina em microcontroladores com recursos limitados, como o RP2040 da plataforma BitDogLab. Este projeto propõe um sistema embarcado que utiliza o acelerômetro MPU6500, a plataforma Edge Impulse para treinamento de modelos, e o protocolo MQTT para transmissão de dados, classificando automaticamente os movimentos de contêineres em quatro classes: (i) parado (armazenado ou em espera), (ii) subindo/descendo (movimentação por empilhadeira ou guindaste), (iii) esquerda/direita (transporte terrestre), e (iv) ziguezague (transporte marítimo). O sistema opera com baixo consumo energético, exibe resultados localmente em um display SSD1306 e transmite dados via Wi-Fi, alinhando-se aos objetivos do curso Embarcatech de criar soluções embarcadas inovadoras para desafios reais.     
+TinyML permite a execução de modelos de aprendizado de máquina em microcontroladores com recursos limitados, como o RP2040 da plataforma BitDogLab. Este projeto propõe um sistema embarcado que utiliza o acelerômetro MPU6500, a plataforma Edge Impulse<sup>2</sup> para treinamento de modelos, e o protocolo MQTT para transmissão de dados, classificando automaticamente os movimentos de contêineres em quatro classes:    
+    - (i) parado (armazenado ou em espera);   
+    - (ii) subindo/descendo (movimentação por empilhadeira ou guindaste);  
+    - (iii) esquerda/direita (transporte terrestre); e    
+    - (iv) ziguezague (transporte marítimo).    
+O sistema opera com baixo consumo energético, exibe resultados localmente em um display SSD1306 e transmite dados via Wi-Fi, alinhando-se aos objetivos do curso Embarcatech de criar soluções embarcadas inovadoras para desafios reais.     
+
+
 # 2. Usuários
 O sistema proposto oferece utilidade direta para múltiplos atores da cadeia logística, gerando valor econômico e operacional.    
 **Os usuários-alvo do sistema incluem:**    
@@ -23,17 +32,19 @@ O sistema proposto oferece utilidade direta para múltiplos atores da cadeia log
 - **Desenvolvedores de sistemas embarcados:** Podem usar o projeto como base para soluções escaláveis, integrando novos sensores ou funcionalidades.    
 - **Empresas de transporte marítimo:** Interessadas em rastreabilidade detalhada para detectar anomalias e melhorar a eficiência operacional.    
 - **Para o Ecossistema de Cidades Inteligentes:** A coleta de dados em massa sobre o fluxo de contêineres pode alimentar sistemas de gerenciamento de tráfego e planejamento urbano, otimizando as rotas de veículos pesados.   
+
+Um ponto importante a ser observado, é que a mesma plataforma (BitDogLab + acelerômetro + TinyML) possui inumeros casos de uso no campo da manutenção prescritiva, mais precisamente na análise de vibrações.   
 # 3. Objetivo Geral  
-Desenvolver um sistema embarcado baseado na plataforma BitDogLab, utilizando TinyML e o acelerômetro MPU6500, para classificar automaticamente os movimentos de contêineres marítimos em quatro classes (parado, subindo/descendo, esquerda/direita, ziguezague), com visualização local em um display SSD1306, transmissão de dados via MQTT para monitoramento remoto, e operação otimizada para baixo consumo energético, alcançando autonomia mínima de 30 dias.
+Desenvolver um sistema embarcado baseado na plataforma BitDogLab (AIoT<sup>3</sup>), utilizando TinyML e o acelerômetro MPU6500, para classificar automaticamente os movimentos de contêineres marítimos em quatro classes (parado, subindo/descendo, esquerda/direita, ziguezague), com visualização local em um display SSD1306, transmissão de dados via MQTT para monitoramento remoto, e operação otimizada para baixo consumo energético, alcançando autonomia mínima de 30 dias.
 # 4. Objetivos Específicos
-- 1.Coletar dados do acelerômetro MPU6500 (eixos X, Y, Z) a 60 Hz para capturar padrões de movimento.    
-- 2.Pré-processar os dados com filtro passa-baixa, normalização e janelamento para preparar os sinais para o modelo TinyML.    
-- 3.Desenvolver, treinar e avaliar um modelo de aprendizado de máquina na plataforma Edge Impulse, alcançando acurácia superior a 80%.    
-- 4.Implementar o modelo TinyML na BitDogLab para inferência em tempo real com latência inferior a 200 ms.    
-- 5.Exibir a classe de movimento detectada em um display OLED SSD1306.   
-- 6.Transmitir os resultados via Wi-Fi para um broker MQTT com qualidade de serviço (QoS) 2 e e estampa de tempo (dia/mês/ano - hora:minuto: segundo);
-- 7.Garantir operação em modo de baixo consumo para autonomia mínima de 30 dias com bateria.   
-- 8.Utilizar FreeRTOS para gerenciar tarefas concorrentes, assegurando estabilidade e escalabilidade.    
+- 1. Coletar dados do acelerômetro MPU6500 (eixos X, Y, Z) a 60 Hz para capturar padrões de movimento.    
+- 2. Pré-processar os dados com filtro passa-baixa, normalização e janelamento para preparar os sinais para o modelo TinyML.    
+- 3. Desenvolver, treinar e avaliar um modelo de aprendizado de máquina na plataforma Edge Impulse, alcançando acurácia superior a 80%.    
+- 4. Implementar o modelo TinyML na BitDogLab para inferência em tempo real com latência inferior a 200 ms.    
+- 5. Exibir a classe de movimento detectada em um display OLED SSD1306.   
+- 6. Transmitir os resultados via Wi-Fi para um broker MQTT com qualidade de serviço (QoS) 2 e e estampa de tempo (dia/mês/ano - hora:minuto: segundo);
+- 7. Garantir operação em modo de baixo consumo para autonomia mínima de 30 dias com bateria.   
+- 8. Utilizar FreeRTOS para gerenciar tarefas concorrentes, assegurando estabilidade e escalabilidade.    
 
 # 5. Requisitos
 ## 5.1 Requisitos Funcionais
@@ -82,22 +93,22 @@ O projeto segue a metodologia CUGNASA, estruturada em quatro etapas, com ativida
 **Atividades:**  
 - Desenvolvendo diagrama de hardware:  
     - Conexões:   
-        1.MPU6500: I2C (SDA: GPIO4, SCL: GPIO5).   
-        2.SSD1306: I2C (mesmo barramento, endereços distintos).      
-        3.Bateria: Conectada ao regulador de tensão da BitDogLab.    
+        1. MPU6500: I2C (SDA: GPIO4, SCL: GPIO5).   
+        2. SSD1306: I2C (mesmo barramento, endereços distintos).      
+        3. Bateria: Conectada ao regulador de tensão da BitDogLab.    
 
 - Diagrama de software:    
 ![diagrama](etapa_1_diagrama.png)  
 
-    - **Criando fluxograma do software:**   
-        - **Inicialização:** Configurar FreeRTOS, inicializar periféricos (MPU6500, SSD1306, Wi-Fi).   
-        - **Loop Principal:**   
-            1.Ler dados do MPU6500 (60 Hz).   
-            2.Pré-processar (filtro passa-baixa, normalização, janelamento).   
-            3.Executar inferência TinyML.   
-            4.Exibir classe no SSD1306.   
-            5.Transmitir via MQTT.   
-            6.Verificar estado parado para modo de baixo consumo.    
+- **Criando fluxograma do software:**   
+    - **Inicialização:** Configurar FreeRTOS, inicializar periféricos (MPU6500, SSD1306, Wi-Fi).   
+    - **Loop Principal:**   
+        1. Ler dados do MPU6500 (60 Hz).   
+        2. Pré-processar (filtro passa-baixa, normalização, janelamento).   
+        3. Executar inferência TinyML.   
+        4. Exibir classe no SSD1306.   
+        5. Transmitir via MQTT.   
+        6. Verificar estado parado para modo de baixo consumo.    
 
     - **Configurando ambiente:**    
         - Instalar Pico-SDK e configurar FreeRTOS no RP2040.    
@@ -129,7 +140,7 @@ O projeto segue a metodologia CUGNASA, estruturada em quatro etapas, com ativida
     - **Testes:**
     - **Métricas:**
     - **Consumo:** 
-    - **Documentando desafios:** 
+    - **Documentando desafios:**       
 **Entregável:** Vídeo/fotos do protótipo, relatório detalhando testes, desafios e melhorias planejadas.
 
 ## 6.4 Etapa 4: Entrega Final e Documentação (Data a ser definida)
