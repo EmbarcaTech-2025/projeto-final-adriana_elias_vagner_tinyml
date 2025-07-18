@@ -204,3 +204,28 @@ O projeto integra sistemas embarcados, TinyML e IoT para resolver um problema cr
 
 **Referencias**
 
+https://zlib.pub/book/tinyml-machine-learning-with-tensorflow-lite-on-arduino-and-ultra-low-power-microcontrollers-vshhregc28o0
+
+https://www.researchgate.net/publication/362806678_Introduction_to_TinyML
+
+https://upcommons.upc.edu/bitstream/handle/2117/353756/160036.pdf
+
+https://digital.futurecom.com.br/artigos/aiot-o-que-e-inteligencia-artificial-das-coisas/
+
+https://www.bosch.com.br/noticias-e-historias/aiot/
+
+https://www.bing.com/videos/riverview/relatedvideo?q=AIoT&mid=7C27CE70B5EADF176AA37C27CE70B5EADF176AA3&FORM=VIRE
+
+https://www.bing.com/videos/riverview/relatedvideo?q=AIoT&mid=9671E43B51A222DB9F229671E43B51A222DB9F22&FORM=VIRE
+
+https://cienciaembarcada.com.br/publicacoes/o-que-e-iot-iiot-e-aiot/
+
+https://edgeimpulse.com/
+
+https://www.bing.com/videos/riverview/relatedvideo?q=edge+impulse&mid=41C8C11509B60E3C360B41C8C11509B60E3C360B&FORM=VIRE
+
+https://aidude.info/pt/ferramentas/edge-impulse
+
+https://embarcados.com.br/qualcomm-adquire-edge-impulse/
+
+
