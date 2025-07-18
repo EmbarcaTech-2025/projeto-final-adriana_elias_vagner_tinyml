@@ -25,7 +25,7 @@ TinyML permite a execução de modelos de aprendizado de máquina em microcontro
 O sistema opera com baixo consumo energético, exibe resultados localmente em um display SSD1306 e transmite dados via Wi-Fi, alinhando-se aos objetivos do curso Embarcatech de criar soluções embarcadas inovadoras para desafios reais.  
 A figura 1, ilustra    
 ![diagrama](estudoCaso.png)    
-<h4 align = "right"> Figura 1. Caso de Uso. Fonte: [Prof. Marcelo Rovai](https://github.com/Mjrovai/UNIFEI-IESTI01-TinyML/blob/main/00_Curse_Folder/2_Applications_Deploy/Class_19/IESTI01_TinyML_class_19.pdf) </h4>  
+<h4 align = "right"> Figura 1 - Caso de Uso. Fonte: Curso UNIFEI-IESTI01- TinyML </h4>  
 
 # 2. Usuários
 O sistema proposto oferece utilidade direta para múltiplos atores da cadeia logística, gerando valor econômico e operacional.    
@@ -217,7 +217,12 @@ O projeto integra sistemas embarcados, TinyML e IoT para resolver um problema cr
 
 [3]: AIoT: Artificial Intelligence of Thing é a integração de IA com a IoT, combinando a capacidade de coleta de dados de dispositivos IoT com técnicas avançadas de processamento, como ML e deep learning (DL), para permitir análise em tempo real, tomada de decisão autônoma e otimização de sistemas embarcados.
 
-**Referencias**
+**Referencias**    
+Curso UNIFEI-IESTI01- TinyML - https://github.com/Mjrovai/UNIFEI-IESTI01-TinyML/tree/main  
+
+Curso Coursera: Edge Impulse - Introdução ao TinyML - https://www.coursera.org/learn/introduction-to-embedded-machine-learning   
+
+TinyML - Motion Recognition Using Raspberry Pi Pico - https://mjrobot.org/2021/03/12/tinyml-motion-recognition-using-raspberry-pi-pico/
 
 https://zlib.pub/book/tinyml-machine-learning-with-tensorflow-lite-on-arduino-and-ultra-low-power-microcontrollers-vshhregc28o0
 
