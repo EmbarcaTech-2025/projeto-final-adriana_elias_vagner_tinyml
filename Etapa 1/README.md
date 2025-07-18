@@ -17,13 +17,14 @@ A logística de contêineres marítimos é um componente crítico da cadeia de s
 A **concepção** deste projeto é criar um sistema embarcado de baixo custo e alta autonomia, embarcado no próprio contêiner, que utilize sensores inerciais e inteligência artificial na borda (edge) para resolver esse problema. A ideia é "dar inteligência" ao contêiner, permitindo que ele "entenda" seu próprio estado de movimento e comunique essa informação em tempo real. A solução se baseia no campo emergente de Tiny Machine Learning (TinyML<sup>1</sup>), que foca na implementação de modelos de aprendizado de máquina em microcontroladores com recursos limitados.    
 
 TinyML permite a execução de modelos de aprendizado de máquina em microcontroladores com recursos limitados, como o RP2040 da plataforma BitDogLab. Este projeto propõe um sistema embarcado que utiliza o acelerômetro MPU6500, a plataforma Edge Impulse<sup>2</sup> para treinamento de modelos, e o protocolo MQTT para transmissão de dados, classificando automaticamente os movimentos de contêineres em quatro classes:      
-        - (i) parado (armazenado ou em espera);   
-        - (ii) subindo/descendo (movimentação por empilhadeira ou guindaste);  
-        - (iii) esquerda/direita (transporte terrestre); e    
-        - (iv) ziguezague (transporte marítimo).    
-O sistema opera com baixo consumo energético, exibe resultados localmente em um display SSD1306 e transmite dados via Wi-Fi, alinhando-se aos objetivos do curso Embarcatech de criar soluções embarcadas inovadoras para desafios reais.     
+> (i) Parado (armazenado ou em espera);   
+> (ii) Subindo/descendo (movimentação por empilhadeira ou guindaste);  
+> (iii) Esquerda/direita (transporte terrestre); e    
+> (iv) Ziguezague (transporte marítimo).    
+O sistema opera com baixo consumo energético, exibe resultados localmente em um display SSD1306 e transmite dados via Wi-Fi, alinhando-se aos objetivos do curso Embarcatech de criar soluções embarcadas inovadoras para desafios reais.  
+A figura 1, ilustra    
 ![diagrama](estudoCaso.png)    
-<h4 align = "right"> Fonte: [Prof. Marcelo Rovai](https://github.com/Mjrovai/UNIFEI-IESTI01-TinyML/blob/main/00_Curse_Folder/2_Applications_Deploy/Class_19/IESTI01_TinyML_class_19.pdf) </h4>  
+<h4 align = "right"> Figura 1. Caso de Uso. Fonte: [Prof. Marcelo Rovai](https://github.com/Mjrovai/UNIFEI-IESTI01-TinyML/blob/main/00_Curse_Folder/2_Applications_Deploy/Class_19/IESTI01_TinyML_class_19.pdf) </h4>  
 
 # 2. Usuários
 O sistema proposto oferece utilidade direta para múltiplos atores da cadeia logística, gerando valor econômico e operacional.    
