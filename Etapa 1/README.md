@@ -144,7 +144,7 @@ O projeto segue a metodologia CUGNASA, estruturada em quatro etapas, com ativida
     - **Testes:**
     - **Métricas:**
     - **Consumo:** 
-    - **Documentando desafios:**       
+    - **Documentando desafios:**          
 **Entregável:** Vídeo/fotos do protótipo, relatório detalhando testes, desafios e melhorias planejadas.
 
 ## 6.4 Etapa 4: Entrega Final e Documentação (Data a ser definida)
