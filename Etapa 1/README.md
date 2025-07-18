@@ -22,8 +22,8 @@ TinyML permite a execução de modelos de aprendizado de máquina em microcontro
 > (iii) Esquerda/direita (transporte terrestre); e    
 > (iv) Ziguezague (transporte marítimo).      
 
-O sistema opera com baixo consumo energético, exibe resultados localmente em um display SSD1306 e transmite dados via Wi-Fi, alinhando-se aos objetivos do curso Embarcatech de criar soluções embarcadas inovadoras para desafios reais.  
-A figura 1, ilustra    
+O sistema opera com baixo consumo energético, exibe resultados localmente em um display SSD1306 e transmite dados via Wi-Fi, alinhando-se aos objetivos do curso Embarcatech de criar soluções embarcadas inovadoras para desafios reais.   
+A figura 1, ilustra o estudo de caso em questão.   
 ![diagrama](estudoCaso.png)    
 <h4 align = "right"> Figura 1 - Caso de Uso. Fonte: Curso UNIFEI-IESTI01- TinyML </h4>  
 
@@ -101,7 +101,8 @@ O projeto segue a metodologia CUGNASA, estruturada em quatro etapas, com ativida
         3. Bateria: Conectada ao regulador de tensão da BitDogLab.    
 
 - Diagrama de software:    
-![diagrama](etapa_1_diagrama.png)  
+![diagrama](etapa_1_diagrama.png)   
+<h4 align = "right"> Figura 2 - Produzido pelos autores </h4>
 
 - **Criando fluxograma do software:**   
     - **Inicialização:** Configurar FreeRTOS, inicializar periféricos (MPU6500, SSD1306, Wi-Fi).   
