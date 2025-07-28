@@ -108,6 +108,7 @@ A figura 3 apresenta o diagrama de hardware proposto.
 <h4 align = "right"> Figura 3 - Fonte: produzido pelos autores </h4>
 
 Ambos os componentes utilizados (Acelerômetro MPU6500 e Display SSD1306) possuem interface serial de comunicação do tipo I2C. Sendo assim, a proposta é conectá-los na interface I2C1 da BitDogLab, GPIO 14 e 15, sendo o RP2040 o mestre da rede e ambos os componentes os escravos.
+
 Endereços de rede:
 |Componente|Endereço|
 |---|---|
@@ -135,22 +136,22 @@ Temos ainda o **Semaphoro**, que atua como mecanismo de sinalização entre as t
 ### Fluxograma do software
 - Inicialização: Configurar FreeRTOS, inicializar periféricos (MPU6500, SSD1306, Wi-Fi).
 - Loop Principal:
-  1. Autenticação nno ponto de acesso;
-  2. Ler dados do MPU6500;
-  3. Pré-processar os dados (filtro passa-baixa, normalização, janelamento, outros);
-  4. Executar inferência com o modelo de ML (TinyML);
-  4. Exibir classe no SSD1306;
-  5. Transmitir via MQTT para o broker MQTT;
-  6. Verificar estado parado para modo de baixo consumo.
+1. Autenticação nno ponto de acesso;
+2. Ler dados do MPU6500;
+3. Pré-processar os dados (filtro passa-baixa, normalização, janelamento, outros);
+4. Executar inferência com o modelo de ML (TinyML);
+5. Exibir classe no SSD1306;
+6. Transmitir via MQTT para o broker MQTT;
+7. Verificar estado parado para modo de baixo consumo.
 
 - Configurando ambientes:
-  1. Instalar Pico-SDK e configurar FreeRTOS no RP2040;
-  2. Configurar Edge Impulse para coleta de dados e treinamento do modelo.
+1. Instalar Pico-SDK e configurar FreeRTOS no RP2040;
+2. Configurar Edge Impulse para coleta de dados e treinamento do modelo.
 
 - Definindo arquitetura do modelo TinyML:
-  1. Pré-processamento;
-  2. Modelo: Rede neural densa;
-  3. Saída: Probabilidades para as classes: parado, subindo/descendo, esquerda/direita, ziguezague.
+1. Pré-processamento;
+2. Modelo: Rede neural densa;
+3. Saída: Probabilidades para as classes: parado, subindo/descendo, esquerda/direita, ziguezague.
 
 - **Entregável:** Arquivo com diagramas de hardware e software, acompanhado de explicações detalhando a lógica e estrutura do sistema.
 
