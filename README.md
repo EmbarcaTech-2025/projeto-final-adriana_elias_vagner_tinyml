@@ -37,39 +37,46 @@ O sistema proposto oferece utilidade direta para múltiplos atores da cadeia log
 - **Para o Ecossistema de Cidades Inteligentes:** A coleta de dados em massa sobre o fluxo de contêineres pode alimentar sistemas de gerenciamento de tráfego e planejamento urbano, otimizando as rotas de veículos pesados.
 
 Um ponto importante a ser observado, é que a mesma plataforma (BitDogLab + acelerômetro + TinyML) possui inumeros casos de uso no campo da manutenção prescritiva, mais precisamente na análise de vibrações.
+
 # 3. Objetivo Geral
 Desenvolver um sistema embarcado baseado na plataforma BitDogLab (AIoT<sup>3</sup>), utilizando TinyML e o acelerômetro MPU6500, para classificar automaticamente os movimentos de contêineres marítimos em quatro classes (parado, subindo/descendo, esquerda/direita, ziguezague), com visualização local em um display SSD1306, transmissão de dados via MQTT para monitoramento remoto, e operação otimizada para baixo consumo energético, alcançando autonomia mínima de 30 dias.
+
 # 4. Objetivos Específicos
-- 1. Coletar dados do acelerômetro MPU6500 (eixos X, Y, Z) a 60 Hz para capturar padrões de movimento.
-- 2. Pré-processar os dados com filtro passa-baixa, normalização e janelamento para preparar os sinais para o modelo TinyML.
-- 3. Desenvolver, treinar e avaliar um modelo de aprendizado de máquina na plataforma Edge Impulse, alcançando acurácia superior a 80%.
-- 4. Implementar o modelo TinyML na BitDogLab para inferência em tempo real com latência inferior a 200 ms.
-- 5. Exibir a classe de movimento detectada em um display OLED SSD1306.
-- 6. Transmitir os resultados via Wi-Fi para um broker MQTT com qualidade de serviço (QoS) 2 e e estampa de tempo (dia/mês/ano - hora:minuto: segundo);
-- 7. Garantir operação em modo de baixo consumo para autonomia mínima de 30 dias com bateria.
-- 8. Utilizar FreeRTOS para gerenciar tarefas concorrentes, assegurando estabilidade e escalabilidade.
+  1. Coletar dados do acelerômetro MPU6500 (eixos X, Y, Z) para capturar padrões de movimento;
+  2. Pré-processar os dados com filtro passa-baixa, normalização e janelamento para preparar os sinais para o modelo TinyML;
+  3. Desenvolver, treinar e avaliar um modelo de aprendizado de máquina na plataforma Edge Impulse, alcançando acurácia superior a 80%;
+  4. Implementar o modelo TinyML na BitDogLab para inferência em tempo real com latência inferior a 200 ms;
+  5. Exibir a classe de movimento detectada em um display OLED SSD1306;
+  6. Transmitir os resultados via Wi-Fi para um broker MQTT com qualidade de serviço (QoS) 2 e e estampa de tempo (dia/mês/ano - hora:minuto: segundo);
+  7. Garantir operação em modo de baixo consumo para autonomia mínima de 30 dias com bateria;
+  8. Utilizar FreeRTOS para gerenciar tarefas concorrentes, assegurando estabilidade e escalabilidade.
 
 # 5. Requisitos
 ## 5.1 Requisitos Funcionais
 
-- RF01: Coletar dados do acelerômetro MPU6500 (eixos X, Y, Z) a 60Hz;
-- RF02: Pré-processar os dados (filtro passa-baixa, normalização e janelamento);
-- RF03: Executar modelo TinyML para classificação em tempo real;
-- RF04: Exibir a classe detectada no display SSD1306;
-- RF05: Transmitir resultados via Wi-Fi para um broker MQTT em nuvem, com QoS 2 e estampa de tempo (dia/mês/ano - hora:minuto: segundo);
-- RF06: Operar em modo de baixo consumo quando parado;
-- RF07: Utilizar Sistema Operacional de Tempo Real (RTOS).
+| Requisito | Descrição|
+|---|---|
+|RF01| Coletar dados do acelerômetro MPU6500 (eixos X, Y, Z) a 60Hz|
+|RF02| Pré-processar os dados (filtro passa-baixa, normalização e janelamento)|
+|RF03| Executar modelo TinyML para classificação em tempo real|
+|RF04| Exibir a classe detectada no display SSD1306|
+|RF05| Transmitir resultados via Wi-Fi para um broker MQTT em nuvem, com QoS 2 e estampa de tempo (dia/mês/ano - hora:minuto: segundo)|
+|RF06| Operar em modo de baixo consumo quando parado|
+|RF07| Utilizar Sistema Operacional de Tempo Real (RTOS)|
 
 ## 5.2 Requisitos Não Funcionais
-
-- RNF01: Taxa de acerto ≥ 90% em condições reais (dados de testes);
-- RNF02: Latência de inferência ≤ 200ms;
-- RNF03: Autonomia mínima de 30 dias com bateria;
-- RNF04: Funcionamento estável em temperaturas de 0°C a 50°C;
-- RNF05:  Código modular e documentado para manutenibilidade.
+| Requisito | Descrição|
+|---|---|
+|RNF01| Taxa de acerto ≥ 90% em condições reais (dados de testes)|
+|RNF02| Latência de inferência ≤ 200ms|
+|RNF03| Autonomia mínima de 30 dias com bateria|
+|RNF04| Funcionamento estável em temperaturas de 0°C a 50°C|
+|RNF05|  Código modular e documentado para manutenibilidade|
 
 # 6. Abordagem
-O projeto segue a metodologia CUGNASA, estruturada em quatro etapas, com atividades divididas em duas frentes: desenvolvimento do sistema embarcado e desenvolvimento do modelo TinyML. A abordagem é iterativa, com ciclos de projeto, prototipagem, teste e refinamento, utilizando ferramentas como Pico-SDK, FreeRTOS e Edge Impulse.
+O projeto segue a metodologia apresentada por CUGNASA (2025), conforme figura 2, estruturada em quatro etapas, com atividades divididas em duas frentes: desenvolvimento do sistema embarcado e desenvolvimento do modelo TinyML. A abordagem é iterativa, com ciclos de projeto, prototipagem, teste e refinamento, utilizando ferramentas como Pico-SDK, FreeRTOS e Edge Impulse.
+![diagrama](/assets/metodologia.png)
+<h4 align = "right"> Figura 2 - Metodologia. Fonte: Cugnasca (2025) </h4>
 
 ## 6.1 Etapa 1: Definição de Requisitos e Lista de Materiais (Entrega: 16/07/2025)
 
@@ -82,6 +89,7 @@ O projeto segue a metodologia CUGNASA, estruturada em quatro etapas, com ativida
         - BitDogLab (RP2040): Microcontrolador principal.
         - MPU6500: Acelerômetro de 6 eixos (I2C).
         - SSD1306: Display OLED 128x64 (I2C).
+        - CYW43439: Wi-Fi (Pi Pico W).
         - Bateria: LiPo 3.7V, capacidade ~2000 mAh (a ser confirmada).
     - Software:
         - Pico-SDK: Framework para programação do RP2040.
@@ -94,34 +102,57 @@ O projeto segue a metodologia CUGNASA, estruturada em quatro etapas, com ativida
 ## 6.2 Etapa 2: Arquitetura e Modelagem (Entrega: 04/08/2025)
 **Objetivo:** Definir a arquitetura do sistema e modelar o software e o modelo TinyML.
 **Atividades:**
-- Desenvolvendo diagrama de hardware:
-    - Conexões:
-        1. MPU6500: I2C (SDA: GPIO4, SCL: GPIO5).
-        2. SSD1306: I2C (mesmo barramento, endereços distintos).
-        3. Bateria: Conectada ao regulador de tensão da BitDogLab.
+### Diagrama de hardware
+A figura 3 apresenta o diagrama de hardware proposto.
+![diagrama](/assets/esquematico.png)
+<h4 align = "right"> Figura 3 - Fonte: produzido pelos autores </h4>
 
-- Diagrama de software:
+Ambos os componentes utilizados (Acelerômetro MPU6500 e Display SSD1306) possuem interface serial de comunicação do tipo I2C. Sendo assim, a proposta é conectá-los na interface I2C1 da BitDogLab, GPIO 14 e 15, sendo o RP2040 o mestre da rede e ambos os componentes os escravos.
+
+Endereços de rede:
+|Componente|Endereço|
+|---|---|
+|MPU6050|0x68|
+|SSD1306|0x3C|
+
+O módulo wi-fi (CYW43439) já é integrado a placa Pi Pico W, disponibilizada na BitDogLab.
+
+### Blocos funcionais do software
+A figura 4 apresenta o diagrama de blocos funcionais do software proposto.
 ![diagrama](/assets/etapa_1_diagrama.png)
-<h4 align = "right"> Figura 2 - Produzido pelos autores </h4>
+<h4 align = "right"> Figura 4 - Produzido pelos autores </h4>
 
-- **Criando fluxograma do software:**
-    - **Inicialização:** Configurar FreeRTOS, inicializar periféricos (MPU6500, SSD1306, Wi-Fi).
-    - **Loop Principal:**
-        1. Ler dados do MPU6500 (60 Hz).
-        2. Pré-processar (filtro passa-baixa, normalização, janelamento).
-        3. Executar inferência TinyML.
-        4. Exibir classe no SSD1306.
-        5. Transmitir via MQTT.
-        6. Verificar estado parado para modo de baixo consumo.
+Conforme apresentado na figura 4, a proposta envolve a utilização de um sistema operacional de tempo real (FreeRTOS) para o controle do sistema. Serão desenvolvidas as seguintes tarefas:
+|Tarefa|Função|
+|---|---|
+|Wi-fi_task|Realiza autenticação no ponto de acesso wi-fi|
+|mqtt_task|Envia os dados para o broker mqtt na nuvem e para a a tarefa display_gate_task|
+|display_gate_task|Envia os dados para o display|
+|mpu6500_task|Lê os dados do acelerômetro e os envia para a tarefa ML_task|
+|ML_task| Recebe os dados do acelerômetro e realiza a classsificação do movimento (inferência) e envia o resultado para o wi-fi e display|
 
-    - **Configurando ambiente:**
-        - Instalar Pico-SDK e configurar FreeRTOS no RP2040.
-        - Configurar Edge Impulse para coleta e treinamento de dados.
+Temos ainda o **Semaphoro**, que atua como mecanismo de sinalização entre as tarefas: Wi-fi_task e mqtt_task, de forma que a tarefa mqtt_task aguarda a autenticação da Wi-fi_task para iniciar; e a fila **Queue** que controla o acesso ao display.
 
-    - **Definindo arquitetura do modelo TinyML:**
-        - Pré-processamento;
-        - Modelo: Rede neural densa;
-        - Saída: Probabilidades para as classes: parado, subindo/descendo, esquerda/direita, ziguezague.
+### Fluxograma do software
+- Inicialização: Configurar FreeRTOS, inicializar periféricos (MPU6500, SSD1306, Wi-Fi).
+- Loop Principal:
+1. Autenticação nno ponto de acesso;
+2. Ler dados do MPU6500;
+3. Pré-processar os dados (filtro passa-baixa, normalização, janelamento, outros);
+4. Executar inferência com o modelo de ML (TinyML);
+5. Exibir classe no SSD1306;
+6. Transmitir via MQTT para o broker MQTT;
+7. Verificar estado parado para modo de baixo consumo.
+
+- Configurando ambientes:
+1. Instalar Pico-SDK e configurar FreeRTOS no RP2040;
+2. Configurar Edge Impulse para coleta de dados e treinamento do modelo.
+
+- Definindo arquitetura do modelo TinyML:
+1. Pré-processamento;
+2. Modelo: Rede neural densa;
+3. Saída: Probabilidades para as classes: parado, subindo/descendo, esquerda/direita, ziguezague.
+
 - **Entregável:** Arquivo com diagramas de hardware e software, acompanhado de explicações detalhando a lógica e estrutura do sistema.
 
 ## 6.3 Etapa 3: Prototipagem e Ajustes (Entrega: 25/08/2025)
@@ -224,6 +255,8 @@ Curso UNIFEI-IESTI01- TinyML - https://github.com/Mjrovai/UNIFEI-IESTI01-TinyML/
 Curso Coursera: Edge Impulse - Introdução ao TinyML - https://www.coursera.org/learn/introduction-to-embedded-machine-learning
 
 TinyML - Motion Recognition Using Raspberry Pi Pico - https://mjrobot.org/2021/03/12/tinyml-motion-recognition-using-raspberry-pi-pico/
+
+C. E. Cugnasca, “Projetos de sistemas embarcados”. 2018. Acesso em: 16 de fevereiro de 2025. [Online]. Disponível em: https://integra.univesp.br/courses/2710/pages/texto-base-projetos-de-sistemas-embarcados-%7C-carlos-eduardo-cugnasca
 
 https://zlib.pub/book/tinyml-machine-learning-with-tensorflow-lite-on-arduino-and-ultra-low-power-microcontrollers-vshhregc28o0
 
