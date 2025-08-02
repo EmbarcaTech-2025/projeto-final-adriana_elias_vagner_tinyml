@@ -1,121 +1,100 @@
-#include "mpu.h"
 #include <stdio.h>
-#include <stdint.h>   // ← Aqui garante o tipo uint8_t
-#include <stdlib.h>
+#include "mpu.h"
+#include "hardware/i2c.h"
+#include "pico/stdlib.h"
 #include <math.h>
+#include <stdint.h>   // ← Aqui garante o tipo uint8_t
 
-// Variável global visível a todo o programa
-volatile uint8_t sensor_detectado = 0;
-volatile const char* nome_sensor_global = "Desconhecido";
+// Escalas de conversão (g/LSB) para cada faixa
+static const float accel_scales[] = {
+    [ACCEL_RANGE_2G] = 16384.0f,
+    [ACCEL_RANGE_4G] = 8192.0f,
+    [ACCEL_RANGE_8G] = 4096.0f,
+    [ACCEL_RANGE_16G] = 2048.0f
+};
 
-// Offsets globais aplicados após calibração
-extern float offset_ax, offset_ay, offset_az;
-extern float offset_gx, offset_gy, offset_gz;
+static float current_scale = 0;
 
-// Endereço I2C base
-#define MPU_ADDR 0x68
+bool mpu_i2c_init(i2c_inst_t *i2c, uint sda_pin, uint scl_pin, uint baudrate) {
+    i2c_init(i2c, baudrate);
+    gpio_set_function(sda_pin, GPIO_FUNC_I2C);
+    gpio_set_function(scl_pin, GPIO_FUNC_I2C);
+    gpio_pull_up(sda_pin);
+    gpio_pull_up(scl_pin);
+    return true;
+}
 
-// WHO_AM_I valores esperados
-#define WHO_AMI_6050 0x68
-#define WHO_AMI_6500 0x70
+static bool mpu_write_register(i2c_inst_t *i2c, uint8_t reg, uint8_t value) {
+    uint8_t buf[] = {reg, value};
+    int retorno = i2c_write_blocking(i2c, MPU6500_ADDR, buf, 2, false);
+    printf("Retorno: %d \n", retorno);
+    //return i2c_write_blocking(i2c, MPU6500_ADDR, buf, 2, false) == 2;
+    return retorno;
+}
 
-// Definições de zona morta (ajustável conforme necessidade)
-#define ZONA_MORTA_ACC  0.02f   // em 'g'
-#define ZONA_MORTA_GYRO 0.2f    // em graus/segundo
-
-bool mpu_inicializar(i2c_inst_t *i2c) {
-    uint8_t id = 0;
-    uint8_t reg = WHO_AM_I_REG;
-
-    // Leitura do WHO_AM_I
-    if (i2c_write_blocking(i2c, MPU_ADDR, &reg, 1, true) < 0 ||
-        i2c_read_blocking(i2c, MPU_ADDR, &id, 1, false) < 0) {
-        printf("Erro na comunicação I2C\n");
+static bool mpu_read_registers(i2c_inst_t *i2c, uint8_t reg, uint8_t *buf, uint8_t len) {
+    if (i2c_write_blocking(i2c, MPU6500_ADDR, &reg, 1, true) != 1) {
         return false;
     }
+    return i2c_read_blocking(i2c, MPU6500_ADDR, buf, len, false) == len;
+}
 
-    sensor_detectado = id;
-
-    if (id == WHO_AMI_6500) {
-        nome_sensor_global = "MPU6500";
-    } else if (id == WHO_AMI_6050) {
-        nome_sensor_global = "MPU6050";
-    } else {
-        nome_sensor_global = "Desconhecido";
-        printf("Sensor desconhecido (WHO_AM_I = 0x%02X)\n", id);
+bool mpu_init(i2c_inst_t *i2c) {
+    // Resetar o dispositivo
+    if (!mpu_write_register(i2c, MPU6500_PWR_MGMT_1, 0x80)) {
+        printf("Falha 1 \n");
         return false;
     }
+    sleep_ms(100);
 
-    printf("%s inicializado com sucesso (WHO_AM_I = 0x%02X)\n", nome_sensor_global, id);
-
-    // Acordar o sensor (clear bit SLEEP)
-    uint8_t wake_cmd[2] = {PWR_MGMT_1_REG, 0x00};
-    if (i2c_write_blocking(i2c, MPU_ADDR, wake_cmd, 2, false) < 0) {
-        printf("Falha ao acordar sensor\n");
+    // Sair do modo sleep e usar clock interno
+    if (!mpu_write_register(i2c, MPU6500_PWR_MGMT_1, 0x01)) {
+        printf("Falha 2 \n");
         return false;
     }
+    sleep_ms(10);
 
-    // Configuração do DLPF para 5 Hz
-    if (sensor_detectado == WHO_AMI_6500) {
-        uint8_t config_gyro[] = { 0x1A, 0x01 };  // CONFIG
-        uint8_t config_accel[] = { 0x1D, 0x01 }; // ACCEL_CONFIG2
-        i2c_write_blocking(i2c, MPU_ADDR, config_gyro, 2, false);
-        i2c_write_blocking(i2c, MPU_ADDR, config_accel, 2, false);
-        //printf("MPU6500: Filtros DLPF configurados para 5 Hz\n");
-    } else if (sensor_detectado == WHO_AMI_6050) {
-        uint8_t config_gyro[] = { 0x1A, 0x01 };  // CONFIG
-        i2c_write_blocking(i2c, MPU_ADDR, config_gyro, 2, false);
-        //printf("MPU6050: Filtro DLPF configurado para 5 Hz\n");
+
+    /*
+
+    // Verificar identificação do dispositivo
+    uint8_t whoami;
+    if (!mpu_read_registers(i2c, MPU6500_WHO_AM_I, &whoami, 1) || whoami != 0x70) {
+        printf("Falha 3 \n");
+        return false;
     }
+    */
 
     return true;
 }
 
-bool mpu_ler_dados(i2c_inst_t *i2c, sensor_dataf_t *dados) {
-    uint8_t reg = DATA_START_REG;
-    uint8_t buf[14];
+bool mpu_set_accel_range(i2c_inst_t *i2c, accel_range_t range) {
+    if (range > ACCEL_RANGE_16G) return false;
 
-    if (i2c_write_blocking(i2c, MPU_ADDR, &reg, 1, true) < 0) return false;
-    if (i2c_read_blocking(i2c, MPU_ADDR, buf, 14, false) < 0) return false;
+    if (!mpu_write_register(i2c, MPU6500_ACCEL_CONFIG, range << 3)) {
+        return false;
+    }
 
-    int16_t ax_raw = (buf[0] << 8) | buf[1];
-    int16_t ay_raw = (buf[2] << 8) | buf[3];
-    int16_t az_raw = (buf[4] << 8) | buf[5];
-    int16_t temp_raw = (buf[6] << 8) | buf[7];
-    int16_t gx_raw = (buf[8] << 8) | buf[9];
-    int16_t gy_raw = (buf[10] << 8) | buf[11];
-    int16_t gz_raw = (buf[12] << 8) | buf[13];
+    current_scale = accel_scales[range];
+    return true;
+}
 
-    // Conversão padrão (±2g, ±250°/s)
-    dados->ax = ax_raw / 16384.0f;
-    dados->ay = ay_raw / 16384.0f;
-    dados->az = az_raw / 16384.0f;
+bool mpu_read_accel(i2c_inst_t *i2c, float accel[3]) {
+    uint8_t buffer[6];
 
-    dados->gx = gx_raw / 131.0f;
-    dados->gy = gy_raw / 131.0f;
-    dados->gz = gz_raw / 131.0f;
+    if (!mpu_read_registers(i2c, MPU6500_ACCEL_XOUT_H, buffer, 6)) {
+        return false;
+    }
 
-    dados->temp_c = temp_raw / 340.0f + 36.53f;
+    // Converter bytes para valores inteiros (big-endian)
+    int16_t raw_x = (buffer[0] << 8) | buffer[1];
+    int16_t raw_y = (buffer[2] << 8) | buffer[3];
+    int16_t raw_z = (buffer[4] << 8) | buffer[5];
 
-    // Aplica offsets calibrados
-    dados->ax -= offset_ax;
-    dados->ay -= offset_ay;
-    dados->az -= offset_az;
+    // Converter para g (considerando a escala atual)
+    accel[0] = raw_x / current_scale;
+    accel[1] = raw_y / current_scale;
+    accel[2] = raw_z / current_scale;
 
-    dados->gx -= offset_gx;
-    dados->gy -= offset_gy;
-    dados->gz -= offset_gz;
-
-    // Aplica zona morta no acelerômetro
-    /*
-    if (fabsf(dados->ax) < ZONA_MORTA_ACC) dados->ax = 0.0f;
-    if (fabsf(dados->ay) < ZONA_MORTA_ACC) dados->ay = 0.0f;
-    if (fabsf(dados->az - 1.0f) < ZONA_MORTA_ACC) dados->az = 1.0f;  // sensor plano
-
-    // Aplica zona morta no giroscópio
-    if (fabsf(dados->gx) < ZONA_MORTA_GYRO) dados->gx = 0.0f;
-    if (fabsf(dados->gy) < ZONA_MORTA_GYRO) dados->gy = 0.0f;
-    if (fabsf(dados->gz) < ZONA_MORTA_GYRO) dados->gz = 0.0f;
-*/
     return true;
 }

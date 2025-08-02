@@ -1,89 +1,50 @@
+#include <pico/time.h>
 #include <stdio.h>
 #include "pico/stdlib.h"
-#include "FreeRTOS.h"
-#include "task.h"
-
-// Módulos do projeto
-#include "i2c_config.h"
+#include "hardware/i2c.h"
 #include "mpu.h"
-#include "oled_display.h"
-#include "oled_context.h"
-#include "display_oled.h"
-#include "buffer_sensor.h"
-#include "leitura_sensor.h"
-#include "tarefa_botao_a.h"
-#include "tarefa_calibracao.h"
-#include "handles_tarefas.h"
+#include "pico/binary_info.h"
 
-// Handles globais
-TaskHandle_t handle_display       = NULL;
-TaskHandle_t handle_botao_a       = NULL;
-TaskHandle_t handle_leitura_mpu   = NULL;
 
-void main() {
+#define I2C_PORT i2c0
+#define I2C_SDA_PIN 0
+#define I2C_SCL_PIN 1
+
+int main() {
     stdio_init_all();
-    // Aguarda conexão USB se necessário:
-    // while (!stdio_usb_connected()) { sleep_ms(10); }
+    sleep_ms(10000);
 
-    printf("=== INICIANDO SISTEMA MPU + OLED ===\n");
-
-    // Configura os barramentos I2C
-    i2c_configurar(i2c0, 0, 1);     // SDA0 = GPIO 0, SCL0 = GPIO 1
-    i2c_configurar(i2c1, 14, 15);   // SDA1 = GPIO 14, SCL1 = GPIO 15
-    printf("Barramentos I2C inicializados\n");
-
-    // Inicializa buffer circular de leituras
-    buffer_sensor_inicializar();
-
-    // Inicializa sensor MPU
-    if (!mpu_inicializar(i2c0)) {
-        printf("Sensor MPU não detectado.\n");
-        while (true);
+    // Inicializa I2C
+    if (!mpu_i2c_init(I2C_PORT, I2C_SDA_PIN, I2C_SCL_PIN, 100000)) {
+        printf("Falha na inicializacao do I2C\n");
+        return -1;
     }
 
-    // Inicializa display OLED
-    if (!oled_init(&oled)) {
-        printf("Falha ao inicializar OLED!\n");
-        while (true);
+    // Inicializa MPU6500
+    if (!mpu_init(I2C_PORT)) {
+        printf("Falha na inicializacao do MPU6500\n");
+        return -1;
     }
 
-    // Cria mutex para uso compartilhado do OLED
-    mutex_oled = xSemaphoreCreateMutex();
-    if (mutex_oled == NULL) {
-        printf("Erro ao criar mutex do OLED\n");
-        while (true);
+    // Configura faixa de medida do acelerômetro (±8g)
+    mpu_set_accel_range(I2C_PORT, ACCEL_RANGE_8G);
+
+    // Loop principal
+    while (true) {
+        float accel[3];
+        if (mpu_read_accel(I2C_PORT, accel)) {
+            //printf("Aceleracao: X=%.2fg, Y=%.2fg, Z=%.2fg\n",
+            //      accel[0], accel[1], accel[2]);
+            printf("%.2f \t", accel[0]);
+            printf("%.2f \t", accel[1]);
+            printf("%.2f \t", accel[2]);
+            printf("\n");
+        } else {
+            printf("Erro na leitura do acelerometro\n");
+        }
+
+        sleep_ms(100); // Taxa de amostragem de 10Hz
     }
 
-    // Tarefa de calibração (núcleo 1)
-    xTaskCreateAffinitySet(
-        tarefa_calibracao, "Calibracao", 2048, i2c0,
-        1, (1 << 1), NULL
-    );
-
-    // Tarefa de leitura da MPU (núcleo 0)
-    xTaskCreateAffinitySet(
-        tarefa_leitura_mpu, "LeituraMPU", 1024, NULL,
-        1, (1 << 0), &handle_leitura_mpu
-    );
-
-    // Tarefa de exibição centralizada (núcleo 1)
-    xTaskCreateAffinitySet(
-        tarefa_display_oled, "DisplayOLED", 1024, NULL,
-        1, (1 << 1), &handle_display
-    );
-
-    // Tarefa do botão A (núcleo 0)
-    xTaskCreateAffinitySet(
-        tarefa_botao_a, "BotaoA", 1024, NULL,
-        1, (1 << 0), &handle_botao_a
-    );
-
-    // Suspende tarefas de exibição e botão até fim da calibração
-    vTaskSuspend(handle_display);
-    vTaskSuspend(handle_botao_a);
-
-    // Inicia o escalonador do FreeRTOS
-    vTaskStartScheduler();
-
-    while (true); // Nunca deve chegar aqui
+    return 0;
 }
