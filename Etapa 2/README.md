@@ -135,6 +135,7 @@ Temos ainda o **Semaphoro**, que atua como mecanismo de sinalização entre as t
 
 ### Fluxograma do software
 
+<img width="933" height="1428" alt="fluxograma22" src="https://github.com/user-attachments/assets/3cbbdfa4-4f9a-44c5-bd2b-9bb3a5f610c4" />
 
 
 - Inicialização: Configurar FreeRTOS, inicializar periféricos (MPU6500, SSD1306, Wi-Fi).
