@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named TinyML
+# Target rules for targets named tinyML
 
 # Build rule for target.
-TinyML: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TinyML
-.PHONY : TinyML
+tinyML: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyML
+.PHONY : tinyML
 
 # fast build rule for target.
-TinyML/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/build
-.PHONY : TinyML/fast
+tinyML/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/build
+.PHONY : tinyML/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default
@@ -194,12 +194,228 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
+FreeRTOS/croutine.o: FreeRTOS/croutine.c.o
+.PHONY : FreeRTOS/croutine.o
+
+# target to build an object file
+FreeRTOS/croutine.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/croutine.c.o
+.PHONY : FreeRTOS/croutine.c.o
+
+FreeRTOS/croutine.i: FreeRTOS/croutine.c.i
+.PHONY : FreeRTOS/croutine.i
+
+# target to preprocess a source file
+FreeRTOS/croutine.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/croutine.c.i
+.PHONY : FreeRTOS/croutine.c.i
+
+FreeRTOS/croutine.s: FreeRTOS/croutine.c.s
+.PHONY : FreeRTOS/croutine.s
+
+# target to generate assembly for a file
+FreeRTOS/croutine.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/croutine.c.s
+.PHONY : FreeRTOS/croutine.c.s
+
+FreeRTOS/event_groups.o: FreeRTOS/event_groups.c.o
+.PHONY : FreeRTOS/event_groups.o
+
+# target to build an object file
+FreeRTOS/event_groups.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/event_groups.c.o
+.PHONY : FreeRTOS/event_groups.c.o
+
+FreeRTOS/event_groups.i: FreeRTOS/event_groups.c.i
+.PHONY : FreeRTOS/event_groups.i
+
+# target to preprocess a source file
+FreeRTOS/event_groups.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/event_groups.c.i
+.PHONY : FreeRTOS/event_groups.c.i
+
+FreeRTOS/event_groups.s: FreeRTOS/event_groups.c.s
+.PHONY : FreeRTOS/event_groups.s
+
+# target to generate assembly for a file
+FreeRTOS/event_groups.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/event_groups.c.s
+.PHONY : FreeRTOS/event_groups.c.s
+
+FreeRTOS/list.o: FreeRTOS/list.c.o
+.PHONY : FreeRTOS/list.o
+
+# target to build an object file
+FreeRTOS/list.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/list.c.o
+.PHONY : FreeRTOS/list.c.o
+
+FreeRTOS/list.i: FreeRTOS/list.c.i
+.PHONY : FreeRTOS/list.i
+
+# target to preprocess a source file
+FreeRTOS/list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/list.c.i
+.PHONY : FreeRTOS/list.c.i
+
+FreeRTOS/list.s: FreeRTOS/list.c.s
+.PHONY : FreeRTOS/list.s
+
+# target to generate assembly for a file
+FreeRTOS/list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/list.c.s
+.PHONY : FreeRTOS/list.c.s
+
+FreeRTOS/portable/MemMang/heap_4.o: FreeRTOS/portable/MemMang/heap_4.c.o
+.PHONY : FreeRTOS/portable/MemMang/heap_4.o
+
+# target to build an object file
+FreeRTOS/portable/MemMang/heap_4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/portable/MemMang/heap_4.c.o
+.PHONY : FreeRTOS/portable/MemMang/heap_4.c.o
+
+FreeRTOS/portable/MemMang/heap_4.i: FreeRTOS/portable/MemMang/heap_4.c.i
+.PHONY : FreeRTOS/portable/MemMang/heap_4.i
+
+# target to preprocess a source file
+FreeRTOS/portable/MemMang/heap_4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/portable/MemMang/heap_4.c.i
+.PHONY : FreeRTOS/portable/MemMang/heap_4.c.i
+
+FreeRTOS/portable/MemMang/heap_4.s: FreeRTOS/portable/MemMang/heap_4.c.s
+.PHONY : FreeRTOS/portable/MemMang/heap_4.s
+
+# target to generate assembly for a file
+FreeRTOS/portable/MemMang/heap_4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/portable/MemMang/heap_4.c.s
+.PHONY : FreeRTOS/portable/MemMang/heap_4.c.s
+
+FreeRTOS/portable/ThirdParty/GCC/RP2040/port.o: FreeRTOS/portable/ThirdParty/GCC/RP2040/port.c.o
+.PHONY : FreeRTOS/portable/ThirdParty/GCC/RP2040/port.o
+
+# target to build an object file
+FreeRTOS/portable/ThirdParty/GCC/RP2040/port.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/portable/ThirdParty/GCC/RP2040/port.c.o
+.PHONY : FreeRTOS/portable/ThirdParty/GCC/RP2040/port.c.o
+
+FreeRTOS/portable/ThirdParty/GCC/RP2040/port.i: FreeRTOS/portable/ThirdParty/GCC/RP2040/port.c.i
+.PHONY : FreeRTOS/portable/ThirdParty/GCC/RP2040/port.i
+
+# target to preprocess a source file
+FreeRTOS/portable/ThirdParty/GCC/RP2040/port.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/portable/ThirdParty/GCC/RP2040/port.c.i
+.PHONY : FreeRTOS/portable/ThirdParty/GCC/RP2040/port.c.i
+
+FreeRTOS/portable/ThirdParty/GCC/RP2040/port.s: FreeRTOS/portable/ThirdParty/GCC/RP2040/port.c.s
+.PHONY : FreeRTOS/portable/ThirdParty/GCC/RP2040/port.s
+
+# target to generate assembly for a file
+FreeRTOS/portable/ThirdParty/GCC/RP2040/port.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/portable/ThirdParty/GCC/RP2040/port.c.s
+.PHONY : FreeRTOS/portable/ThirdParty/GCC/RP2040/port.c.s
+
+FreeRTOS/queue.o: FreeRTOS/queue.c.o
+.PHONY : FreeRTOS/queue.o
+
+# target to build an object file
+FreeRTOS/queue.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/queue.c.o
+.PHONY : FreeRTOS/queue.c.o
+
+FreeRTOS/queue.i: FreeRTOS/queue.c.i
+.PHONY : FreeRTOS/queue.i
+
+# target to preprocess a source file
+FreeRTOS/queue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/queue.c.i
+.PHONY : FreeRTOS/queue.c.i
+
+FreeRTOS/queue.s: FreeRTOS/queue.c.s
+.PHONY : FreeRTOS/queue.s
+
+# target to generate assembly for a file
+FreeRTOS/queue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/queue.c.s
+.PHONY : FreeRTOS/queue.c.s
+
+FreeRTOS/stream_buffer.o: FreeRTOS/stream_buffer.c.o
+.PHONY : FreeRTOS/stream_buffer.o
+
+# target to build an object file
+FreeRTOS/stream_buffer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/stream_buffer.c.o
+.PHONY : FreeRTOS/stream_buffer.c.o
+
+FreeRTOS/stream_buffer.i: FreeRTOS/stream_buffer.c.i
+.PHONY : FreeRTOS/stream_buffer.i
+
+# target to preprocess a source file
+FreeRTOS/stream_buffer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/stream_buffer.c.i
+.PHONY : FreeRTOS/stream_buffer.c.i
+
+FreeRTOS/stream_buffer.s: FreeRTOS/stream_buffer.c.s
+.PHONY : FreeRTOS/stream_buffer.s
+
+# target to generate assembly for a file
+FreeRTOS/stream_buffer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/stream_buffer.c.s
+.PHONY : FreeRTOS/stream_buffer.c.s
+
+FreeRTOS/tasks.o: FreeRTOS/tasks.c.o
+.PHONY : FreeRTOS/tasks.o
+
+# target to build an object file
+FreeRTOS/tasks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/tasks.c.o
+.PHONY : FreeRTOS/tasks.c.o
+
+FreeRTOS/tasks.i: FreeRTOS/tasks.c.i
+.PHONY : FreeRTOS/tasks.i
+
+# target to preprocess a source file
+FreeRTOS/tasks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/tasks.c.i
+.PHONY : FreeRTOS/tasks.c.i
+
+FreeRTOS/tasks.s: FreeRTOS/tasks.c.s
+.PHONY : FreeRTOS/tasks.s
+
+# target to generate assembly for a file
+FreeRTOS/tasks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/tasks.c.s
+.PHONY : FreeRTOS/tasks.c.s
+
+FreeRTOS/timers.o: FreeRTOS/timers.c.o
+.PHONY : FreeRTOS/timers.o
+
+# target to build an object file
+FreeRTOS/timers.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/timers.c.o
+.PHONY : FreeRTOS/timers.c.o
+
+FreeRTOS/timers.i: FreeRTOS/timers.c.i
+.PHONY : FreeRTOS/timers.i
+
+# target to preprocess a source file
+FreeRTOS/timers.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/timers.c.i
+.PHONY : FreeRTOS/timers.c.i
+
+FreeRTOS/timers.s: FreeRTOS/timers.c.s
+.PHONY : FreeRTOS/timers.s
+
+# target to generate assembly for a file
+FreeRTOS/timers.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/FreeRTOS/timers.c.s
+.PHONY : FreeRTOS/timers.c.s
+
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
@@ -207,7 +423,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/vagne
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
@@ -215,7 +431,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/vagne
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
@@ -223,7 +439,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.o: home/vagner/pi
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
@@ -231,7 +447,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/vagner/pi
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
@@ -239,7 +455,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/vagner/pi
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
@@ -247,7 +463,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.o: home/vagner/pi
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
@@ -255,7 +471,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/vagner/pi
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
@@ -263,7 +479,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/vagner/pi
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
@@ -271,7 +487,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.o: home/vagner
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
@@ -279,7 +495,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/vagner
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
@@ -287,7 +503,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/vagner
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
@@ -295,7 +511,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.o: home/vagner/pi
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
@@ -303,7 +519,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/vagner/pi
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
@@ -311,7 +527,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/vagner/pi
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
@@ -319,7 +535,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.o: home/vagner/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
@@ -327,7 +543,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/vagner/
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
@@ -335,7 +551,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/vagner/
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
@@ -343,7 +559,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.o: home/vagner/pi
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
@@ -351,7 +567,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/vagner/pi
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
@@ -359,7 +575,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/vagner/pi
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
@@ -367,7 +583,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.o: home/vag
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
@@ -375,7 +591,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/vag
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
@@ -383,7 +599,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/vag
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
@@ -391,7 +607,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.o: home/vagner/pi
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
@@ -399,7 +615,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/vagner/pi
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
@@ -407,7 +623,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/vagner/pi
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
@@ -415,7 +631,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o: home/vag
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
@@ -423,7 +639,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/vag
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
@@ -431,7 +647,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/vag
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
@@ -439,7 +655,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.o: home/vag
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
@@ -447,7 +663,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/vag
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
@@ -455,7 +671,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/vag
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
@@ -463,7 +679,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.o: home/vagne
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
@@ -471,7 +687,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/vagne
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
@@ -479,7 +695,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/vagne
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
@@ -487,7 +703,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.o: home/vagner/pico/p
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
@@ -495,7 +711,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/vagner/pico/p
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
@@ -503,7 +719,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/vagner/pico/p
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
@@ -511,7 +727,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.o: home/vagner/pico/pico-s
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
@@ -519,7 +735,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: home/vagner/pico/pico-s
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
@@ -527,7 +743,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: home/vagner/pico/pico-s
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
@@ -535,7 +751,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.o: home/vagner/pic
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
@@ -543,7 +759,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/vagner/pic
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
@@ -551,7 +767,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/vagner/pic
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
@@ -559,7 +775,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
@@ -567,7 +783,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
@@ -575,7 +791,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
@@ -583,7 +799,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
@@ -591,7 +807,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
@@ -599,7 +815,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
@@ -607,7 +823,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.o: home/vagner/pico/pico-sdk/lib/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.c.o
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.i: home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
@@ -615,7 +831,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.i: home/vagner/pico/pico-sdk/lib/
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 
 home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.s: home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
@@ -623,7 +839,7 @@ home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.s: home/vagner/pico/pico-sdk/lib/
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 
 home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.o: home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.c.o
@@ -631,7 +847,7 @@ home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.o: home/vagner/pico/pi
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.c.o
 
 home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.i: home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.c.i
@@ -639,7 +855,7 @@ home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.i: home/vagner/pico/pi
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.c.i
 
 home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.s: home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.c.s
@@ -647,7 +863,7 @@ home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.s: home/vagner/pico/pi
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/common/hardware_claim/claim.c.s
 
 home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.o: home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
@@ -655,7 +871,7 @@ home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.o: home/vagner/p
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
 
 home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -663,7 +879,7 @@ home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/vagner/p
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -671,7 +887,7 @@ home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/vagner/p
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.o: home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
@@ -679,7 +895,7 @@ home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.o: home/vagner/pico/pic
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
 
 home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -687,7 +903,7 @@ home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/vagner/pico/pic
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -695,7 +911,7 @@ home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/vagner/pico/pic
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.o: home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.c.o
@@ -703,7 +919,7 @@ home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.o: home/vagner/pico/pico-sd
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.c.o
 
 home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.i: home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -711,7 +927,7 @@ home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.i: home/vagner/pico/pico-sd
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 
 home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.s: home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -719,7 +935,7 @@ home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.s: home/vagner/pico/pico-sd
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 
 home/vagner/pico/pico-sdk/src/common/pico_sync/sem.o: home/vagner/pico/pico-sdk/src/common/pico_sync/sem.c.o
@@ -727,7 +943,7 @@ home/vagner/pico/pico-sdk/src/common/pico_sync/sem.o: home/vagner/pico/pico-sdk/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/common/pico_sync/sem.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/sem.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/sem.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_sync/sem.c.o
 
 home/vagner/pico/pico-sdk/src/common/pico_sync/sem.i: home/vagner/pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -735,7 +951,7 @@ home/vagner/pico/pico-sdk/src/common/pico_sync/sem.i: home/vagner/pico/pico-sdk/
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_sync/sem.c.i
 
 home/vagner/pico/pico-sdk/src/common/pico_sync/sem.s: home/vagner/pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -743,7 +959,7 @@ home/vagner/pico/pico-sdk/src/common/pico_sync/sem.s: home/vagner/pico/pico-sdk/
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_sync/sem.c.s
 
 home/vagner/pico/pico-sdk/src/common/pico_time/time.o: home/vagner/pico/pico-sdk/src/common/pico_time/time.c.o
@@ -751,7 +967,7 @@ home/vagner/pico/pico-sdk/src/common/pico_time/time.o: home/vagner/pico/pico-sdk
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/common/pico_time/time.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_time/time.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_time/time.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_time/time.c.o
 
 home/vagner/pico/pico-sdk/src/common/pico_time/time.i: home/vagner/pico/pico-sdk/src/common/pico_time/time.c.i
@@ -759,7 +975,7 @@ home/vagner/pico/pico-sdk/src/common/pico_time/time.i: home/vagner/pico/pico-sdk
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/common/pico_time/time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_time/time.c.i
 
 home/vagner/pico/pico-sdk/src/common/pico_time/time.s: home/vagner/pico/pico-sdk/src/common/pico_time/time.c.s
@@ -767,7 +983,7 @@ home/vagner/pico/pico-sdk/src/common/pico_time/time.s: home/vagner/pico/pico-sdk
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/common/pico_time/time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_time/time.c.s
 
 home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.o: home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o
@@ -775,7 +991,7 @@ home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.o: home/vagner/pic
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o
 
 home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -783,7 +999,7 @@ home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/vagner/pic
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -791,7 +1007,7 @@ home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/vagner/pic
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 home/vagner/pico/pico-sdk/src/common/pico_util/datetime.o: home/vagner/pico/pico-sdk/src/common/pico_util/datetime.c.o
@@ -799,7 +1015,7 @@ home/vagner/pico/pico-sdk/src/common/pico_util/datetime.o: home/vagner/pico/pico
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/common/pico_util/datetime.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/datetime.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/datetime.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_util/datetime.c.o
 
 home/vagner/pico/pico-sdk/src/common/pico_util/datetime.i: home/vagner/pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -807,7 +1023,7 @@ home/vagner/pico/pico-sdk/src/common/pico_util/datetime.i: home/vagner/pico/pico
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_util/datetime.c.i
 
 home/vagner/pico/pico-sdk/src/common/pico_util/datetime.s: home/vagner/pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -815,7 +1031,7 @@ home/vagner/pico/pico-sdk/src/common/pico_util/datetime.s: home/vagner/pico/pico
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_util/datetime.c.s
 
 home/vagner/pico/pico-sdk/src/common/pico_util/pheap.o: home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c.o
@@ -823,7 +1039,7 @@ home/vagner/pico/pico-sdk/src/common/pico_util/pheap.o: home/vagner/pico/pico-sd
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c.o
 
 home/vagner/pico/pico-sdk/src/common/pico_util/pheap.i: home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -831,7 +1047,7 @@ home/vagner/pico/pico-sdk/src/common/pico_util/pheap.i: home/vagner/pico/pico-sd
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c.i
 
 home/vagner/pico/pico-sdk/src/common/pico_util/pheap.s: home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -839,7 +1055,7 @@ home/vagner/pico/pico-sdk/src/common/pico_util/pheap.s: home/vagner/pico/pico-sd
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c.s
 
 home/vagner/pico/pico-sdk/src/common/pico_util/queue.o: home/vagner/pico/pico-sdk/src/common/pico_util/queue.c.o
@@ -847,7 +1063,7 @@ home/vagner/pico/pico-sdk/src/common/pico_util/queue.o: home/vagner/pico/pico-sd
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/common/pico_util/queue.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/queue.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/queue.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_util/queue.c.o
 
 home/vagner/pico/pico-sdk/src/common/pico_util/queue.i: home/vagner/pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -855,7 +1071,7 @@ home/vagner/pico/pico-sdk/src/common/pico_util/queue.i: home/vagner/pico/pico-sd
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/common/pico_util/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_util/queue.c.i
 
 home/vagner/pico/pico-sdk/src/common/pico_util/queue.s: home/vagner/pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -863,7 +1079,7 @@ home/vagner/pico/pico-sdk/src/common/pico_util/queue.s: home/vagner/pico/pico-sd
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/common/pico_util/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/common/pico_util/queue.c.s
 
 home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.o: home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
@@ -871,7 +1087,7 @@ home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.o: home/vagner/pico/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
 
 home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.i: home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.i
@@ -879,7 +1095,7 @@ home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.i: home/vagner/pico/
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.i
 
 home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.s: home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.s
@@ -887,39 +1103,15 @@ home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.s: home/vagner/pico/
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.s
-
-home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o
-.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.o
-
-# target to build an object file
-home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o
-.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o
-
-home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
-.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i
-
-# target to preprocess a source file
-home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
-.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
-
-home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
-.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s
-
-# target to generate assembly for a file
-home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
-.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
@@ -927,7 +1119,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: home/va
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
@@ -935,7 +1127,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s: home/va
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
@@ -943,7 +1135,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: home/vagner/p
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -951,7 +1143,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/vagner/p
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -959,7 +1151,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/vagner/p
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_divider/divider.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
@@ -967,15 +1159,39 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_divider/divider.o: home/vagner
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.o
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
@@ -983,7 +1199,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/vagner/pic
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
@@ -991,7 +1207,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/vagner/pic
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
@@ -999,7 +1215,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: home/vagner/pico/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -1007,7 +1223,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/vagner/pico/
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -1015,7 +1231,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/vagner/pico/
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
@@ -1023,7 +1239,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.o: home/vagner/pico/pi
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
@@ -1031,7 +1247,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: home/vagner/pico/pi
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
@@ -1039,7 +1255,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: home/vagner/pico/pi
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
@@ -1047,7 +1263,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.o: home/vagner/pico/pi
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -1055,7 +1271,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/vagner/pico/pi
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -1063,7 +1279,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/vagner/pico/pi
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
@@ -1071,7 +1287,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: home/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
@@ -1079,7 +1295,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.o: home/vagner/pico/pi
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -1087,7 +1303,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/vagner/pico/pi
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -1095,7 +1311,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/vagner/pico/pi
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
@@ -1103,7 +1319,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.o: home/vagner/pico/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -1111,7 +1327,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/vagner/pico/
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -1119,7 +1335,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/vagner/pico/
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
@@ -1127,7 +1343,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
@@ -1135,7 +1351,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
@@ -1143,7 +1359,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
@@ -1151,7 +1367,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: home/vagner/pic
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
@@ -1159,7 +1375,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: home/vagner/pic
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
@@ -1167,7 +1383,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: home/vagner/pic
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
@@ -1175,7 +1391,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.o: home/vagner/pic
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -1183,7 +1399,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/vagner/pic
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -1191,7 +1407,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/vagner/pic
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
@@ -1199,7 +1415,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.o: home/vagner/pico/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -1207,7 +1423,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/vagner/pico/
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -1215,7 +1431,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/vagner/pico/
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
@@ -1223,7 +1439,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: home/vagner/pico/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -1231,7 +1447,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/vagner/pico/
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -1239,7 +1455,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/vagner/pico/
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
@@ -1247,7 +1463,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: home/vagn
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -1255,7 +1471,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/vagn
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -1263,7 +1479,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/vagn
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
@@ -1271,7 +1487,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o: home/va
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
@@ -1279,7 +1495,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i: home/va
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
@@ -1287,7 +1503,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s: home/va
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
@@ -1295,7 +1511,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: home/vagner/pico/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -1303,7 +1519,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/vagner/pico/
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -1311,7 +1527,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/vagner/pico/
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
@@ -1319,7 +1535,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.o: home/vagner/pico/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
@@ -1327,7 +1543,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.i: home/vagner/pico/
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
@@ -1335,7 +1551,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.s: home/vagner/pico/
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
@@ -1343,7 +1559,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: home/vagn
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
@@ -1351,7 +1567,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: home/vagner/pic
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -1359,7 +1575,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/vagner/pic
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -1367,7 +1583,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/vagner/pic
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
@@ -1375,7 +1591,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: home/vagne
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
@@ -1383,7 +1599,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: home/vagne
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
@@ -1391,7 +1607,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: home/vagne
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
@@ -1399,7 +1615,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o:
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
@@ -1407,7 +1623,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i:
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
@@ -1415,7 +1631,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s:
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -1423,7 +1639,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.o: home/vagner/pico/pico
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
@@ -1431,7 +1647,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: home/vag
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
@@ -1439,7 +1655,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: home/vag
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
@@ -1447,7 +1663,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: home/vag
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
@@ -1455,7 +1671,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o: home/v
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
@@ -1463,7 +1679,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o: home
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
@@ -1471,7 +1687,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o: h
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
@@ -1479,7 +1695,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i: h
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
@@ -1487,7 +1703,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s: h
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o
@@ -1495,7 +1711,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.o: home/vagner/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -1503,7 +1719,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/vagner/
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -1511,7 +1727,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/vagner/
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
@@ -1519,7 +1735,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
@@ -1527,7 +1743,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
@@ -1535,7 +1751,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
@@ -1543,7 +1759,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o
@@ -1551,7 +1767,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.o: home/vagner/pico/pi
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i
@@ -1559,7 +1775,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.i: home/vagner/pico/pi
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s
@@ -1567,7 +1783,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.s: home/vagner/pico/pi
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
@@ -1575,7 +1791,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o: home/v
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
@@ -1583,7 +1799,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o: hom
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
@@ -1591,7 +1807,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i: hom
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
@@ -1599,7 +1815,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s: hom
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o
@@ -1607,7 +1823,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.o: home/vagner/pi
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1615,7 +1831,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/vagner/pi
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1623,7 +1839,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/vagner/pi
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
@@ -1631,7 +1847,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: 
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
@@ -1639,7 +1855,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: 
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
@@ -1647,7 +1863,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.o: home/vagner/pico/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
@@ -1655,7 +1871,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.i: home/vagner/pico/
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
@@ -1663,7 +1879,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.s: home/vagner/pico/
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
@@ -1671,15 +1887,39 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: home/vagn
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.o
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
@@ -1687,7 +1927,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: home/vagne
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
@@ -1695,7 +1935,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: home/vagne
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
@@ -1703,7 +1943,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.o: home/vagner/pico/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1711,7 +1951,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/vagner/pico/
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1719,7 +1959,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/vagner/pico/
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
@@ -1727,7 +1967,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.o: home/vagner/pic
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1735,7 +1975,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/vagner/pic
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1743,7 +1983,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/vagner/pic
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
@@ -1751,7 +1991,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: home/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
@@ -1759,7 +1999,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: home/
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
@@ -1767,7 +2007,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s: home/
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
@@ -1775,7 +2015,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
@@ -1783,7 +2023,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
@@ -1791,7 +2031,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
@@ -1799,7 +2039,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_gu
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
@@ -1807,7 +2047,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_gu
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
@@ -1815,7 +2055,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_gu
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
@@ -1823,7 +2063,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_bina
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
@@ -1831,7 +2071,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_bina
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
@@ -1839,7 +2079,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_bina
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
@@ -1847,7 +2087,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.o: home/vagner/pico/pi
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1855,7 +2095,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/vagner/pico/pi
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1863,7 +2103,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/vagner/pico/pi
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
@@ -1871,7 +2111,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o: home/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
@@ -1879,7 +2119,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home/
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
@@ -1887,7 +2127,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home/
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
@@ -1895,7 +2135,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.o: home/vagner
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
@@ -1903,7 +2143,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/vagner
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
@@ -1911,7 +2151,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/vagner
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
@@ -1919,7 +2159,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o:
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
@@ -1927,7 +2167,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i:
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
@@ -1935,7 +2175,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s:
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
@@ -1943,7 +2183,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: home/vagner/pico/
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1951,7 +2191,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/vagner/pico/
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1959,7 +2199,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/vagner/pico/
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
@@ -1967,7 +2207,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o: home/vagner
 
 # target to build an object file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
@@ -1975,7 +2215,7 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/vagner
 
 # target to preprocess a source file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
@@ -1983,56 +2223,272 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/vagner
 
 # target to generate assembly for a file
 home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
-src/main.o: src/main.c.o
-.PHONY : src/main.o
+lib/ssd1306_i2c.o: lib/ssd1306_i2c.c.o
+.PHONY : lib/ssd1306_i2c.o
 
 # target to build an object file
-src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/src/main.c.o
-.PHONY : src/main.c.o
+lib/ssd1306_i2c.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/ssd1306_i2c.c.o
+.PHONY : lib/ssd1306_i2c.c.o
 
-src/main.i: src/main.c.i
-.PHONY : src/main.i
+lib/ssd1306_i2c.i: lib/ssd1306_i2c.c.i
+.PHONY : lib/ssd1306_i2c.i
 
 # target to preprocess a source file
-src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/src/main.c.i
-.PHONY : src/main.c.i
+lib/ssd1306_i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/ssd1306_i2c.c.i
+.PHONY : lib/ssd1306_i2c.c.i
 
-src/main.s: src/main.c.s
-.PHONY : src/main.s
+lib/ssd1306_i2c.s: lib/ssd1306_i2c.c.s
+.PHONY : lib/ssd1306_i2c.s
 
 # target to generate assembly for a file
-src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/src/main.c.s
-.PHONY : src/main.c.s
+lib/ssd1306_i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/ssd1306_i2c.c.s
+.PHONY : lib/ssd1306_i2c.c.s
 
-src/mpu.o: src/mpu.c.o
-.PHONY : src/mpu.o
+main.o: main.c.o
+.PHONY : main.o
 
 # target to build an object file
-src/mpu.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/src/mpu.c.o
-.PHONY : src/mpu.c.o
+main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/main.c.o
+.PHONY : main.c.o
 
-src/mpu.i: src/mpu.c.i
-.PHONY : src/mpu.i
+main.i: main.c.i
+.PHONY : main.i
 
 # target to preprocess a source file
-src/mpu.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/src/mpu.c.i
-.PHONY : src/mpu.c.i
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/main.c.i
+.PHONY : main.c.i
 
-src/mpu.s: src/mpu.c.s
-.PHONY : src/mpu.s
+main.s: main.c.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-src/mpu.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TinyML.dir/build.make CMakeFiles/TinyML.dir/src/mpu.c.s
-.PHONY : src/mpu.c.s
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/main.c.s
+.PHONY : main.c.s
+
+src/button_a.o: src/button_a.c.o
+.PHONY : src/button_a.o
+
+# target to build an object file
+src/button_a.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/button_a.c.o
+.PHONY : src/button_a.c.o
+
+src/button_a.i: src/button_a.c.i
+.PHONY : src/button_a.i
+
+# target to preprocess a source file
+src/button_a.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/button_a.c.i
+.PHONY : src/button_a.c.i
+
+src/button_a.s: src/button_a.c.s
+.PHONY : src/button_a.s
+
+# target to generate assembly for a file
+src/button_a.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/button_a.c.s
+.PHONY : src/button_a.c.s
+
+src/button_b.o: src/button_b.c.o
+.PHONY : src/button_b.o
+
+# target to build an object file
+src/button_b.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/button_b.c.o
+.PHONY : src/button_b.c.o
+
+src/button_b.i: src/button_b.c.i
+.PHONY : src/button_b.i
+
+# target to preprocess a source file
+src/button_b.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/button_b.c.i
+.PHONY : src/button_b.c.i
+
+src/button_b.s: src/button_b.c.s
+.PHONY : src/button_b.s
+
+# target to generate assembly for a file
+src/button_b.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/button_b.c.s
+.PHONY : src/button_b.c.s
+
+src/button_j.o: src/button_j.c.o
+.PHONY : src/button_j.o
+
+# target to build an object file
+src/button_j.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/button_j.c.o
+.PHONY : src/button_j.c.o
+
+src/button_j.i: src/button_j.c.i
+.PHONY : src/button_j.i
+
+# target to preprocess a source file
+src/button_j.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/button_j.c.i
+.PHONY : src/button_j.c.i
+
+src/button_j.s: src/button_j.c.s
+.PHONY : src/button_j.s
+
+# target to generate assembly for a file
+src/button_j.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/button_j.c.s
+.PHONY : src/button_j.c.s
+
+src/ctrl.o: src/ctrl.c.o
+.PHONY : src/ctrl.o
+
+# target to build an object file
+src/ctrl.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/ctrl.c.o
+.PHONY : src/ctrl.c.o
+
+src/ctrl.i: src/ctrl.c.i
+.PHONY : src/ctrl.i
+
+# target to preprocess a source file
+src/ctrl.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/ctrl.c.i
+.PHONY : src/ctrl.c.i
+
+src/ctrl.s: src/ctrl.c.s
+.PHONY : src/ctrl.s
+
+# target to generate assembly for a file
+src/ctrl.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/ctrl.c.s
+.PHONY : src/ctrl.c.s
+
+src/display_gate.o: src/display_gate.c.o
+.PHONY : src/display_gate.o
+
+# target to build an object file
+src/display_gate.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/display_gate.c.o
+.PHONY : src/display_gate.c.o
+
+src/display_gate.i: src/display_gate.c.i
+.PHONY : src/display_gate.i
+
+# target to preprocess a source file
+src/display_gate.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/display_gate.c.i
+.PHONY : src/display_gate.c.i
+
+src/display_gate.s: src/display_gate.c.s
+.PHONY : src/display_gate.s
+
+# target to generate assembly for a file
+src/display_gate.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/display_gate.c.s
+.PHONY : src/display_gate.c.s
+
+src/led_rgb.o: src/led_rgb.c.o
+.PHONY : src/led_rgb.o
+
+# target to build an object file
+src/led_rgb.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/led_rgb.c.o
+.PHONY : src/led_rgb.c.o
+
+src/led_rgb.i: src/led_rgb.c.i
+.PHONY : src/led_rgb.i
+
+# target to preprocess a source file
+src/led_rgb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/led_rgb.c.i
+.PHONY : src/led_rgb.c.i
+
+src/led_rgb.s: src/led_rgb.c.s
+.PHONY : src/led_rgb.s
+
+# target to generate assembly for a file
+src/led_rgb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/led_rgb.c.s
+.PHONY : src/led_rgb.c.s
+
+src/oled/display.o: src/oled/display.c.o
+.PHONY : src/oled/display.o
+
+# target to build an object file
+src/oled/display.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/oled/display.c.o
+.PHONY : src/oled/display.c.o
+
+src/oled/display.i: src/oled/display.c.i
+.PHONY : src/oled/display.i
+
+# target to preprocess a source file
+src/oled/display.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/oled/display.c.i
+.PHONY : src/oled/display.c.i
+
+src/oled/display.s: src/oled/display.c.s
+.PHONY : src/oled/display.s
+
+# target to generate assembly for a file
+src/oled/display.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/oled/display.c.s
+.PHONY : src/oled/display.c.s
+
+src/oled/i2c.o: src/oled/i2c.c.o
+.PHONY : src/oled/i2c.o
+
+# target to build an object file
+src/oled/i2c.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/oled/i2c.c.o
+.PHONY : src/oled/i2c.c.o
+
+src/oled/i2c.i: src/oled/i2c.c.i
+.PHONY : src/oled/i2c.i
+
+# target to preprocess a source file
+src/oled/i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/oled/i2c.c.i
+.PHONY : src/oled/i2c.c.i
+
+src/oled/i2c.s: src/oled/i2c.c.s
+.PHONY : src/oled/i2c.s
+
+# target to generate assembly for a file
+src/oled/i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/oled/i2c.c.s
+.PHONY : src/oled/i2c.c.s
+
+src/util.o: src/util.c.o
+.PHONY : src/util.o
+
+# target to build an object file
+src/util.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/util.c.o
+.PHONY : src/util.c.o
+
+src/util.i: src/util.c.i
+.PHONY : src/util.i
+
+# target to preprocess a source file
+src/util.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/util.c.i
+.PHONY : src/util.c.i
+
+src/util.s: src/util.c.s
+.PHONY : src/util.s
+
+# target to generate assembly for a file
+src/util.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/util.c.s
+.PHONY : src/util.c.s
 
 # Help Target
 help:
@@ -2045,9 +2501,36 @@ help:
 	@echo "... bs2_default_bin"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... pioasmBuild"
-	@echo "... TinyML"
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"
+	@echo "... tinyML"
+	@echo "... FreeRTOS/croutine.o"
+	@echo "... FreeRTOS/croutine.i"
+	@echo "... FreeRTOS/croutine.s"
+	@echo "... FreeRTOS/event_groups.o"
+	@echo "... FreeRTOS/event_groups.i"
+	@echo "... FreeRTOS/event_groups.s"
+	@echo "... FreeRTOS/list.o"
+	@echo "... FreeRTOS/list.i"
+	@echo "... FreeRTOS/list.s"
+	@echo "... FreeRTOS/portable/MemMang/heap_4.o"
+	@echo "... FreeRTOS/portable/MemMang/heap_4.i"
+	@echo "... FreeRTOS/portable/MemMang/heap_4.s"
+	@echo "... FreeRTOS/portable/ThirdParty/GCC/RP2040/port.o"
+	@echo "... FreeRTOS/portable/ThirdParty/GCC/RP2040/port.i"
+	@echo "... FreeRTOS/portable/ThirdParty/GCC/RP2040/port.s"
+	@echo "... FreeRTOS/queue.o"
+	@echo "... FreeRTOS/queue.i"
+	@echo "... FreeRTOS/queue.s"
+	@echo "... FreeRTOS/stream_buffer.o"
+	@echo "... FreeRTOS/stream_buffer.i"
+	@echo "... FreeRTOS/stream_buffer.s"
+	@echo "... FreeRTOS/tasks.o"
+	@echo "... FreeRTOS/tasks.i"
+	@echo "... FreeRTOS/tasks.s"
+	@echo "... FreeRTOS/timers.o"
+	@echo "... FreeRTOS/timers.i"
+	@echo "... FreeRTOS/timers.s"
 	@echo "... home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o"
 	@echo "... home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
@@ -2135,9 +2618,6 @@ help:
 	@echo "... home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.s"
-	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.o"
-	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i"
-	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s"
@@ -2145,6 +2625,9 @@ help:
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_divider/divider.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.s"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s"
@@ -2233,6 +2716,9 @@ help:
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.s"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.s"
@@ -2272,12 +2758,39 @@ help:
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... src/mpu.o"
-	@echo "... src/mpu.i"
-	@echo "... src/mpu.s"
+	@echo "... lib/ssd1306_i2c.o"
+	@echo "... lib/ssd1306_i2c.i"
+	@echo "... lib/ssd1306_i2c.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... src/button_a.o"
+	@echo "... src/button_a.i"
+	@echo "... src/button_a.s"
+	@echo "... src/button_b.o"
+	@echo "... src/button_b.i"
+	@echo "... src/button_b.s"
+	@echo "... src/button_j.o"
+	@echo "... src/button_j.i"
+	@echo "... src/button_j.s"
+	@echo "... src/ctrl.o"
+	@echo "... src/ctrl.i"
+	@echo "... src/ctrl.s"
+	@echo "... src/display_gate.o"
+	@echo "... src/display_gate.i"
+	@echo "... src/display_gate.s"
+	@echo "... src/led_rgb.o"
+	@echo "... src/led_rgb.i"
+	@echo "... src/led_rgb.s"
+	@echo "... src/oled/display.o"
+	@echo "... src/oled/display.i"
+	@echo "... src/oled/display.s"
+	@echo "... src/oled/i2c.o"
+	@echo "... src/oled/i2c.i"
+	@echo "... src/oled/i2c.s"
+	@echo "... src/util.o"
+	@echo "... src/util.i"
+	@echo "... src/util.s"
 .PHONY : help
 
 

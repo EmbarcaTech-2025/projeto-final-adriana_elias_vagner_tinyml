@@ -172,7 +172,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=TinyML
+CMAKE_PROJECT_NAME:STATIC=tinyML
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/arm-none-eabi-ranlib
@@ -268,6 +268,18 @@ FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 //Enables UPDATE_DISCONNECTED behavior just for population of picotool
 FETCHCONTENT_UPDATES_DISCONNECTED_PICOTOOL:BOOL=OFF
 
+//Path to the FreeRTOS_KERNEL
+FREERTOS_KERNEL_PATH:PATH=/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/FreeRTOS
+
+//Value Computed by CMake
+FreeRTOS-Kernel_BINARY_DIR:STATIC=/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/FREERTOS_KERNEL
+
+//Value Computed by CMake
+FreeRTOS-Kernel_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+FreeRTOS-Kernel_SOURCE_DIR:STATIC=/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/FreeRTOS/portable/ThirdParty/GCC/RP2040
+
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 
@@ -338,15 +350,6 @@ PICO_STDIO_USB:BOOL=OFF
 PIOASM_INSTALL_DIR:PATH=/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/pioasm-install
 
 //Value Computed by CMake
-TinyML_BINARY_DIR:STATIC=/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build
-
-//Value Computed by CMake
-TinyML_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-TinyML_SOURCE_DIR:STATIC=/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml
-
-//Value Computed by CMake
 pico_sdk_BINARY_DIR:STATIC=/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/pico-sdk
 
 //Value Computed by CMake
@@ -363,6 +366,24 @@ picotool_INSTALL_DIR:PATH=/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr
 
 //The directory containing a CMake configuration file for pioasm.
 pioasm_DIR:PATH=pioasm_DIR-NOTFOUND
+
+//Value Computed by CMake
+tarefa_2_BINARY_DIR:STATIC=/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build
+
+//Value Computed by CMake
+tarefa_2_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+tarefa_2_SOURCE_DIR:STATIC=/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml
+
+//Value Computed by CMake
+tinyML_BINARY_DIR:STATIC=/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build
+
+//Value Computed by CMake
+tinyML_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+tinyML_SOURCE_DIR:STATIC=/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml
 
 
 ########################
@@ -486,7 +507,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=96
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=97
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

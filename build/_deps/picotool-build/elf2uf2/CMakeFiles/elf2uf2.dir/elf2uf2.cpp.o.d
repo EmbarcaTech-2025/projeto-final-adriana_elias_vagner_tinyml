@@ -200,5 +200,16 @@ elf2uf2/CMakeFiles/elf2uf2.dir/elf2uf2.cpp.o: \
  /usr/include/c++/14/iostream \
  /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/elf/elf.h \
  /usr/include/c++/14/sstream /usr/include/c++/14/bits/sstream.tcc \
- /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/elf/addresses.h \
+ /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/model/addresses.h \
+ /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/model/model.h \
+ /home/vagner/pico/pico-sdk/src/common/boot_picoboot_headers/include/boot/picoboot.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
+ /home/vagner/pico/pico-sdk/src/host/pico_platform/include/pico/platform.h \
+ /home/vagner/pico/pico-sdk/src/host/pico_platform/include/hardware/platform_defs.h \
+ /home/vagner/pico/pico-sdk/src/common/boot_picoboot_headers/include/boot/picoboot_constants.h \
+ /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-build/model/rp2350_a2_rom_end.h \
+ /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-build/model/rp2350_a3_rom_end.h \
+ /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-build/model/rp2350_a4_rom_end.h \
+ /usr/include/c++/14/utility /usr/include/c++/14/bits/stl_relops.h \
+ /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/model/addresses.h \
  /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/errors/errors.h

@@ -240,6 +240,32 @@ mbedtls/fast:
 .PHONY : mbedtls/fast
 
 #=============================================================================
+# Target rules for targets named model
+
+# Build rule for target.
+model: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 model
+.PHONY : model
+
+# fast build rule for target.
+model/fast:
+	$(MAKE) $(MAKESILENT) -f model/CMakeFiles/model.dir/build.make model/CMakeFiles/model.dir/build
+.PHONY : model/fast
+
+#=============================================================================
+# Target rules for targets named unreadable_rom_data
+
+# Build rule for target.
+unreadable_rom_data: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unreadable_rom_data
+.PHONY : unreadable_rom_data
+
+# fast build rule for target.
+unreadable_rom_data/fast:
+	$(MAKE) $(MAKESILENT) -f model/CMakeFiles/unreadable_rom_data.dir/build.make model/CMakeFiles/unreadable_rom_data.dir/build
+.PHONY : unreadable_rom_data/fast
+
+#=============================================================================
 # Target rules for targets named errors
 
 # Build rule for target.
@@ -451,11 +477,13 @@ help:
 	@echo "... embedded_data_no_libusb"
 	@echo "... enc_bootloader"
 	@echo "... enc_bootloader_mbedtls"
+	@echo "... unreadable_rom_data"
 	@echo "... bintool"
 	@echo "... elf"
 	@echo "... elf2uf2"
 	@echo "... errors"
 	@echo "... mbedtls"
+	@echo "... model"
 	@echo "... picotool"
 	@echo "... data_locs.o"
 	@echo "... data_locs.i"

@@ -688,12 +688,14 @@ CMakeFiles/picotool.dir/main.cpp.o: /media/vagner/dados/vagner_vasconcelos_embar
   /home/vagner/pico/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/otp_data.h \
   /home/vagner/pico/pico-sdk/src/rp2_common/boot_bootrom_headers/include/boot/bootrom_constants.h \
   /home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb/reset_interface.h \
+  model/rp2350_a2_rom_end.h \
+  model/rp2350_a3_rom_end.h \
+  model/rp2350_a4_rom_end.h \
   /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/bintool/bintool.h \
   /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/bintool/mbedtls_wrapper.h \
   /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/bintool/metadata.h \
   /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/cli.h \
   /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/clipp/clipp.h \
-  /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/elf/addresses.h \
   /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/elf/elf.h \
   /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/elf/elf_file.h \
   /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/elf2uf2/elf2uf2.h \
@@ -701,6 +703,8 @@ CMakeFiles/picotool.dir/main.cpp.o: /media/vagner/dados/vagner_vasconcelos_embar
   /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/get_enc_bootloader.h \
   /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/lib/include/picotool_mbedtls_config.h \
   /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/lib/nlohmann_json/single_include/nlohmann/json.hpp \
+  /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/model/addresses.h \
+  /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/model/model.h \
   /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/otp.h \
   /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/picoboot_connection/picoboot_connection.h \
   /usr/include/alloca.h \
@@ -1542,6 +1546,8 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /media/vagner/dados/vagner_vasconcelos_emb
 
 /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/otp.h:
 
+/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/model/addresses.h:
+
 /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/lib/nlohmann_json/single_include/nlohmann/json.hpp:
 
 /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/lib/include/picotool_mbedtls_config.h:
@@ -1550,8 +1556,6 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /media/vagner/dados/vagner_vasconcelos_emb
 
 /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/elf2uf2/elf2uf2.h:
 
-/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/elf/addresses.h:
-
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/clipp/clipp.h:
@@ -1559,6 +1563,10 @@ CMakeFiles/picotool.dir/no_otp.cpp.o: /media/vagner/dados/vagner_vasconcelos_emb
 /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/cli.h:
 
 /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/bintool/bintool.h:
+
+model/rp2350_a4_rom_end.h:
+
+model/rp2350_a3_rom_end.h:
 
 /usr/include/c++/14/cstdint:
 
@@ -2054,6 +2062,8 @@ enc_bootloader_elf.h:
 
 /usr/include/c++/14/bits/atomic_lockfree_defines.h:
 
+/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/model/model.h:
+
 /usr/include/c++/14/bits/basic_ios.h:
 
 /usr/include/c++/14/bits/codecvt.h:
@@ -2213,6 +2223,8 @@ enc_bootloader_elf.h:
 /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/aes.h:
 
 /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/ecp.h:
+
+model/rp2350_a2_rom_end.h:
 
 /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/platform_time.h:
 

@@ -163,11 +163,13 @@ picotool: CMakeFiles/picotool.dir/main.cpp.o
 picotool: CMakeFiles/picotool.dir/lib/whereami/whereami.c.o
 picotool: CMakeFiles/picotool.dir/lib/whereami/whereami++.cpp.o
 picotool: CMakeFiles/picotool.dir/build.make
+picotool: model/libmodel.a
 picotool: bintool/libbintool.a
 picotool: elf2uf2/libelf2uf2.a
 picotool: errors/liberrors.a
 picotool: lib/libmbedtls.a
 picotool: elf/libelf.a
+picotool: model/libmodel.a
 picotool: errors/liberrors.a
 picotool: CMakeFiles/picotool.dir/link.txt
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/picotool.dir/link.txt --verbose=$(VERBOSE)

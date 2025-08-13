@@ -213,7 +213,7 @@ bintool/CMakeFiles/bintool.dir/bintool.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
  /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/elf/elf.h \
  /usr/include/c++/14/sstream /usr/include/c++/14/bits/sstream.tcc \
- /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/elf/addresses.h \
+ /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/model/addresses.h \
  /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/bintool/mbedtls_wrapper.h \
  /usr/include/c++/14/stdlib.h /usr/include/assert.h \
  /home/vagner/pico/pico-sdk/lib/mbedtls/include/mbedtls/sha256.h \

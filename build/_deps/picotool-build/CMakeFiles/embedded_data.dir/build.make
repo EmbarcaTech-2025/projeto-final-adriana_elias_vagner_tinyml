@@ -63,22 +63,17 @@ CMAKE_BINARY_DIR = /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/p
 # Include any custom commands dependencies for this target.
 include CMakeFiles/embedded_data.dir/compiler_depend.make
 
-CMakeFiles/embedded_data: rp2350.rom.h
 CMakeFiles/embedded_data: xip_ram_perms_elf.h
 CMakeFiles/embedded_data: flash_id_bin.h
 
 flash_id_bin.h: flash_id
 	/usr/bin/cmake -D BINARY_FILE= -D OUTPUT_NAME=flash_id_bin -P /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/cmake/binh.cmake
 
-rp2350.rom.h:
-	/usr/bin/cmake -D BINARY_FILE=/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/bootrom.end.bin -D OUTPUT_NAME=rp2350.rom -P /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/cmake/binh.cmake
-
 xip_ram_perms_elf.h: /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/xip_ram_perms
 	/usr/bin/cmake -D BINARY_FILE= -D OUTPUT_NAME=xip_ram_perms_elf -P /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool-src/cmake/binh.cmake
 
 embedded_data: CMakeFiles/embedded_data
 embedded_data: flash_id_bin.h
-embedded_data: rp2350.rom.h
 embedded_data: xip_ram_perms_elf.h
 embedded_data: CMakeFiles/embedded_data.dir/build.make
 .PHONY : embedded_data
