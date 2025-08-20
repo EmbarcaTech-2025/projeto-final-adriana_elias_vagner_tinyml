@@ -87,8 +87,8 @@ O projeto segue a metodologia apresentada por CUGNASA (2025), conforme figura 2,
 - **Listando materiais:**
     - Hardware:
         - BitDogLab (RP2040): Microcontrolador principal.
-        - MPU6500: Acelerômetro de 6 eixos (I2C).
-        - SSD1306: Display OLED 128x64 (I2C).
+        - MPU6500: Acelerômetro de 6 eixos (I2C0).
+        - SSD1306: Display OLED 128x64 (I2C1).
         - CYW43439: Wi-Fi (Pi Pico W).
         - Bateria: LiPo 3.7V, capacidade ~2000 mAh (a ser confirmada).
     - Software:
@@ -99,7 +99,7 @@ O projeto segue a metodologia apresentada por CUGNASA (2025), conforme figura 2,
 - **Estudando integração:** Analisar a conexão dos periféricos (I2C para MPU6500 e SSD1306, SPI para Wi-Fi) e compatibilidade com o RP2040.
 - **Entregável:** Este documento em Markdown, contendo a descrição do problema, requisitos técnicos e lista de materiais.
 
-## 6.2 Etapa 2: Arquitetura e Modelagem (Entrega: 04/08/2025)
+## 6.2 Etapa 2: Arquitetura e Modelagem (Entrega: 08/08/2025)
 **Objetivo:** Definir a arquitetura do sistema e modelar o software e o modelo TinyML.
 **Atividades:**
 ### Diagrama de hardware
@@ -107,7 +107,7 @@ A figura 3 apresenta o diagrama de hardware proposto.
 ![diagrama](/assets/esquematico.png)
 <h4 align = "right"> Figura 3 - Fonte: produzido pelos autores </h4>
 
-Ambos os componentes utilizados (Acelerômetro MPU6500 e Display SSD1306) possuem interface serial de comunicação do tipo I2C. Sendo assim, a proposta é conectá-los na interface I2C1 da BitDogLab, GPIO 14 e 15, sendo o RP2040 o mestre da rede e ambos os componentes os escravos.
+Ambos os componentes utilizados (Acelerômetro MPU6500 e Display SSD1306) possuem interface serial de comunicação do tipo I2C. Na BitDogLab, o display já está conectado na interface I2C1 (GPIO 14 e 15); conectaremos o acelerômetro na interface I2C0 (GP0 e GP1), sendo o RP2040, em ambos o caso, o mestre da rede e os componentes os escravos.
 
 Endereços de rede:
 |Componente|Endereço|
@@ -198,7 +198,7 @@ Em suma, a estrutura proposta utiliza os pontos fortes do FreeRTOS para criar um
 **Atividades:**
 - **Sistema Embarcado:**
     - **Configurando FreeRTOS:** Implementar tarefas concorrentes;
-    - **Implementando aquisição de dados:** Configurar MPU6500 via I2C, ajustando escala (±2g) e frequência (60 Hz).
+    - **Implementando aquisição de dados:** Configurar MPU6500 via I2C, ajustando escala (±2g).
     - **Configurando display:** Inicializar SSD1306 para exibir a classe detectada (ex.: "Parado", "Subindo", etc.).
     - **Implementando MQTT:** Configurar cliente Paho MQTT, conectar ao broker (ex.: Mosquitto) e publicar mensagens com QoS 2.
     - **Otimizando energia:** Ativar modo sleep do RP2040 quando parado, reduzindo frequência de amostragem e desativando Wi-Fi.
@@ -228,7 +228,7 @@ Em suma, a estrutura proposta utiliza os pontos fortes do FreeRTOS para criar um
 # 7. Solução
 ## 7.1 Hardware
 - **BitDogLab (RP2040):** Microcontrolador principal, gerencia tarefas e comunicação.
-- **MPU6500:** Acelerômetro de 6 eixos (I2C), coleta dados a 60 Hz.
+- **MPU6500:** Acelerômetro de 6 eixos (I2C).
 - **SSD1306:** Display OLED 128x64 (I2C), exibe classe de movimento.
 - **Bateria:** LiPo 3.7V, 2000 mAh, para autonomia de 30 dias.
 
@@ -272,9 +272,9 @@ Em suma, a estrutura proposta utiliza os pontos fortes do FreeRTOS para criar um
 |Etapa|Objetivo|Entregável|Data|
 |---|---|---|---|
 |1|Definição de Requisitos e Materiais|Documento em Markdown|16/07/2025|
-|2|Arquitetura e Modelagem|Diagramas de hardware e software|04/08/2025|
+|2|Arquitetura e Modelagem|Diagramas de hardware e software|08/08/2025|
 |3|Prototipagem e Ajustes|Vídeo/fotos do protótipo, relatório|25/08/2025|
-|4|Entrega Final e Documentação|Sistema funcional, documentação, GitHub|a definir|
+|4|Entrega Final e Documentação|Sistema funcional, documentação, GitHub|08/09/2025|
 
 # 10. Considerações Finais
 O projeto integra sistemas embarcados, TinyML e IoT para resolver um problema crítico na logística de contêineres, oferecendo rastreabilidade detalhada e eficiência energética. A metodologia CUGNASA garante clareza na definição do problema, alinhamento com usuários e uma abordagem estruturada. A solução tem potencial para impactar cadeias logísticas, com aplicações escaláveis em cenários industriais.

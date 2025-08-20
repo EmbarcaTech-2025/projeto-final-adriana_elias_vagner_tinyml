@@ -87,8 +87,8 @@ O projeto segue a metodologia apresentada por CUGNASA (2025), conforme figura 2,
 - **Listando materiais:**
     - Hardware:
         - BitDogLab (RP2040): Microcontrolador principal.
-        - MPU6500: Acelerômetro de 6 eixos (I2C).
-        - SSD1306: Display OLED 128x64 (I2C).
+        - MPU6500: Acelerômetro de 6 eixos (I2C0).
+        - SSD1306: Display OLED 128x64 (I2C1).
         - CYW43439: Wi-Fi (Pi Pico W).
         - Bateria: LiPo 3.7V, capacidade ~2000 mAh (a ser confirmada).
     - Software:
@@ -99,7 +99,7 @@ O projeto segue a metodologia apresentada por CUGNASA (2025), conforme figura 2,
 - **Estudando integração:** Analisar a conexão dos periféricos (I2C para MPU6500 e SSD1306, SPI para Wi-Fi) e compatibilidade com o RP2040.
 - **Entregável:** Este documento em Markdown, contendo a descrição do problema, requisitos técnicos e lista de materiais.
 
-## 6.2 Etapa 2: Arquitetura e Modelagem (Entrega: 04/08/2025)
+## 6.2 Etapa 2: Arquitetura e Modelagem (Entrega: 08/08/2025)
 **Objetivo:** Definir a arquitetura do sistema e modelar o software e o modelo TinyML.
 **Atividades:**
 ### Diagrama de hardware
@@ -107,7 +107,7 @@ A figura 3 apresenta o diagrama de hardware proposto.
 ![diagrama](/assets/esquematico.png)
 <h4 align = "right"> Figura 3 - Fonte: produzido pelos autores </h4>
 
-Ambos os componentes utilizados (Acelerômetro MPU6500 e Display SSD1306) possuem interface serial de comunicação do tipo I2C. Sendo assim, a proposta é conectá-los na interface I2C1 da BitDogLab, GPIO 14 e 15, sendo o RP2040 o mestre da rede e ambos os componentes os escravos.
+Ambos os componentes utilizados (Acelerômetro MPU6500 e Display SSD1306) possuem interface serial de comunicação do tipo I2C. Na BitDogLab, o display já está conectado na interface I2C1 (GPIO 14 e 15); conectaremos o acelerômetro na interface I2C0 (GP0 e GP1), sendo o RP2040, em ambos o caso, o mestre da rede e os componentes os escravos.
 
 Endereços de rede:
 |Componente|Endereço|
@@ -134,6 +134,10 @@ Conforme apresentado na figura 4, a proposta envolve a utilização de um sistem
 Temos ainda o **Semaphoro**, que atua como mecanismo de sinalização entre as tarefas: Wi-fi_task e mqtt_task, de forma que a tarefa mqtt_task aguarda a autenticação da Wi-fi_task para iniciar; e a fila **Queue** que controla o acesso ao display.
 
 ### Fluxograma do software
+
+<img width="1101" height="1441" alt="fluxograma2222" src="https://github.com/user-attachments/assets/42490ab9-bdc4-4ea6-9dc2-477b6de5850a" />
+
+
 - Inicialização: Configurar FreeRTOS, inicializar periféricos (MPU6500, SSD1306, Wi-Fi).
 - Loop Principal:
 1. Autenticação nno ponto de acesso;
@@ -152,6 +156,40 @@ Temos ainda o **Semaphoro**, que atua como mecanismo de sinalização entre as t
 1. Pré-processamento;
 2. Modelo: Rede neural densa;
 3. Saída: Probabilidades para as classes: parado, subindo/descendo, esquerda/direita, ziguezague.
+_____________________________________________________________________________________________________
+
+4. Explicação da Lógica e Estrutura do Sistema
+A arquitetura de software proposta foi projetada para ser modular, escalável e robusta, atendendo a todos os requisitos funcionais e não funcionais do projeto. A escolha central da arquitetura é o uso de um Sistema Operacional de Tempo Real (RTOS), especificamente o FreeRTOS, que permite gerenciar as múltiplas atividades do sistema de forma concorrente e organizada.
+
+4.1. Arquitetura Baseada em Tarefas Concorrentes
+
+O sistema é decomposto em cinco tarefas principais, cada uma com uma responsabilidade única. Essa abordagem, fundamentada no FreeRTOS, permite que operações lentas (como comunicação Wi-Fi) não bloqueiem operações críticas de tempo real (como a aquisição de dados do sensor e a inferência do modelo).
+
+mpu6500_task: Sua única função é coletar dados do acelerômetro MPU6500 na frequência de 60 Hz estipulada no requisito RF01. Ela opera com alta prioridade para garantir a precisão temporal da amostragem.
+
+ML_task: É o núcleo de inteligência do sistema. Recebe os dados brutos da mpu6500_task, realiza o pré-processamento (RF02) e executa a inferência do modelo TinyML (RF03) para classificar o movimento. Esta tarefa é projetada para ser computacionalmente intensiva, mas sua execução em paralelo garante que a latência de inferência seja mantida abaixo de 200 ms (RNF02).
+
+wifi_task: Gerencia a conectividade Wi-Fi. Sua responsabilidade é estabelecer e manter a conexão com o ponto de acesso.
+
+mqtt_task: Responsável por transmitir os resultados da classificação para um broker MQTT na nuvem, atendendo ao requisito RF05. Ela formata a mensagem com a classe detectada e uma estampa de tempo, utilizando QoS 2 para garantir a entrega confiável da mensagem.
+
+display_gate_task: Controla a exibição das informações no display OLED SSD1306 (RF04). Funciona como um "gatekeeper" para o periférico, evitando conflitos de acesso e desacoplando a lógica de exibição do processamento principal.
+
+4.2. Mecanismos de Sincronização e Comunicação Inter-Tarefas
+
+Para garantir a operação correta e a integridade dos dados, a comunicação entre as tarefas é gerenciada por mecanismos específicos do FreeRTOS:
+
+Semáforo (entre wifi_task e mqtt_task): Conforme definido no diagrama de blocos, um semáforo atua como um mecanismo de sinalização. A mqtt_task deve aguardar um sinal (a "liberação" do semáforo) da wifi_task antes de tentar se conectar ao broker e enviar dados. Isso garante que a transmissão MQTT só seja iniciada após a confirmação de uma conexão Wi-Fi ativa, prevenindo falhas e otimizando recursos.
+
+Fila (para a display_gate_task): A ML_task, após cada inferência, envia o resultado (a classe do movimento) para uma fila (Queue). A display_gate_task fica bloqueada aguardando a chegada de um item nessa fila. Essa estrutura desacopla o processamento da exibição: a ML_task não precisa esperar a lenta atualização do display I2C para continuar seu trabalho. A fila também serializa o acesso ao display, garantindo que as informações sejam exibidas de forma ordenada e sem corrupção.
+
+4.3. Lógica de Baixo Consumo (Atendendo RNF03)
+
+A lógica para atingir a autonomia de 30 dias é um pilar central do sistema. Ela é implementada na ML_task e atende ao requisito RF06.
+Quando a inferência resulta na classe "Parado", a tarefa inicia um protocolo de economia de energia.
+Este protocolo pode incluir a redução da frequência de amostragem da mpu6500_task (já que não são esperadas mudanças bruscas) e a desativação temporária do módulo Wi-Fi, que é um dos maiores consumidores de energia.
+O sistema permanecerá neste estado de baixo consumo até que o acelerômetro detecte uma vibração que justifique reativar o modo de operação normal, garantindo que o dispositivo economize bateria significativamente durante os longos períodos de espera do contêiner.
+Em suma, a estrutura proposta utiliza os pontos fortes do FreeRTOS para criar um sistema embarcado que é ao mesmo tempo reativo, eficiente e robusto, alinhado com todos os objetivos e requisitos definidos para o projeto.
 
 - **Entregável:** Arquivo com diagramas de hardware e software, acompanhado de explicações detalhando a lógica e estrutura do sistema.
 
@@ -160,7 +198,7 @@ Temos ainda o **Semaphoro**, que atua como mecanismo de sinalização entre as t
 **Atividades:**
 - **Sistema Embarcado:**
     - **Configurando FreeRTOS:** Implementar tarefas concorrentes;
-    - **Implementando aquisição de dados:** Configurar MPU6500 via I2C, ajustando escala (±2g) e frequência (60 Hz).
+    - **Implementando aquisição de dados:** Configurar MPU6500 via I2C, ajustando escala (±2g).
     - **Configurando display:** Inicializar SSD1306 para exibir a classe detectada (ex.: "Parado", "Subindo", etc.).
     - **Implementando MQTT:** Configurar cliente Paho MQTT, conectar ao broker (ex.: Mosquitto) e publicar mensagens com QoS 2.
     - **Otimizando energia:** Ativar modo sleep do RP2040 quando parado, reduzindo frequência de amostragem e desativando Wi-Fi.
@@ -190,7 +228,7 @@ Temos ainda o **Semaphoro**, que atua como mecanismo de sinalização entre as t
 # 7. Solução
 ## 7.1 Hardware
 - **BitDogLab (RP2040):** Microcontrolador principal, gerencia tarefas e comunicação.
-- **MPU6500:** Acelerômetro de 6 eixos (I2C), coleta dados a 60 Hz.
+- **MPU6500:** Acelerômetro de 6 eixos (I2C).
 - **SSD1306:** Display OLED 128x64 (I2C), exibe classe de movimento.
 - **Bateria:** LiPo 3.7V, 2000 mAh, para autonomia de 30 dias.
 
@@ -234,9 +272,9 @@ Temos ainda o **Semaphoro**, que atua como mecanismo de sinalização entre as t
 |Etapa|Objetivo|Entregável|Data|
 |---|---|---|---|
 |1|Definição de Requisitos e Materiais|Documento em Markdown|16/07/2025|
-|2|Arquitetura e Modelagem|Diagramas de hardware e software|04/08/2025|
+|2|Arquitetura e Modelagem|Diagramas de hardware e software|08/08/2025|
 |3|Prototipagem e Ajustes|Vídeo/fotos do protótipo, relatório|25/08/2025|
-|4|Entrega Final e Documentação|Sistema funcional, documentação, GitHub|a definir|
+|4|Entrega Final e Documentação|Sistema funcional, documentação, GitHub|08/09/2025|
 
 # 10. Considerações Finais
 O projeto integra sistemas embarcados, TinyML e IoT para resolver um problema crítico na logística de contêineres, oferecendo rastreabilidade detalhada e eficiência energética. A metodologia CUGNASA garante clareza na definição do problema, alinhamento com usuários e uma abordagem estruturada. A solução tem potencial para impactar cadeias logísticas, com aplicações escaláveis em cenários industriais.
