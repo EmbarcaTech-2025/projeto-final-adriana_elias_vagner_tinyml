@@ -1,7 +1,0 @@
-/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool/picotool
-/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool/picotoolTargets.cmake
-/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool/picotoolTargets-release.cmake
-/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool/picotoolConfig.cmake
-/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool/picotoolConfigVersion.cmake
-/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool/enc_bootloader.elf
-/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/_deps/picotool/enc_bootloader_mbedtls.elf

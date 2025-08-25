@@ -40,5 +40,4 @@
 
 #define MSG_BUTTON_SEMAPHORO    "      SEMAPHORO"
 
-
 #endif // CONFIG_H

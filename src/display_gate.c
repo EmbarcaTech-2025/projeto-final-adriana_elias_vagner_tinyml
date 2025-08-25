@@ -1,9 +1,10 @@
 /**
  * @file    display_gate.c
- * @author  Ricardo e Vagner
- * @brief   Task que mostra mensagens da file e requisições do semáforo no OLED. Simula um dispositivo lento
+ * @author
+ * @brief   Task que mostra mensagens da file e requisições do semáforo no OLED.
+ * Simula um dispositivo lento
  * @version 0.1
- * @date    2025-06-25
+ * @date
  */
 #include "pico/stdlib.h"
 #include "FreeRTOS.h"
@@ -11,16 +12,16 @@
 #include "../include/config.h"
 #include "../include/ctrl.h"
 #include "../include/display_gate.h"
+#include "../include/mpu6500.h"
 #include "oled/display.h"
 #include "oled/i2c.h"
 
 static char display_buffer[8][QUEUE_MSG_LENGHT] = {0};
 
-
 /**
  * @brief Atualiza o display, simulando dispositivo lento
- * 
- * @param msg 
+ *
+ * @param msg
  */
 static void add_msg(char * msg){
     // move as mensagens anterios para baixo
@@ -30,7 +31,7 @@ static void add_msg(char * msg){
         }
     }
     // adiciona a nova mensagem
-    for(int i=0;i<QUEUE_MSG_LENGHT;i++){
+    for(int i=0;i<QUEUE_MSG_LENGHT-1;i++){
         display_buffer[0][i] = msg[i];
     }
     // limpa o display
@@ -40,7 +41,7 @@ static void add_msg(char * msg){
     for(int i=1;i<8;i++)
         display_msg(false, 0, i, display_buffer[i]);
 
-    // marca a onde está escrevendo e depois escreve o valor para simular dispositivo lento
+    // Marca a onde está escrevendo e depois escreve o valor para simular dispositivo lento
     bool reached_the_end = false;
     for(int i=0;i<16;i++){
         display_invert_char(true, i, 0);
@@ -61,20 +62,22 @@ static void add_msg(char * msg){
 }
 
 /**
- * @brief Task que mostra mensagens da file e requisições do semáforo no OLED. Simula um dispositivo lento
- * 
+ * @brief Task que mostra mensagens da file e requisições do semáforo no OLED.
+ * Simula um dispositivo lento
  */
 void display_gate_task(){
     char bufferMsg[QUEUE_MSG_LENGHT] = {0};
 
     display_init();
-    display_msg(true, 5, 2, "RTOS 2");
+    display_msg(true, 1, 1, "::  TinyML  ::");
+    display_msg(true, 1, 3, "   Movement   ");
+    display_msg(true, 1, 5, "Classification");
     vTaskDelay(pdMS_TO_TICKS(1000));
     display_fill(false, false);
-    display_msg(false, 0, 1, "    PRESSIONE");
-    display_msg(false, 0, 3, "   ALGUM BOTAO");
-    display_msg(false, 0, 5, "       OU");
-    display_msg(true,  0, 7, "    JOYSTICK");
+    // display_msg(false, 0, 1, "    PRESSIONE");
+    // display_msg(false, 0, 3, "   ALGUM BOTAO");
+    // display_msg(false, 0, 5, "       OU");
+    // display_msg(true,  0, 7, "    JOYSTICK");
 
     while(1){
         if(xSemaphoreTake(semaphored_handler_joystick, 0) == pdTRUE){

@@ -21,7 +21,7 @@
 /**
  * @brief Task do botão A
  * Inicializa GPIO do botão
- * Monitora transições de estado do,botão :
+ * Monitora transições de estado do botão :
  * - quando pressionado:
  *   - envia mensagem que foi pressionado para o display via pilha;
  *   - aguarda o LED estar disponível(MUTEX) para acessá-lo e manda uma nova mensagem para o display via pilha;
@@ -37,7 +37,8 @@ void button_a_task(){
     vTaskDelay(pdMS_TO_TICKS(BUTTON_DEBONCE_MS)); // Delay para que o pull up faça efeito
 
     while(1){
-        if(!gpio_get(BUTTON)){
+        // Na BitDogLab, quando os botões (A e B) estão pressionados o I/O associado vai para nível baixo!
+        if(!gpio_get(BUTTON)){  // Botao A pressionado!
             if(!button_pressed){
                 button_pressed = true;
                 util_gera_e_envia_msg(queue_handle, MSG_BUTTON_A_PRESSED);
@@ -45,7 +46,7 @@ void button_a_task(){
                 util_gera_e_envia_msg(queue_handle, MSG_BUTTON_A_LED_ON);
                 led_rgb_set(LED_COR_RED);
             }
-        }else{
+        }else{  // Botao A NÃO pressionado!
             if(button_pressed){
                 button_pressed = false;
                 util_gera_e_envia_msg(queue_handle, MSG_BUTTON_A_RELEASE);

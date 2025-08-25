@@ -47,7 +47,7 @@ void mpu6500_init(void) {
         xSemaphoreGive(i2c_mutex);
     }
 
-    printf("MPU6500 initialized (acceleration only)\n");
+    printf("MPU6500 inicializado (somente aceleração)\n");
 }
 
 void mpu6500_set_accel_scale(uint8_t scale) {
@@ -111,12 +111,12 @@ bool mpu6500_read_accel_data(mpu6500_data_t *data) {
         data->accel_y_g = data->accel_y / scale_factor;
         data->accel_z_g = data->accel_z / scale_factor;
 
-        // Calcula magnitude da aceleração
-        data->accel_magnitude = sqrtf(
-            data->accel_x_g * data->accel_x_g +
-            data->accel_y_g * data->accel_y_g +
-            data->accel_z_g * data->accel_z_g
-        );
+        // // Calcula magnitude da aceleração
+        // data->accel_magnitude = sqrtf(
+        //     data->accel_x_g * data->accel_x_g +
+        //     data->accel_y_g * data->accel_y_g +
+        //     data->accel_z_g * data->accel_z_g
+        // );
 
         success = true;
     }
@@ -140,9 +140,11 @@ void mpu6500_task(void *pvParameters) {
 
             // Debug: imprime dados a cada 100 leituras
             if (read_count++ % 100 == 0) {
-                printf("Accel: X=%.3fg, Y=%.3fg, Z=%.3fg, Mag=%.3fg\n",
-                       data.accel_x_g, data.accel_y_g, data.accel_z_g,
-                       data.accel_magnitude);
+                // printf("Accel: X=%.3fg, Y=%.3fg, Z=%.3fg, Mag=%.3fg\n",
+                //        data.accel_x_g, data.accel_y_g, data.accel_z_g,
+                //        data.accel_magnitude);
+                printf("Aceleração [g]: X=%.3f, Y=%.3f, Z=%.3fb\n",
+                        data.accel_x_g, data.accel_y_g, data.accel_z_g);
             }
         } else {
             printf("MPU6500 read error\n");

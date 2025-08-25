@@ -1,9 +1,9 @@
 /**
  * @file    ctrl.c
- * @author  Ricardo e Vagner
+ * @author
  * @brief   Cria e disponibiliza variáveis de semáforo e pilha
  * @version 0.1
- * @date    2025-06-25
+ * @date
  */
 #include "FreeRTOS.h"
 #include "../include/config.h"
@@ -15,7 +15,7 @@ SemaphoreHandle_t semaphored_handler_joystick;
 
 /**
  * @brief Inicializa as variáveis de semáforo e pilha
- * 
+ *
  */
 void ctrl_init(){
     mutex_handler_led           = xSemaphoreCreateMutex();

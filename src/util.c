@@ -1,9 +1,9 @@
 /**
  * @file    util.h
- * @author  Ricardo e Vagner
+ * @author
  * @brief   Funções comuns
  * @version 0.1
- * @date    2025-06-25
+ * @date
  */
 #include <stdio.h>
 #include "pico/stdlib.h"
