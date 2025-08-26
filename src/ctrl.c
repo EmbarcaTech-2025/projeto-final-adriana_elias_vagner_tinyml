@@ -1,9 +1,9 @@
 /**
  * @file    ctrl.c
- * @author
+ * @author  Adriana - Elias - Vagner
  * @brief   Cria e disponibiliza variáveis de semáforo e pilha
  * @version 0.1
- * @date
+ * @date    25/08/2025
  */
 #include "FreeRTOS.h"
 #include "../include/config.h"
