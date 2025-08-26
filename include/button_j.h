@@ -1,9 +1,9 @@
 /**
  * @file    button_j.h
- * @author  Ricardo e Vagner
+ * @author  Adriana - Elias - Vagner
  * @brief   Task para o botão J: Joystick
  * @version 0.1
- * @date    2025-06-25
+ * @date    2025-08-25
  */
 #ifndef BUTTON_J_H
 #define BUTTON_J_H
