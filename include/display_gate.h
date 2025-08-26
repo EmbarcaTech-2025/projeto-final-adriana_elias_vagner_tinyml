@@ -1,9 +1,9 @@
 /**
  * @file    display_gate.h
- * @author
+ * @author  Adriana - Elias - Vagner
  * @brief   Task que mostra mensagens da file e requisições do semáforo no OLED. Simula um dispositivo lento
  * @version 0.1
- * @date
+ * @date    25/08/2025
  */
 #ifndef DISPLAY_GATE_H
 #define DISPLAY_GATE_H
