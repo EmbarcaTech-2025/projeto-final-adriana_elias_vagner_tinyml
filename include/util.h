@@ -1,9 +1,9 @@
 /**
  * @file    util.h
- * @author  Ricardo e Vagner
+ * @author  Adriana - Elias - Vagner
  * @brief   Funções comuns
  * @version 0.1
- * @date    2025-06-25
+ * @date    2025-08-25
  */
 #ifndef UTIL_H
 #define UTIL_H
