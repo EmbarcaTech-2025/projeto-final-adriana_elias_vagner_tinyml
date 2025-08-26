@@ -1,9 +1,9 @@
 /**
  * @file    button_a.h
- * @author
+ * @author  Adriana - Elias - Vagner
  * @brief
  * @version 0.1
- * @date
+ * @date    25/08/2025
  */
 #ifndef BUTTON_A_H
 #define BUTTON_A_H
