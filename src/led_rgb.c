@@ -1,9 +1,9 @@
 /**
  * @file    led_rgb.c
- * @author  Ricardo e Vagner
+ * @author  Adriana - Elias - Vagner
  * @brief   Configura e inicializa os GPIOs dos LEDs, bem como seta os LEDs para uma determinada cor
  * @version 0.1
- * @date    2025-06-25
+ * @date    2025-08-25
  */
 #include "pico/stdlib.h"
 #include "../include/config.h"
