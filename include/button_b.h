@@ -1,9 +1,9 @@
 /**
  * @file    button_b.h
- * @author  Ricardo e Vagner
+ * @author  Adriana - Elias - Vagner
  * @brief   Task para o botão B
  * @version 0.1
- * @date    2025-06-25
+ * @date    2025-08-25
  */
 #ifndef BUTTON_B_H
 #define BUTTON_B_H
