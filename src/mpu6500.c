@@ -138,14 +138,25 @@ void mpu6500_task(void *pvParameters) {
             // Envia dados para a fila (se houver consumidores) | Produção
             xQueueSend(mpu6500_queue, &data, 0);
 
+
             // Debug: imprime dados a cada 100 leituras
-            if (read_count++ % 100 == 0) {
-                // printf("Accel: X=%.3fg, Y=%.3fg, Z=%.3fg, Mag=%.3fg\n",
-                //        data.accel_x_g, data.accel_y_g, data.accel_z_g,
-                //        data.accel_magnitude);
-                printf("Aceleração [g]: X=%.3f, Y=%.3f, Z=%.3fb\n",
-                        data.accel_x_g, data.accel_y_g, data.accel_z_g);
-            }
+            // if (read_count++ % 100 == 0) {
+            //     /**
+            //     printf("Accel: X=%.3fg, Y=%.3fg, Z=%.3fg, Mag=%.3fg\n",
+            //             data.accel_x_g, data.accel_y_g, data.accel_z_g,
+            //             data.accel_magnitude);
+            //     */
+            //     printf("%.2f \t", data.accel_x_g);
+            //     printf("%.2f \t", data.accel_y_g);
+            //     printf("%.2f \t", data.accel_z_g);
+            //     printf("\n");
+            // }
+            printf("%.2f \t", data.accel_x_g);
+            printf("%.2f \t", data.accel_y_g);
+            printf("%.2f \t", data.accel_z_g);
+            printf("\n");
+
+
         } else {
             printf("MPU6500 read error\n");
         }

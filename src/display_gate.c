@@ -9,6 +9,7 @@
 #include "pico/stdlib.h"
 #include "FreeRTOS.h"
 #include "semphr.h"
+#include <stdio.h> // Para snprintf
 #include "../include/config.h"
 #include "../include/ctrl.h"
 #include "../include/display_gate.h"
@@ -67,6 +68,11 @@ static void add_msg(char * msg){
  */
 void display_gate_task(){
     char bufferMsg[QUEUE_MSG_LENGHT] = {0};
+    // Estrutura para armazenar os dados do MPU6500
+    mpu6500_data_t mpu_data;
+    // Obtém o handle da fila do MPU6500.
+    // É necessário um cast pois mpu6500_get_queue retorna void*.
+    QueueHandle_t mpu_queue_handle = (QueueHandle_t)mpu6500_get_queue();
 
     display_init();
     display_msg(true, 1, 1, "::  TinyML  ::");
@@ -84,6 +90,18 @@ void display_gate_task(){
             add_msg(MSG_BUTTON_SEMAPHORO);
         }else if (xQueueReceive(queue_handle, bufferMsg, 0) == pdTRUE) {
             add_msg(bufferMsg);
+        }else if (xQueueReceive(mpu_queue_handle, &mpu_data, 0) == pdTRUE) { // Tenta receber dados do MPU6500
+            char accel_msg[QUEUE_MSG_LENGHT];
+            // Formata os dados de aceleração em uma string
+            // snprintf(accel_msg, QUEUE_MSG_LENGHT, "Ax:%.2f Ay:%.2f Az:%.2f",
+            //          mpu_data.accel_x_g, mpu_data.accel_y_g, mpu_data.accel_z_g);
+            // add_msg(accel_msg); // Exibe a mensagem no display
+            snprintf(accel_msg, QUEUE_MSG_LENGHT, "Ax:%.4f",mpu_data.accel_x_g);
+            add_msg(accel_msg); // Exibe a mensagem no display
+            snprintf(accel_msg, QUEUE_MSG_LENGHT, "Ay:%.4f",mpu_data.accel_y_g);
+            add_msg(accel_msg); // Exibe a mensagem no display
+            snprintf(accel_msg, QUEUE_MSG_LENGHT, "Az:%.4f",mpu_data.accel_z_g);
+            add_msg(accel_msg); // Exibe a mensagem no display
         }else{
             vTaskDelay(pdMS_TO_TICKS(50));
         }
