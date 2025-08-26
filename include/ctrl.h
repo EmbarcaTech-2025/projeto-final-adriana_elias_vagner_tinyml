@@ -1,9 +1,9 @@
 /**
  * @file    ctrl.h
- * @author  Ricardo e Vagner
+ * @author  Adriana - Elias - Vagner
  * @brief   Cria e disponibiliza variáveis de semáforo e pilha
  * @version 0.1
- * @date    2025-06-25
+ * @date    2025-08-25
  */
 #ifndef CTRL_H
 #define CTRL_H
