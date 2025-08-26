@@ -1,9 +1,9 @@
 /**
  * @file    button_j.c
- * @author  Ricardo e Vagner
+ * @author  Adriana - Elias - Vagner
  * @brief   Task para o botão J: Joystick
  * @version 0.1
- * @date    2025-06-25
+ * @date    2025-08-25
  */
 #include "pico/stdlib.h"
 #include "FreeRTOS.h"
