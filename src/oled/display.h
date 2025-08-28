@@ -24,6 +24,9 @@ void    display_set_ret(  bool on, bool update, uint8_t x0, uint8_t y0, uint8_t 
 // Escreve uma mensagem no display a partir da posição cx e cy (0<=cx<=15, 0<=cy<=7)
 void    display_msg(               bool update, uint8_t cx,  uint8_t cy , char *msg);
 
+// Escreve uma mensagem com o dobro do tamanho
+void    display_msg_large(         bool update, uint8_t cx,  uint8_t cy , char *msg);
+
 // Inverte todo o conteúdo do display
 void    display_invert(            bool update);
 

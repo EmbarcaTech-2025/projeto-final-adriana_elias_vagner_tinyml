@@ -15,3 +15,8 @@ extern void ssd1306_config(ssd1306_t *ssd);
 extern void ssd1306_init_bm(ssd1306_t *ssd, uint8_t width, uint8_t height, bool external_vcc, uint8_t address, i2c_inst_t *i2c);
 extern void ssd1306_send_data(ssd1306_t *ssd);
 extern void ssd1306_draw_bitmap(ssd1306_t *ssd, const uint8_t *bitmap);
+// Novas funções para desenho com escala
+extern void ssd1306_draw_char_scaled(uint8_t *ssd, int16_t x, int16_t y, uint8_t scale, uint8_t character);
+extern void ssd1306_draw_string_scaled(uint8_t *ssd, int16_t x, int16_t y, uint8_t scale, char *string);
+
+extern void ssd1306_command(ssd1306_t *ssd, uint8_t command);

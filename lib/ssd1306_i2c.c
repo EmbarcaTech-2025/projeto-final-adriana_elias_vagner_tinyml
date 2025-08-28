@@ -8,7 +8,60 @@
 #include "ssd1306_font.h"
 #include "ssd1306_i2c.h"
 
-// V:0.02 - 2025-04-09
+const uint8_t font[] = {
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // Nothing
+    0x78, 0x14, 0x12, 0x11, 0x12, 0x14, 0x78, 0x00, // A
+    0x7f, 0x49, 0x49, 0x49, 0x49, 0x49, 0x7f, 0x00, // B
+    0x7e, 0x41, 0x41, 0x41, 0x41, 0x41, 0x41, 0x00, // C
+    0x7f, 0x41, 0x41, 0x41, 0x41, 0x41, 0x7e, 0x00, // D
+    0x7f, 0x49, 0x49, 0x49, 0x49, 0x49, 0x49, 0x00, // E
+    0x7f, 0x09, 0x09, 0x09, 0x09, 0x01, 0x01, 0x00, // F
+    0x7f, 0x41, 0x41, 0x41, 0x51, 0x51, 0x73, 0x00, // G
+    0x7f, 0x08, 0x08, 0x08, 0x08, 0x08, 0x7f, 0x00, // H
+    0x00, 0x00, 0x00, 0x7f, 0x00, 0x00, 0x00, 0x00, // I
+    0x21, 0x41, 0x41, 0x3f, 0x01, 0x01, 0x01, 0x00, // J
+    0x00, 0x7f, 0x08, 0x08, 0x14, 0x22, 0x41, 0x00, // K
+    0x7f, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x00, // L
+    0x7f, 0x02, 0x04, 0x08, 0x04, 0x02, 0x7f, 0x00, // M
+    0x7f, 0x02, 0x04, 0x08, 0x10, 0x20, 0x7f, 0x00, // N
+    0x3e, 0x41, 0x41, 0x41, 0x41, 0x41, 0x3e, 0x00, // O
+    0x7f, 0x11, 0x11, 0x11, 0x11, 0x11, 0x0e, 0x00, // P
+    0x3e, 0x41, 0x41, 0x49, 0x51, 0x61, 0x7e, 0x00, // Q
+    0x7f, 0x11, 0x11, 0x11, 0x31, 0x51, 0x0e, 0x00, // R
+    0x46, 0x49, 0x49, 0x49, 0x49, 0x30, 0x00, 0x00, // S
+    0x01, 0x01, 0x01, 0x7f, 0x01, 0x01, 0x01, 0x00, // T
+    0x3f, 0x40, 0x40, 0x40, 0x40, 0x40, 0x3f, 0x00, // U
+    0x0f, 0x10, 0x20, 0x40, 0x20, 0x10, 0x0f, 0x00, // V
+    0x7f, 0x20, 0x10, 0x08, 0x10, 0x20, 0x7f, 0x00, // W
+    0x00, 0x41, 0x22, 0x14, 0x14, 0x22, 0x41, 0x00, // X
+    0x01, 0x02, 0x04, 0x78, 0x04, 0x02, 0x01, 0x00, // Y
+    0x41, 0x61, 0x59, 0x45, 0x43, 0x41, 0x00, 0x00, // Z
+    0x3e, 0x41, 0x41, 0x49, 0x41, 0x41, 0x3e, 0x00, // 0
+    0x00, 0x00, 0x42, 0x7f, 0x40, 0x00, 0x00, 0x00, // 1
+    0x30, 0x49, 0x49, 0x49, 0x49, 0x46, 0x00, 0x00, // 2
+    0x49, 0x49, 0x49, 0x49, 0x49, 0x49, 0x36, 0x00, // 3
+    0x3f, 0x20, 0x20, 0x78, 0x20, 0x20, 0x00, 0x00, // 4
+    0x4f, 0x49, 0x49, 0x49, 0x49, 0x30, 0x00, 0x00, // 5
+    0x3f, 0x48, 0x48, 0x48, 0x48, 0x48, 0x30, 0x00, // 6
+    0x01, 0x01, 0x01, 0x61, 0x31, 0x0d, 0x03, 0x00, // 7
+    0x36, 0x49, 0x49, 0x49, 0x49, 0x49, 0x36, 0x00, // 8
+    0x06, 0x09, 0x09, 0x09, 0x09, 0x09, 0x7f, 0x00, // 9
+    0x00, 0x00, 0x00, 0x40, 0x00, 0x00, 0x00, 0x00, // .  ponto
+    0x00, 0x00, 0x00, 0x70, 0x80, 0x00, 0x00, 0x00, // ,  virgula
+    0x00, 0x00, 0x00, 0x22, 0x00, 0x00, 0x00, 0x00, // :  dois pontos
+    0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x00, // -
+    0x10, 0x10, 0x10, 0x7F, 0x10, 0x10, 0x10, 0x00, // +
+    0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x40, 0x00, // _
+    0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01, 0x00, // /
+    0x00, 0x00, 0x00, 0xBF, 0x00, 0x00, 0x00, 0x00, // !
+    0x00, 0x00, 0x00, 0xB1, 0x11, 0x0E, 0x00, 0x00, // ?
+    0x14, 0x14, 0x7F, 0x14, 0x7F, 0x14, 0x14, 0x00, // #
+    0x08, 0x2A, 0x1C, 0x7F, 0x1C, 0x2A, 0x08, 0x00, // *
+    0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x00, // "\\"
+    0x00, 0x00, 0x00, 0x7F, 0x00, 0x00, 0x00, 0x00, // |
+
+    0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x7F, 0x00, // full
+};
 
 // Calcular quanto do buffer será destinado à área de renderização
 void calculate_render_area_buffer_length(struct render_area *area) {
@@ -44,11 +97,11 @@ void ssd1306_send_buffer(uint8_t ssd[], int buffer_length) {
 void ssd1306_init() {
     uint8_t commands[] = {
         ssd1306_set_display, ssd1306_set_memory_mode, 0x00,
-        ssd1306_set_display_start_line, ssd1306_set_segment_remap | 0x01, 
+        ssd1306_set_display_start_line, ssd1306_set_segment_remap | 0x01,
         ssd1306_set_mux_ratio, ssd1306_height - 1,
         ssd1306_set_common_output_direction | 0x08, ssd1306_set_display_offset,
         0x00, ssd1306_set_common_pin_configuration,
-    
+
 #if ((ssd1306_width == 128) && (ssd1306_height == 32))
     0x02,
 #elif ((ssd1306_width == 128) && (ssd1306_height == 64))
@@ -159,7 +212,7 @@ int ssd1306_get_font(uint8_t character)
   else if(character == '*' ) return 47;
   else if(character == '\\') return 48;
   else if(character == '|' ) return 49;
-  
+
   else return 50;
 }
 
@@ -273,3 +326,108 @@ void ssd1306_draw_bitmap(ssd1306_t *ssd, const uint8_t *bitmap) {
 
     ssd1306_send_data(ssd);
 }
+
+// ... (final do arquivo ssd1306_i2c.c)
+
+#include "ssd1306_font.h" // Garante que a fonte está incluída
+
+/**
+void ssd1306_draw_char_scaled(uint8_t *ssd, int16_t x, int16_t y, uint8_t scale, uint8_t character) {
+    if (character > 0x7E) { // Limita aos caracteres ASCII imprimíveis
+        return;
+    }
+
+    // Para cada coluna de 8 pixels do caractere original
+    for (uint8_t i = 0; i < 8; i++) {
+        uint8_t line = font[character - 0x20][i];
+
+        // Para cada pixel na coluna
+        for (uint8_t j = 0; j < 8; j++) {
+            if (line & 0x1) {
+                // Desenha um retângulo de 'scale' x 'scale' pixels
+                for (uint8_t sx = 0; sx < scale; sx++) {
+                    for (uint8_t sy = 0; sy < scale; sy++) {
+                        ssd1306_set_pixel(ssd, x + (i * scale) + sx, y + (j * scale) + sy, true);
+                    }
+                }
+            }
+            line >>= 1;
+        }
+    }
+}
+*/
+void ssd1306_draw_char_scaled(uint8_t *ssd, int16_t x, int16_t y, uint8_t scale, uint8_t character) {
+    // A fonte no arquivo .h começa com um caractere em branco, depois 'A'.
+    // Portanto, o caractere 'A' (ASCII 65) corresponde ao índice 1 da nossa fonte.
+    // O caractere ' ' (espaço, ASCII 32) não está na fonte, então vamos tratá-lo como o primeiro caractere (índice 0).
+    // Para simplificar, vamos mapear 'A' para o índice 1, 'B' para o 2, etc.
+    // E os números '0'-'9' para os seus respectivos locais.
+    // Esta lógica é complexa e depende muito da ordem exata da fonte.
+
+    // UMA ABORDAGEM MAIS SIMPLES E ROBUSTA:
+    // A fonte original `ssd1306_draw_char` já sabe como encontrar o caractere certo.
+    // Vamos reutilizar essa lógica.
+    // Infelizmente, a função original não nos dá acesso aos bytes da fonte.
+
+    // VAMOS REESCREVER COM A LÓGICA CORRETA PARA A FONTE FORNECIDA.
+    // A fonte parece começar com um caractere nulo, depois A-Z, depois 0-9, etc.
+    // Vamos assumir que `ssd1306_draw_char` tem a lógica correta e replicá-la.
+    // A função `ssd1306_draw_char` provavelmente faz algo assim:
+
+    // CORREÇÃO FINAL: Com base no arquivo `ssd1306_font.h`, o array `font`
+    // não corresponde diretamente ao ASCII. A biblioteca original deve ter uma lógica de mapeamento.
+    // Em vez de replicar, vamos usar uma matemática de índice mais simples, assumindo
+    // que a `ssd1306_font.h` que você me mostrou é a correta.
+    // O primeiro caractere é "Nothing", depois 'A'.
+    // Se `character` for 'A' (ASCII 65), queremos o segundo bloco de 8 bytes.
+
+    int char_index = 0;
+    if (character >= 'A' && character <= 'Z') {
+        char_index = (character - 'A') + 1;
+    } else if (character >= '0' && character <= '9') {
+        char_index = (character - '0') + 27;
+    } else if (character == '.') {
+        char_index = 37;
+    } else if (character == ':') {
+        char_index = 39;
+    } else if (character == '-') {
+        char_index = 40;
+    }
+    // Adicione mais mapeamentos se necessário, ou deixe o caractere em branco
+
+    // Para cada coluna de 8 pixels do caractere
+    for (uint8_t i = 0; i < 8; i++) {
+        // Acessa o byte correto para a linha 'i' do caractere
+        uint8_t line = font[(char_index * 8) + i];
+
+        // Para cada pixel na coluna
+        for (uint8_t j = 0; j < 8; j++) {
+            if (line & (1 << j)) { // Corrigido para iterar pelos bits corretamente
+                // Desenha um retângulo de 'scale' x 'scale' pixels
+                for (uint8_t sx = 0; sx < scale; sx++) {
+                    for (uint8_t sy = 0; sy < scale; sy++) {
+                        ssd1306_set_pixel(ssd, x + (i * scale) + sx, y + (j * scale) + sy, true);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+void ssd1306_draw_string_scaled(uint8_t *ssd, int16_t x, int16_t y, uint8_t scale, char *string) {
+    for (int i = 0; string[i]; i++) {
+        ssd1306_draw_char_scaled(ssd, x, y, scale, string[i]);
+        x += 8 * scale; // Avança o cursor para a posição do próximo caractere
+    }
+}
+
+
+
+// void ssd1306_draw_string_scaled(uint8_t *ssd, int16_t x, int16_t y, uint8_t scale, char *string) {
+//     for (int i = 0; string[i]; i++) {
+//         ssd1306_draw_char_scaled(ssd, x, y, scale, string[i]);
+//         // Avança o cursor para o próximo caractere. A fonte padrão tem 8 pixels de largura.
+//         x += 8 * scale;
+//     }
+// }

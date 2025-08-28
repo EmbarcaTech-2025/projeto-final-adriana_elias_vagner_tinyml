@@ -235,3 +235,11 @@ uint32_t display_sinc(bool slow){
     display_update();
     return t1 - t0;
 }
+
+// Escreve uma mensagem com o dobro do tamanho
+// Escreve uma mensagem com o dobro do tamanho
+void display_msg_large(bool update, uint8_t cx, uint8_t cy, char *msg) {
+    // O '2' no final é o fator de escala para dobrar o tamanho da fonte
+    ssd1306_draw_string_scaled(display_data, cx * 8, cy * 8, 2, msg);
+    if (update) display_update();
+}
