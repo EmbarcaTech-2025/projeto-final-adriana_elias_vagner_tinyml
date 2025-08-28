@@ -1,9 +1,9 @@
 /**
  * @file    button_b.c
- * @author  Ricardo e Vagner
+ * @author  Adriana - Elias - Vagner
  * @brief   Task para o botão B
  * @version 0.1
- * @date    2025-06-25
+ * @date    2025-08-25
  */
 #include <stdio.h>
 #include "pico/stdlib.h"

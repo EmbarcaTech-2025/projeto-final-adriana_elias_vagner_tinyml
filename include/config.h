@@ -1,9 +1,9 @@
 /**
  * @file    config.h
- * @author
+ * @author  Adriana - Elias - Vagner
  * @brief   Configurações do hardware e definição de mensagens
  * @version 0.1
- * @date
+ * @date    25/08/2025
  */
 #ifndef CONFIG_H
 #define CONFIG_H

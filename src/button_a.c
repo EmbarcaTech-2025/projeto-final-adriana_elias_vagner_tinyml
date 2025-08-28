@@ -1,6 +1,6 @@
 /**
  * @file    button_a.c
- * @author
+ * @author  Adriana - Elias - Vagner
  * @brief   Task para o botão A
  * @version 0.1
  * @date
