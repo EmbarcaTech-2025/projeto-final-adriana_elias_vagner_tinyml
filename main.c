@@ -1,6 +1,6 @@
 /**
  * @file    main.c
- * @author  grupo
+ * @author  Adriana - Elias - Vagner
  * @brief
  * @version 0.1
  * @date
