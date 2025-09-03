@@ -1,6 +1,6 @@
 /**
  * @file    led_rgb.h
- * @author  Ricardo e Vagner
+ * @author  Adriana - Elias - Vagner
  * @brief   Configura e inicializa os GPIOs dos LEDs, bem como seta os LEDs para uma determinada cor
  * @version 0.1
  * @date    2025-06-25
