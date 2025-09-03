@@ -1,6 +1,6 @@
 /**
  * @file    util.h
- * @author
+ * @author  Adriana - Elias - Vagner
  * @brief   Funções comuns
  * @version 0.1
  * @date
