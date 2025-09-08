@@ -19,6 +19,9 @@
 #define ACCEL_SCALE_8G 0x10     // ±8g  |  4096 LSB/g
 #define ACCEL_SCALE_16G 0x18    // ±16g |  2048 LSB/g
 
+// Conversão de g para m/s²
+#define CONVERT_G_TO_MS2    9.80665f
+
 // Estrutura para dados do acelerômetro apenas para aceleração
 typedef struct {
     // Valores brutos do sensor | -32768 a +32767
@@ -29,6 +32,10 @@ typedef struct {
     float accel_x_g;
     float accel_y_g;
     float accel_z_g;
+    // Dados convertidos para unidades m/s² ... (accel_x_ms2 = accel_x_g * CONVERT_G_TO_MS2)
+    float accel_x_ms2;
+    float accel_y_ms2;
+    float accel_z_ms2;
     // Magnitude vetorial total é um valor escalar que representa a intensidade total do vetor aceleração em um
     // ponto 3D,independentemente de sua direção. É calculada usando o Teorema de Pitágoras em três dimensões
     // accel_magnitude = √(accel_x_g² + accel_y_g² + accel_z_g²)

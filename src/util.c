@@ -7,8 +7,8 @@
  */
 #include <stdio.h>
 #include "pico/stdlib.h"
-#include "../include/config.h"
-#include "../include/util.h"
+#include "config.h"
+#include "util.h"
 
 /**
  * @brief Formata uma mensagem (msg) e a envia para o display

@@ -3,13 +3,13 @@
  * @author  Adriana - Elias - Vagner
  * @brief   Task para o botão J: Joystick
  * @version 0.1
- * @date    2025-08-25
+ * @date    2025-09-08
  */
 #include "pico/stdlib.h"
 #include "FreeRTOS.h"
-#include "../include/button_j.h"
-#include "../include/config.h"
-#include "../include/ctrl.h"
+#include "button_j.h"
+#include "config.h"
+#include "ctrl.h"
 
 #define BUTTON BUTTON_J_GPIO
 
@@ -18,7 +18,7 @@
  * Monitora transições de estado do,botão :
  *   - quando pressionado gera um semáforo
  */
-void button_j_task(){
+void button_j_task(void *pvParameters){
     bool button_pressed = false;
 
     gpio_init(   BUTTON);
@@ -41,7 +41,7 @@ void button_j_task(){
         }else{
             if(button_pressed){
                 button_pressed = false;
-                // msg 
+                // msg
 
                 //led_rgb_set(LED_COR_BLACK);
                 //xSemaphoreGive(mutex_handler_led);

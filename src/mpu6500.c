@@ -1,10 +1,19 @@
+/**
+ * @file    mpu6500.c
+ * @author  Adriana - Elias - Vagner
+ * @brief   Task que configura e lê os dados de aceleração dos
+ * 3 eixos do MPU6500.
+ * @version
+ * @date
+ */
+
 #include <stdio.h>
 #include <math.h>
 #include "FreeRTOS.h"
 #include "task.h"
 #include "queue.h"
 #include "semphr.h"
-#include "../include/mpu6500.h"
+#include "mpu6500.h"
 
 #include "hardware/gpio.h"
 #include "hardware/i2c.h"
@@ -111,6 +120,11 @@ bool mpu6500_read_accel_data(mpu6500_data_t *data) {
         data->accel_y_g = data->accel_y / scale_factor;
         data->accel_z_g = data->accel_z / scale_factor;
 
+        // Converte para unidades m/s²
+        data->accel_x_ms2 = data->accel_x_g * CONVERT_G_TO_MS2;
+        data->accel_y_ms2 = data->accel_y_g * CONVERT_G_TO_MS2;
+        data->accel_z_ms2 = data->accel_z_g * CONVERT_G_TO_MS2;
+
         // // Calcula magnitude da aceleração
         // data->accel_magnitude = sqrtf(
         //     data->accel_x_g * data->accel_x_g +
@@ -151,9 +165,9 @@ void mpu6500_task(void *pvParameters) {
             //     printf("%.2f \t", data.accel_z_g);
             //     printf("\n");
             // }
-            printf("%.2f \t", data.accel_x_g);
-            printf("%.2f \t", data.accel_y_g);
-            printf("%.2f \t", data.accel_z_g);
+            printf("%.1f \t", data.accel_x_ms2);
+            printf("%.1f \t", data.accel_y_ms2);
+            printf("%.1f \t", data.accel_z_ms2);
             printf("\n");
 
 

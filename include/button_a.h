@@ -20,7 +20,9 @@
  *   - libera o acesso ao LED(MUTEX);
  *   - Manda uma mensagem para o display via pilha
  */
-void button_a_task();
+//void button_a_task();
+void button_a_task(void *pvParameters);
+
 
 
 #endif // BUTTON_A_H

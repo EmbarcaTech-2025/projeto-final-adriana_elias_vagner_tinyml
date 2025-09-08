@@ -4,7 +4,6 @@ CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/
  /usr/include/newlib/c++/13.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h \
  /usr/include/newlib/c++/13.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/os_defines.h \
  /usr/include/newlib/c++/13.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h \
- /usr/include/newlib/c++/13.2.1/pstl/pstl_config.h \
  /usr/include/newlib/c++/13.2.1/stdlib.h /usr/include/newlib/stdlib.h \
  /usr/include/newlib/machine/ieeefp.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \

@@ -8,11 +8,11 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "FreeRTOS.h"
-#include "../include/button_b.h"
-#include "../include/config.h"
-#include "../include/ctrl.h"
-#include "../include/led_rgb.h"
-#include "../include/util.h"
+#include "button_b.h"
+#include "config.h"
+#include "ctrl.h"
+#include "led_rgb.h"
+#include "util.h"
 
 #define BUTTON BUTTON_B_GPIO
 
@@ -28,7 +28,7 @@
  *   - libera o acesso ao LED(MUTEX);
  *   - Manda uma mensagem para o display via pilha
  */
-void button_b_task(){
+void button_b_task(void *pvParameters){
     bool button_pressed = false;
 
     gpio_init(   BUTTON);

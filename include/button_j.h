@@ -14,7 +14,7 @@
  * Monitora transições de estado do,botão :
  *   - quando pressionado gera um semáforo
  */
-void button_j_task();
+void button_j_task(void *pvParameters);
 
 
 #endif // BUTTON_J_H

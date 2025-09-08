@@ -59,5 +59,5 @@ CMakeFiles/tinyML.dir/src/led_rgb.c.o: \
  /home/vagner/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
  /home/vagner/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
  /home/vagner/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
- /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/src/../include/config.h \
- /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/src/../include/led_rgb.h
+ /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/include/config.h \
+ /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/include/led_rgb.h

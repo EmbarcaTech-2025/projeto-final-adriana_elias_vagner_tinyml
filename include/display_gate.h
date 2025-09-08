@@ -12,7 +12,7 @@
  * @brief Task que mostra mensagens da file e requisições do semáforo no OLED. Simula um dispositivo lento
  *
  */
-void display_gate_task();
+void display_gate_task(void *pvParameters);
 
 
 #endif // DISPLAY_GATE_H

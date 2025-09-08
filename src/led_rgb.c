@@ -6,8 +6,8 @@
  * @date    2025-08-25
  */
 #include "pico/stdlib.h"
-#include "../include/config.h"
-#include "../include/led_rgb.h"
+#include "config.h"
+#include "led_rgb.h"
 
 static void init_led(uint gpio){
     gpio_set_dir(     gpio, GPIO_OUT);
@@ -17,7 +17,7 @@ static void init_led(uint gpio){
 
 /**
  * @brief Configura e inicializa os GPIOs dos LEDs
- * 
+ *
  */
 void led_rgb_init(){
     init_led(LED_R_GPIO);
@@ -35,8 +35,8 @@ void led_rgb_init(){
 
 /**
  * @brief Seta os LEDs para uma determinada cor
- * 
- * @param led_cor 
+ *
+ * @param led_cor
  */
 void led_rgb_set(LedCor led_cor){
     gpio_put(LED_R_GPIO, led_cor == LED_COR_RED);

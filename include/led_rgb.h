@@ -18,14 +18,14 @@ typedef enum {
 
 /**
  * @brief Configura e inicializa os GPIOs dos LEDs
- * 
+ *
  */
 void led_rgb_init();
 
 /**
  * @brief Seta os LEDs para uma determinada cor
- * 
- * @param led_cor 
+ *
+ * @param led_cor
  */
 void led_rgb_set(LedCor led_cor);
 

@@ -3,17 +3,17 @@
  * @author  Adriana - Elias - Vagner
  * @brief   Task para o botão A
  * @version 0.1
- * @date
+ * @date    2025-09-08
  */
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "FreeRTOS.h"
-#include "queue.h"
-#include "../include/button_a.h"
-#include "../include/config.h"
-#include "../include/ctrl.h"
-#include "../include/led_rgb.h"
-#include "../include/util.h"
+//#include "queue.h"
+#include "button_a.h"
+#include "config.h"
+#include "ctrl.h"
+#include "led_rgb.h"
+#include "util.h"
 
 #define BUTTON BUTTON_A_GPIO
 
@@ -21,15 +21,10 @@
 /**
  * @brief Task do botão A
  * Inicializa GPIO do botão
- * Monitora transições de estado do botão :
- * - quando pressionado:
- *   - envia mensagem que foi pressionado para o display via pilha;
- *   - aguarda o LED estar disponível(MUTEX) para acessá-lo e manda uma nova mensagem para o display via pilha;
- * - quando solto:
- *   - libera o acesso ao LED(MUTEX);
- *   - Manda uma mensagem para o display via pilha
+ * Monitora o estado do botão, que quando pressionado, envia para o display,
+ * via pilha, as acelerações dos três eixos, por 5 segundos.
  */
-void button_a_task(){
+void button_a_task(void *pvParameters){
     bool button_pressed = false;
 
     gpio_init(   BUTTON);
