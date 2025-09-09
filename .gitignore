@@ -1,3 +1,8 @@
 build
 .cache
 FreeRTOS
+# Arquivos gerados pelo sistema de build (CMake)
+build/
+
+# Configurações do VS Code
+.vscode/
