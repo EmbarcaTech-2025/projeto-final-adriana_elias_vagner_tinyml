@@ -40,4 +40,8 @@
 
 #define MSG_BUTTON_SEMAPHORO    "      SEMAPHORO"
 
+// Mensagens de controle
+#define MSG_ACCEL_START         "ACCEL_START"
+#define MSG_ACCEL_STOP          "ACCEL_STOP"
+
 #endif // CONFIG_H

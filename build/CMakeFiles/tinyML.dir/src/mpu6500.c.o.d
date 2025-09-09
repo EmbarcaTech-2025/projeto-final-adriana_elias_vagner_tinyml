@@ -50,6 +50,7 @@ CMakeFiles/tinyML.dir/src/mpu6500.c.o: \
  /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/FreeRTOS/include/semphr.h \
  /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/FreeRTOS/include/queue.h \
  /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/include/mpu6500.h \
+ /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/include/ml.h \
  /home/vagner/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
  /home/vagner/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
  /home/vagner/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \

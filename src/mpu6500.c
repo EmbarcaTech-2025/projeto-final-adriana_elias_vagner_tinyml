@@ -4,7 +4,7 @@
  * @brief   Task que configura e lê os dados de aceleração dos
  * 3 eixos do MPU6500.
  * @version
- * @date
+ * @date    2025-09-08
  */
 
 #include <stdio.h>
@@ -14,6 +14,7 @@
 #include "queue.h"
 #include "semphr.h"
 #include "mpu6500.h"
+#include "ml.h"
 
 #include "hardware/gpio.h"
 #include "hardware/i2c.h"
@@ -125,12 +126,12 @@ bool mpu6500_read_accel_data(mpu6500_data_t *data) {
         data->accel_y_ms2 = data->accel_y_g * CONVERT_G_TO_MS2;
         data->accel_z_ms2 = data->accel_z_g * CONVERT_G_TO_MS2;
 
-        // // Calcula magnitude da aceleração
-        // data->accel_magnitude = sqrtf(
-        //     data->accel_x_g * data->accel_x_g +
-        //     data->accel_y_g * data->accel_y_g +
-        //     data->accel_z_g * data->accel_z_g
-        // );
+        // Calcula magnitude da aceleração
+        data->accel_magnitude_ms2 = sqrtf(
+             data->accel_x_ms2 * data->accel_x_ms2 +
+             data->accel_y_ms2 * data->accel_y_ms2 +
+             data->accel_z_ms2 * data->accel_z_ms2
+        );
 
         success = true;
     }
@@ -149,28 +150,16 @@ void mpu6500_task(void *pvParameters) {
 
     for (;;) {
         if (mpu6500_read_accel_data(&data)) {
-            // Envia dados para a fila (se houver consumidores) | Produção
+            // Envia dados para a fila | Produtor (Publisher)
             xQueueSend(mpu6500_queue, &data, 0);
 
-
-            // Debug: imprime dados a cada 100 leituras
-            // if (read_count++ % 100 == 0) {
-            //     /**
-            //     printf("Accel: X=%.3fg, Y=%.3fg, Z=%.3fg, Mag=%.3fg\n",
-            //             data.accel_x_g, data.accel_y_g, data.accel_z_g,
-            //             data.accel_magnitude);
-            //     */
-            //     printf("%.2f \t", data.accel_x_g);
-            //     printf("%.2f \t", data.accel_y_g);
-            //     printf("%.2f \t", data.accel_z_g);
-            //     printf("\n");
-            // }
+            //  Saida para monitor serial
+            /*
             printf("%.1f \t", data.accel_x_ms2);
             printf("%.1f \t", data.accel_y_ms2);
             printf("%.1f \t", data.accel_z_ms2);
             printf("\n");
-
-
+            */
         } else {
             printf("MPU6500 read error\n");
         }

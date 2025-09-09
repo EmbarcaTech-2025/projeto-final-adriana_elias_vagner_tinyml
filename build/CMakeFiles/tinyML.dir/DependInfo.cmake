@@ -162,6 +162,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/include"
   "/home/vagner/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
   "/home/vagner/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
+  "/home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/include"
   )
 
 # The set of dependency files which are needed:
@@ -890,6 +891,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c" "CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c.o" "gcc" "CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/pheap.c.o.d"
   "/home/vagner/pico/pico-sdk/src/common/pico_util/queue.c" "CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/queue.c.o" "gcc" "CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/common/pico_util/queue.c.o.d"
   "/home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c" "CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o" "gcc" "CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o.d"
+  "/home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c" "CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o" "gcc" "CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o.d"
   "/home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c" "CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o" "gcc" "CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o.d"
   "/home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o" "gcc" "CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o.d"
   "/home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c" "CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o" "gcc" "CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o.d"
@@ -1152,6 +1154,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/edge-impulse-sdk/tensorflow/lite/micro/test_helpers.cc" "CMakeFiles/tinyML.dir/edge-impulse-sdk/tensorflow/lite/micro/test_helpers.cc.o" "gcc" "CMakeFiles/tinyML.dir/edge-impulse-sdk/tensorflow/lite/micro/test_helpers.cc.o.d"
   "/home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp" "CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o" "gcc" "CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d"
   "/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/src/main.cpp" "CMakeFiles/tinyML.dir/src/main.cpp.o" "gcc" "CMakeFiles/tinyML.dir/src/main.cpp.o.d"
+  "/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/src/ml.cpp" "CMakeFiles/tinyML.dir/src/ml.cpp.o" "gcc" "CMakeFiles/tinyML.dir/src/ml.cpp.o.d"
   "/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/tflite-model/tflite_learn_777509_7_compiled.cpp" "CMakeFiles/tinyML.dir/tflite-model/tflite_learn_777509_7_compiled.cpp.o" "gcc" "CMakeFiles/tinyML.dir/tflite-model/tflite_learn_777509_7_compiled.cpp.o.d"
   )
 

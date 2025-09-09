@@ -39,7 +39,7 @@ typedef struct {
     // Magnitude vetorial total é um valor escalar que representa a intensidade total do vetor aceleração em um
     // ponto 3D,independentemente de sua direção. É calculada usando o Teorema de Pitágoras em três dimensões
     // accel_magnitude = √(accel_x_g² + accel_y_g² + accel_z_g²)
-    float accel_magnitude;
+    float accel_magnitude_ms2;
 } mpu6500_data_t;
 
 // Protótipos das funções
@@ -87,8 +87,7 @@ void mpu6500_set_accel_scale(uint8_t scale);
  * @brief
 1. Lê dados do sensor
 2. Envia para fila (se houver consumidores)
-3. Debug periódico (a cada 100 leituras)
-4. Delay preciso de 10ms (100Hz)
+3. Delay preciso de 10ms (100Hz)
  */
 void mpu6500_task(void *pvParameters);
 

@@ -2,8 +2,7 @@
  * @file    display_gate.c
  * @author  Adriana - Elias - Vagner
  * @brief   Task que mostra mensagens da file e requisições do semáforo no OLED.
- * Simula um dispositivo lento
- * @version 0.1
+ * @version
  * @date
  */
 #include <string.h>
@@ -21,7 +20,7 @@
 static char display_buffer[8][QUEUE_MSG_LENGHT] = {0};
 
 /**
- * @brief Atualiza o display, simulando dispositivo lento
+ * @brief Atualiza o display
  *
  * @param msg
  */
@@ -53,11 +52,12 @@ void display_gate_task(void *pvParameters){
     mpu6500_data_t mpu_data;
     QueueHandle_t mpu_queue_handle = (QueueHandle_t)mpu6500_get_queue();
 
-    // --- Nova variável para controlar qual eixo exibir ---
+    // Variável para controlar qual eixo exibir
     int axis_to_display = 0; // 0=Ax, 1=Ay, 2=Az
 
     display_init();
 
+    // Variáveis para controlar o blink do display
     const int BLINK_DURATION_MS = 5000;
     const int BLINK_INTERVAL_MS = 500;
     const int BLINK_COUNT = BLINK_DURATION_MS / BLINK_INTERVAL_MS;
@@ -80,33 +80,37 @@ void display_gate_task(void *pvParameters){
         if(xSemaphoreTake(semaphored_handler_joystick, 0) == pdTRUE){
             // Mantém o sistema de log com rolagem para botões
             add_msg(MSG_BUTTON_SEMAPHORO);
-        } else if (xQueueReceive(queue_handle, bufferMsg, 0) == pdTRUE) {
+        }else if (xQueueReceive(queue_handle, bufferMsg, portMAX_DELAY) == pdTRUE) {
             add_msg(bufferMsg);
-        } else if (xQueueReceive(mpu_queue_handle, &mpu_data, 0) == pdTRUE) {
+        }else if (xQueueReceive(mpu_queue_handle, &mpu_data, 0) == pdTRUE) {
             char accel_msg[QUEUE_MSG_LENGHT];
 
             // Limpa a tela antes de exibir os novos dados do acelerômetro
             display_fill(false, false);
 
-            display_msg(true, 1, 1, "::  TinyML  ::");
+            //display_msg(true, 1, 1, "::  TinyML  ::");
 
             // Formata e exibe o eixo X na linha 1
             snprintf(accel_msg, QUEUE_MSG_LENGHT, "Ax: %.1f", mpu_data.accel_x_ms2);
-            display_msg(false, 0, 3, accel_msg);
+            display_msg(false, 0, 1, accel_msg);
 
             // Formata e exibe o eixo Y na linha 3
             snprintf(accel_msg, QUEUE_MSG_LENGHT, "Ay: %.1f", mpu_data.accel_y_ms2);
-            display_msg(false, 0, 5, accel_msg);
+            display_msg(false, 0, 3, accel_msg);
 
             // Formata e exibe o eixo Z na linha 5
             snprintf(accel_msg, QUEUE_MSG_LENGHT, "Az: %.1f", mpu_data.accel_z_ms2);
+            display_msg(false, 0, 5, accel_msg);
+
+            // Formata e exibe a Magnitude da Aceleração na linha 7
+            snprintf(accel_msg, QUEUE_MSG_LENGHT, "A RMS: %.1f", mpu_data.accel_magnitude_ms2);
             display_msg(false, 0, 7, accel_msg);
 
             // Atualiza o display com todos os novos dados de uma vez
             display_update();
         }
 
-        // Atualiza o display a cada 1s
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        // Atualiza o display a cada 100ms
+        vTaskDelay(pdMS_TO_TICKS(100));
     }
 }

@@ -37,6 +37,7 @@ add_executable(${PROJECT_NAME}
   src/oled/i2c.c
   src/util.c
   src/mpu6500.c
+  src/ml.cpp
 )
 
 include(${PROJECT_FOLDER}/edge-impulse-sdk/cmake/utils.cmake)
@@ -46,6 +47,7 @@ target_link_libraries(${PROJECT_NAME}
     FreeRTOS-Kernel-Heap4
     hardware_i2c
     hardware_pwm
+    hardware_adc
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE

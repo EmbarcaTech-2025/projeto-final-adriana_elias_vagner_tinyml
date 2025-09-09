@@ -130,32 +130,6 @@ tinyML/fast:
 .PHONY : tinyML/fast
 
 #=============================================================================
-# Target rules for targets named picotoolForceReconfigure
-
-# Build rule for target.
-picotoolForceReconfigure: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picotoolForceReconfigure
-.PHONY : picotoolForceReconfigure
-
-# fast build rule for target.
-picotoolForceReconfigure/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picotoolForceReconfigure.dir/build.make CMakeFiles/picotoolForceReconfigure.dir/build
-.PHONY : picotoolForceReconfigure/fast
-
-#=============================================================================
-# Target rules for targets named picotoolBuild
-
-# Build rule for target.
-picotoolBuild: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picotoolBuild
-.PHONY : picotoolBuild
-
-# fast build rule for target.
-picotoolBuild/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picotoolBuild.dir/build.make CMakeFiles/picotoolBuild.dir/build
-.PHONY : picotoolBuild/fast
-
-#=============================================================================
 # Target rules for targets named bs2_default
 
 # Build rule for target.
@@ -22564,6 +22538,30 @@ home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.c.s
 
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o
 
@@ -23876,6 +23874,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/ml.o: src/ml.cpp.o
+.PHONY : src/ml.o
+
+# target to build an object file
+src/ml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/ml.cpp.o
+.PHONY : src/ml.cpp.o
+
+src/ml.i: src/ml.cpp.i
+.PHONY : src/ml.i
+
+# target to preprocess a source file
+src/ml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/ml.cpp.i
+.PHONY : src/ml.cpp.i
+
+src/ml.s: src/ml.cpp.s
+.PHONY : src/ml.s
+
+# target to generate assembly for a file
+src/ml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/ml.cpp.s
+.PHONY : src/ml.cpp.s
+
 src/mpu6500.o: src/mpu6500.c.o
 .PHONY : src/mpu6500.o
 
@@ -24006,8 +24028,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... bs2_default_bin"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
-	@echo "... picotoolBuild"
-	@echo "... picotoolForceReconfigure"
 	@echo "... pioasmBuild"
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"
@@ -26805,6 +26825,9 @@ help:
 	@echo "... home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2040/pico_platform/platform.s"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s"
@@ -26969,6 +26992,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/ml.o"
+	@echo "... src/ml.i"
+	@echo "... src/ml.s"
 	@echo "... src/mpu6500.o"
 	@echo "... src/mpu6500.i"
 	@echo "... src/mpu6500.s"

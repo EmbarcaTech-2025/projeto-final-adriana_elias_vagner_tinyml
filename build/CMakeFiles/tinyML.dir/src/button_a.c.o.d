@@ -79,4 +79,5 @@ CMakeFiles/tinyML.dir/src/button_a.c.o: \
  /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/FreeRTOS/include/list.h \
  /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/include/led_rgb.h \
  /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/include/util.h \
- /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/FreeRTOS/include/queue.h
+ /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/FreeRTOS/include/queue.h \
+ /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/include/mpu6500.h
