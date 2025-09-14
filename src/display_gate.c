@@ -46,7 +46,6 @@ static void add_msg(char * msg){
     display_update();
 }
 
-
 void display_gate_task(void *pvParameters){
     char bufferMsg[QUEUE_MSG_LENGHT] = {0};
     mpu6500_data_t mpu_data;
@@ -67,16 +66,65 @@ void display_gate_task(void *pvParameters){
             display_msg(true, 1, 1, "::  TinyML  ::");
             display_msg(true, 1, 3, "   Movement   ");
             display_msg(true, 1, 5, "Classification");
+            display_msg(true, 1, 7, "-| BitDogLab |-");
         } else {
             display_fill(false, false);
         }
         vTaskDelay(pdMS_TO_TICKS(BLINK_INTERVAL_MS));
     }
-
     display_fill(false, false);
 
 
     while(1){
+        // Espera por uma mensagem na fila principal.
+        // Usar portMAX_DELAY é eficiente, a tarefa dorme até uma msg chegar.
+        if (xQueueReceive(queue_handle, bufferMsg, 0) == pdTRUE) {
+            // garante que o último caractere da string `bufferMsg` seja sempre um caractere nulo (`\0`),
+            // o que é necessário para que a função `strcmp` funcione corretamente.
+            bufferMsg[QUEUE_MSG_LENGHT - 1] = '\0';
+            //printf("Mensagem Recebida: %s\n", bufferMsg);
+            // Se a mensagem for ACCEL_START...
+            if (strcmp(bufferMsg, MSG_ACCEL_START) == 0) {
+                display_fill(false, false); // Limpa o display
+                display_msg(false, 1, 0, ":: BitDogLab ::"); // Escreve o título
+                display_msg(false, 1, 3, "    TinyML     ");  // Escreve o título
+                display_msg(false, 1, 5, "  EmbarcaTech  ");  // Escreve o título
+                display_update();
+                vTaskDelay(pdMS_TO_TICKS(5000));
+                display_fill(false, false);
+                display_update();
+            }
+            // Se a mensagem for ACCEL_STOP...
+            if (strcmp(bufferMsg, MSG_ACCEL_STOP) == 0) {
+                printf(" Mensagem ACCEL_STOP recebida\n");
+                display_fill(true, true); // Limpa o display e atualiza
+            }
+        }
+        // Fila de dados do MPU
+        else if (xQueueReceive(mpu_queue_handle, &mpu_data, 0) == pdTRUE) {
+            char accel_msg[QUEUE_MSG_LENGHT];
+            // Limpa a tela antes de exibir os novos dados do acelerômetro
+            display_fill(false, false);
+            // Formata e exibe o eixo X na linha 1
+            snprintf(accel_msg, QUEUE_MSG_LENGHT, "Ax: %.1f", mpu_data.accel_x_ms2);
+            display_msg(false, 0, 1, accel_msg);
+            // Formata e exibe o eixo Y na linha 3
+            snprintf(accel_msg, QUEUE_MSG_LENGHT, "Ay: %.1f", mpu_data.accel_y_ms2);
+            display_msg(false, 0, 3, accel_msg);
+            // Formata e exibe o eixo Z na linha 5
+            snprintf(accel_msg, QUEUE_MSG_LENGHT, "Az: %.1f", mpu_data.accel_z_ms2);
+            display_msg(false, 0, 5, accel_msg);
+            // Formata e exibe a Magnitude da Aceleração na linha 7
+            snprintf(accel_msg, QUEUE_MSG_LENGHT, "A RMS: %.1f", mpu_data.accel_magnitude_ms2);
+            display_msg(false, 1, 7, accel_msg);
+            // Atualiza o display com todos os novos dados de uma vez
+            display_update();
+        }
+        vTaskDelay(pdMS_TO_TICKS(BUTTON_DEBONCE_MS));
+    }
+}
+
+        /*
         if(xSemaphoreTake(semaphored_handler_joystick, 0) == pdTRUE){
             // Mantém o sistema de log com rolagem para botões
             add_msg(MSG_BUTTON_SEMAPHORO);
@@ -112,5 +160,4 @@ void display_gate_task(void *pvParameters){
 
         // Atualiza o display a cada 100ms
         vTaskDelay(pdMS_TO_TICKS(100));
-    }
-}
+        */

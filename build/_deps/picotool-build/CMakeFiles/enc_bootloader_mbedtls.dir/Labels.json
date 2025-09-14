@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/_deps/picotool-build/CMakeFiles/enc_bootloader_mbedtls"
+		},
+		{
+			"file" : "/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/_deps/picotool-build/CMakeFiles/enc_bootloader_mbedtls.rule"
+		},
+		{
+			"file" : "/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/_deps/picotool-build/CMakeFiles/enc_bootloader_mbedtls-complete.rule"
+		},
+		{
+			"file" : "/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-build.rule"
+		},
+		{
+			"file" : "/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-configure.rule"
+		},
+		{
+			"file" : "/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-download.rule"
+		},
+		{
+			"file" : "/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-install.rule"
+		},
+		{
+			"file" : "/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-mkdir.rule"
+		},
+		{
+			"file" : "/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-patch.rule"
+		},
+		{
+			"file" : "/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"enc_bootloader_mbedtls"
+		],
+		"name" : "enc_bootloader_mbedtls"
+	}
+}

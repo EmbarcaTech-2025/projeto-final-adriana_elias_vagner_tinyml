@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml
+CMAKE_SOURCE_DIR = /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build
+CMAKE_BINARY_DIR = /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/CMakeFiles /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/CMakeFiles /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinyml/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,32 @@ tinyML: cmake_check_build_system
 tinyML/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/build
 .PHONY : tinyML/fast
+
+#=============================================================================
+# Target rules for targets named picotoolForceReconfigure
+
+# Build rule for target.
+picotoolForceReconfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picotoolForceReconfigure
+.PHONY : picotoolForceReconfigure
+
+# fast build rule for target.
+picotoolForceReconfigure/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/picotoolForceReconfigure.dir/build.make CMakeFiles/picotoolForceReconfigure.dir/build
+.PHONY : picotoolForceReconfigure/fast
+
+#=============================================================================
+# Target rules for targets named picotoolBuild
+
+# Build rule for target.
+picotoolBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picotoolBuild
+.PHONY : picotoolBuild
+
+# fast build rule for target.
+picotoolBuild/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/picotoolBuild.dir/build.make CMakeFiles/picotoolBuild.dir/build
+.PHONY : picotoolBuild/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default
@@ -193,6 +219,19 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: cmake_check_build_system
 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
+
+#=============================================================================
+# Target rules for targets named pico_status_led_ws2812_pio_h
+
+# Build rule for target.
+pico_status_led_ws2812_pio_h: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico_status_led_ws2812_pio_h
+.PHONY : pico_status_led_ws2812_pio_h
+
+# fast build rule for target.
+pico_status_led_ws2812_pio_h/fast:
+	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build
+.PHONY : pico_status_led_ws2812_pio_h/fast
 
 FreeRTOS/croutine.o: FreeRTOS/croutine.c.o
 .PHONY : FreeRTOS/croutine.o
@@ -21842,6 +21881,2166 @@ edge-impulse-sdk/tensorflow/lite/micro/test_helpers.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/edge-impulse-sdk/tensorflow/lite/micro/test_helpers.cc.s
 .PHONY : edge-impulse-sdk/tensorflow/lite/micro/test_helpers.cc.s
 
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.o: home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
+
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i: home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
+
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s: home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
+
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.o: home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.i: home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
+
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.s: home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
+
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.o: home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o
+
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i: home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
+
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.s: home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
+
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.o: home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o
+
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.i: home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
+
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.s: home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.o: home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.i: home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.s: home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.o: home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.i: home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.s: home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.o: home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.i: home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.s: home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/err.o: home/vagner/pico/pico-sdk/lib/lwip/src/api/err.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/err.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/err.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/err.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/err.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/err.i: home/vagner/pico/pico-sdk/lib/lwip/src/api/err.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/err.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/err.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/err.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/err.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/err.s: home/vagner/pico/pico-sdk/lib/lwip/src/api/err.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/err.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/err.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/err.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/err.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.o: home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.i: home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.s: home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.o: home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.i: home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.s: home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.o: home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.i: home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.s: home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.o: home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.i: home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.s: home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.o: home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.i: home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.s: home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.o: home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.i: home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.s: home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/def.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/def.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/def.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/def.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/def.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/def.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/def.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/def.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/def.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/def.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/def.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/def.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/def.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/def.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/def.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/def.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/def.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/def.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/init.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/init.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/init.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/init.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/init.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/init.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/init.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/init.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/init.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/init.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/init.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/init.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/init.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/init.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/init.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/init.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/init.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/init.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.o: home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.i: home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.s: home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.c.s
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.o: home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.c.o
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.c.o
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.i: home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.c.i
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.c.i
+
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.s: home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.c.s
+.PHONY : home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.c.s
+
 home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o: home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
 .PHONY : home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o
 
@@ -22618,6 +24817,30 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
 
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.o
 
@@ -22745,6 +24968,30 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: home/
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i: home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s: home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.o: home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.o
@@ -22986,6 +25233,54 @@ home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
+home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.c.s
+
 home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.o
 
@@ -23121,6 +25416,198 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: home/vag
 home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o
@@ -23314,6 +25801,30 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 
+home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.c.s
+
 home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.o
 
@@ -23370,6 +25881,30 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 
+home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
+
 home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.o
 
@@ -23417,6 +25952,30 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/vagner/pico/
 home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.o
+
+# target to build an object file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.o
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.o
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.i: home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.i
+
+# target to preprocess a source file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.i
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.i
+
+home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.s: home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.s
+
+# target to generate assembly for a file
+home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.s
+.PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.s
 
 home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.o: home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.o
@@ -23682,6 +26241,222 @@ home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.o: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.o
+
+# target to build an object file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.c.o
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.i: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.i
+
+# target to preprocess a source file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.c.i
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.s: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.s
+
+# target to generate assembly for a file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.c.s
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.o: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.o
+
+# target to build an object file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.c.o
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.i: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.i
+
+# target to preprocess a source file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.c.i
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.s: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.s
+
+# target to generate assembly for a file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.c.s
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.o: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.o
+
+# target to build an object file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.c.o
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.i: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.i
+
+# target to preprocess a source file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.c.i
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.s: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.s
+
+# target to generate assembly for a file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.c.s
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.o: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.o
+
+# target to build an object file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.c.o
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.i: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.i
+
+# target to preprocess a source file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.c.i
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.s: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.s
+
+# target to generate assembly for a file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.c.s
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.o: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.o
+
+# target to build an object file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.c.o
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.i: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.i
+
+# target to preprocess a source file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.c.i
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.s: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.s
+
+# target to generate assembly for a file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.c.s
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.o: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.o
+
+# target to build an object file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.c.o
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.i: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.i
+
+# target to preprocess a source file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.c.i
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.s: lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.s
+
+# target to generate assembly for a file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.c.s
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.o: lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.o
+
+# target to build an object file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.c.o
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.i: lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.i
+
+# target to preprocess a source file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.c.i
+
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.s: lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.s
+
+# target to generate assembly for a file
+lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.c.s
+
+lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.o: lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.o
+
+# target to build an object file
+lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.c.o
+
+lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.i: lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.i
+
+# target to preprocess a source file
+lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.c.i
+
+lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.s: lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.s
+
+# target to generate assembly for a file
+lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.c.s
+
+lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.o: lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.o
+
+# target to build an object file
+lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.c.o
+.PHONY : lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.c.o
+
+lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.i: lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.i
+
+# target to preprocess a source file
+lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.c.i
+.PHONY : lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.c.i
+
+lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.s: lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.s
+
+# target to generate assembly for a file
+lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.c.s
+.PHONY : lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.c.s
+
 lib/ssd1306_i2c.o: lib/ssd1306_i2c.c.o
 .PHONY : lib/ssd1306_i2c.o
 
@@ -23922,6 +26697,30 @@ src/mpu6500.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/mpu6500.c.s
 .PHONY : src/mpu6500.c.s
 
+src/mqtt_task.o: src/mqtt_task.c.o
+.PHONY : src/mqtt_task.o
+
+# target to build an object file
+src/mqtt_task.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/mqtt_task.c.o
+.PHONY : src/mqtt_task.c.o
+
+src/mqtt_task.i: src/mqtt_task.c.i
+.PHONY : src/mqtt_task.i
+
+# target to preprocess a source file
+src/mqtt_task.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/mqtt_task.c.i
+.PHONY : src/mqtt_task.c.i
+
+src/mqtt_task.s: src/mqtt_task.c.s
+.PHONY : src/mqtt_task.s
+
+# target to generate assembly for a file
+src/mqtt_task.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/mqtt_task.c.s
+.PHONY : src/mqtt_task.c.s
+
 src/oled/display.o: src/oled/display.c.o
 .PHONY : src/oled/display.o
 
@@ -23969,6 +26768,54 @@ src/oled/i2c.s: src/oled/i2c.c.s
 src/oled/i2c.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/oled/i2c.c.s
 .PHONY : src/oled/i2c.c.s
+
+src/paho_network.o: src/paho_network.c.o
+.PHONY : src/paho_network.o
+
+# target to build an object file
+src/paho_network.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/paho_network.c.o
+.PHONY : src/paho_network.c.o
+
+src/paho_network.i: src/paho_network.c.i
+.PHONY : src/paho_network.i
+
+# target to preprocess a source file
+src/paho_network.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/paho_network.c.i
+.PHONY : src/paho_network.c.i
+
+src/paho_network.s: src/paho_network.c.s
+.PHONY : src/paho_network.s
+
+# target to generate assembly for a file
+src/paho_network.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/paho_network.c.s
+.PHONY : src/paho_network.c.s
+
+src/paho_timer.o: src/paho_timer.c.o
+.PHONY : src/paho_timer.o
+
+# target to build an object file
+src/paho_timer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/paho_timer.c.o
+.PHONY : src/paho_timer.c.o
+
+src/paho_timer.i: src/paho_timer.c.i
+.PHONY : src/paho_timer.i
+
+# target to preprocess a source file
+src/paho_timer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/paho_timer.c.i
+.PHONY : src/paho_timer.c.i
+
+src/paho_timer.s: src/paho_timer.c.s
+.PHONY : src/paho_timer.s
+
+# target to generate assembly for a file
+src/paho_timer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyML.dir/build.make CMakeFiles/tinyML.dir/src/paho_timer.c.s
+.PHONY : src/paho_timer.c.s
 
 src/util.o: src/util.c.o
 .PHONY : src/util.o
@@ -24028,6 +26875,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... bs2_default_bin"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
+	@echo "... pico_status_led_ws2812_pio_h"
+	@echo "... picotoolBuild"
+	@echo "... picotoolForceReconfigure"
 	@echo "... pioasmBuild"
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"
@@ -26738,6 +29588,276 @@ help:
 	@echo "... edge-impulse-sdk/tensorflow/lite/micro/test_helpers.o"
 	@echo "... edge-impulse-sdk/tensorflow/lite/micro/test_helpers.i"
 	@echo "... edge-impulse-sdk/tensorflow/lite/micro/test_helpers.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/contrib/ports/freertos/sys_arch.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/api_lib.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/api_msg.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/err.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/err.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/err.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/if_api.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/netbuf.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/netdb.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/netifapi.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/sockets.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/api/tcpip.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/def.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/def.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/def.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/dns.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/inet_chksum.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/init.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/init.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/init.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ip.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/mem.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/memp.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/netif.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/pbuf.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/raw.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/stats.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/sys.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_in.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/tcp_out.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/timeouts.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/core/udp.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ethernet.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/slipif.s"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.o"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.i"
+	@echo "... home/vagner/pico/pico-sdk/lib/lwip/src/netif/zepif.s"
 	@echo "... home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o"
 	@echo "... home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... home/vagner/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
@@ -26835,6 +29955,9 @@ help:
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_divider/divider.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_exception/exception.s"
@@ -26851,6 +29974,9 @@ help:
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s"
@@ -26881,6 +30007,12 @@ help:
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.s"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_freertos.s"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.s"
@@ -26898,6 +30030,30 @@ help:
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.s"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.s"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.s"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.s"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.s"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.s"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.s"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.s"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o"
@@ -26922,6 +30078,9 @@ help:
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_math.s"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_freertos.s"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.s"
@@ -26929,12 +30088,18 @@ help:
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_common/common.s"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.s"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_printf/printf.s"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.o"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.i"
+	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_rand/rand.s"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s"
@@ -26968,6 +30133,33 @@ help:
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... home/vagner/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.o"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.i"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTClient.s"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.o"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.i"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTConnectClient.s"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.o"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.i"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTDeserializePublish.s"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.o"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.i"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSerializePublish.s"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.o"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.i"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTSubscribeClient.s"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.o"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.i"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/MQTTUnsubscribeClient.s"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.o"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.i"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTClient-C/src/transport.s"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.o"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.i"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.s"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.o"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.i"
+	@echo "... lib/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.s"
 	@echo "... lib/ssd1306_i2c.o"
 	@echo "... lib/ssd1306_i2c.i"
 	@echo "... lib/ssd1306_i2c.s"
@@ -26998,12 +30190,21 @@ help:
 	@echo "... src/mpu6500.o"
 	@echo "... src/mpu6500.i"
 	@echo "... src/mpu6500.s"
+	@echo "... src/mqtt_task.o"
+	@echo "... src/mqtt_task.i"
+	@echo "... src/mqtt_task.s"
 	@echo "... src/oled/display.o"
 	@echo "... src/oled/display.i"
 	@echo "... src/oled/display.s"
 	@echo "... src/oled/i2c.o"
 	@echo "... src/oled/i2c.i"
 	@echo "... src/oled/i2c.s"
+	@echo "... src/paho_network.o"
+	@echo "... src/paho_network.i"
+	@echo "... src/paho_network.s"
+	@echo "... src/paho_timer.o"
+	@echo "... src/paho_timer.i"
+	@echo "... src/paho_timer.s"
 	@echo "... src/util.o"
 	@echo "... src/util.i"
 	@echo "... src/util.s"

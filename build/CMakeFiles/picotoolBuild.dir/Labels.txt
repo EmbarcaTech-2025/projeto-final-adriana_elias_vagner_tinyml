@@ -1,0 +1,14 @@
+# Target labels
+ picotoolBuild
+# Source files and their labels
+/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/CMakeFiles/picotoolBuild
+/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/CMakeFiles/picotoolBuild.rule
+/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/CMakeFiles/picotoolBuild-complete.rule
+/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/picotool/src/picotoolBuild-stamp/picotoolBuild-build.rule
+/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/picotool/src/picotoolBuild-stamp/picotoolBuild-configure.rule
+/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/picotool/src/picotoolBuild-stamp/picotoolBuild-download.rule
+/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/picotool/src/picotoolBuild-stamp/picotoolBuild-install.rule
+/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir.rule
+/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/picotool/src/picotoolBuild-stamp/picotoolBuild-patch.rule
+/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/picotool/src/picotoolBuild-stamp/picotoolBuild-test.rule
+/media/vagner/dados/vagner_vasconcelos_embarcatech_HBr_2025/projetos/projeto-final-adriana_elias_vagner_tinym_20250914_com_MQTT/build/picotool/src/picotoolBuild-stamp/picotoolBuild-update.rule

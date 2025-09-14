@@ -4,16 +4,20 @@
  * @brief   Task Machine Learning (ML)
  * Classifica os movimentos e/ou anomalias em função dos sinais do acelerômetro.
  * @version
- * @date    2025-08-09
+ * @date    2025-14-09
  */
 
 #include <stdio.h>
 #include "pico/stdlib.h"
+#include "pico/cyw43_arch.h"
+#include "FreeRTOS.h"
+#include "task.h"
+
+#include <string.h>
 #include "hardware/gpio.h"
 #include "hardware/adc.h"
 #include <math.h>
-#include "FreeRTOS.h"
-#include "task.h"
+
 #include "queue.h"
 #include "semphr.h"
 #include "ml.h"
@@ -155,17 +159,25 @@ void log_top_inference_result(ei_impulse_result_t result, float threshold) {
     // 3. Verifica se a maior pontuação atende ao limite de confiança
     if (max_index != -1 && max_value >= threshold) {
         // Se a confiança for alta o suficiente, imprime a classe
+        /*
         ei_printf("Classe Inferida: %s (Confianca: %.5f)\n",
-                  ei_classifier_inferencing_categories[max_index],
-                  max_value);
+            ei_classifier_inferencing_categories[max_index],
+            max_value);
+        */
+        // Só mostra a classe inferida se a confiança for alta o suficiente
+        ei_printf("%s \n",ei_classifier_inferencing_categories[max_index]);
     } else if (max_index != -1) {
         // Se a confiança for muito baixa, informa que o resultado foi descartado
+        /*
         ei_printf("Resultado incerto: %s (Confianca: %.5f) - Abaixo do limite de %.2f\n",
                   ei_classifier_inferencing_categories[max_index],
                   max_value,
                   threshold);
+        */
+        ei_printf("Resultado incerto \n");
     } else {
         // Caso nenhuma classificação seja encontrada
-        ei_printf("Nenhum resultado de classificacao encontrado.\n");
+        // ei_printf("Nenhum resultado de classificacao encontrado.\n");
+        ei_printf("Resultado incerto \n");
     }
 }

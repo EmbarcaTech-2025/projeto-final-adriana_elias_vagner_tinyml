@@ -65,6 +65,7 @@ void button_a_task(void *pvParameters){
             // Lógica de envio de dados por 5 segundos
             // Verifica se ainda estamos dentro da janela de 5 segundos
             // press_start_time`: Armazena o "timestamp" de quando o botão foi pressionado.
+            /*
             if (xTaskGetTickCount() - press_start_time < pdMS_TO_TICKS(5000)) {
                 // Tenta receber um item da fila do MPU com um pequeno timeout ...
                 // ... para não bloquear a tarefa indefinidamente
@@ -78,6 +79,7 @@ void button_a_task(void *pvParameters){
                     xQueueSend(queue_handle, &display_msg_buffer, 0);
                 }
             }
+            */
         }else { // Botão solto
             if(button_pressed){
                 button_pressed = false;
