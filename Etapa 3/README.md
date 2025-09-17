@@ -11,14 +11,6 @@
 - Vagner Sanches Vasconcelos
 ----
 
-# ETAPA 3
-
-[![Apresentação](https://img.youtube.com/vi/r4KT6auRS9Y/hqdefault.jpg)](https://youtu.be/r4KT6auRS9Y "Etapa 3")
-
-https://youtu.be/r4KT6auRS9Y?si=LlxuRj-Y9J4jt735
-
-
-
 
 # 1. Contexto
 A logística de contêineres marítimos é um componente crítico da cadeia de suprimentos global, envolvendo etapas como movimentação por empilhadeiras ou guindastes, transporte terrestre em caminhões e transporte marítimo em navios. A rastreabilidade precisa dessas etapas é essencial para otimizar rotas, reduzir custos operacionais, prevenir danos causados por vibrações excessivas e detectar anomalias em tempo real. No entanto, sistemas tradicionais baseados em GPS e registros manuais carecem de granularidade para identificar o tipo de movimento do contêiner, limitando a capacidade de resposta proativa.
@@ -224,6 +216,16 @@ Em suma, a estrutura proposta utiliza os pontos fortes do FreeRTOS para criar um
     - **Consumo:**
     - **Documentando desafios:**
 **Entregável:** Vídeo/fotos do protótipo, relatório detalhando testes, desafios e melhorias planejadas.
+
+# ETAPA 3
+
+[![Apresentação](https://img.youtube.com/vi/r4KT6auRS9Y/hqdefault.jpg)](https://youtu.be/r4KT6auRS9Y "Etapa 3")
+
+https://youtu.be/r4KT6auRS9Y?si=LlxuRj-Y9J4jt735
+
+
+
+
 
 ## 6.4 Etapa 4: Entrega Final e Documentação (Data a ser definida)
 **Objetivo:** Finalizar o projeto com ajustes implementados e documentação completa.
