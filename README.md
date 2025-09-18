@@ -1,4 +1,4 @@
-<h1 align = "center"> # **Sistema para Monitoramento Inteligente de Movimentos em Contêineres Marítimos com TinyML** </h1>
+<h1 align = "center"> Sistema para Monitoramento Inteligente de Movimentos em Contêineres Marítimos com TinyML </h1>
 
 <h2 align = "center"> Projeto: Embarcatech - Fase 2 </h2>
 <h3 align = "center"> Instituto Hardware BR - HBr </h3>
