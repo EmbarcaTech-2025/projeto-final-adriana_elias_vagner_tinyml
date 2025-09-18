@@ -1,7 +1,12 @@
-# **Classificação de Movimentos em Contêineres Marítimos com TinyML**
+# **Sistema para Monitoramento Inteligente de Movimentos em Contêineres Marítimos com TinyML**
 
-**Autores:** Adriana R. Castro de Paula, Elias Kento Tomiyama, Vagner Sanches Vasconcelos   
-**Instituição:** Instituto Hardware BR \- HBr (Projeto Embarcatech \- Fase 2\)  
+**Instituição:** Instituto Hardware BR \- HBr (Projeto Embarcatech \- Fase 2\) 
+
+**Autores:** 
+Adriana R. Castro de Paula
+Elias Kento Tomiyama
+Vagner Sanches Vasconcelos   
+ 
 **Local:** Campinas-SP  
 **Data:** 18 de Setembro de 2025
 
