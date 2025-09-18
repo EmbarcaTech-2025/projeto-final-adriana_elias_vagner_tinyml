@@ -1,20 +1,8 @@
-<h1 align = "center"> Classificação de Movimentos em Contêineres Marítimos com TinyML na BitDogLab </h1>
+<h1 align = "center"> Etapa 1 - Contexto - Problema </h1>
 
-<h2 align = "center"> Projeto: Embarcatech - Fase 2 </h2>
-<h3 align = "center"> Instituto Hardware BR - HBr </h3>
-<h3 align = "center"> Campinas-SP </h3>
-
-----
-### Time:
-- Adriana R. Castro de Paula
-- Elias Kento Tomiyama
-- Vagner Sanches Vasconcelos
-----
-
-# 1. Contexto - Problema
 A logística de contêineres marítimos é um componente crítico da cadeia de suprimentos global, envolvendo etapas como movimentação por empilhadeiras ou guindastes, transporte terrestre em caminhões e transporte marítimo em navios. A rastreabilidade precisa dessas etapas é essencial para otimizar rotas, reduzir custos operacionais, prevenir danos causados por vibrações excessivas e detectar anomalias em tempo real. No entanto, sistemas tradicionais baseados em GPS e registros manuais carecem de granularidade para identificar o tipo de movimento do contêiner, limitando a capacidade de resposta proativa.
 
-# 2. Usuários
+Usuários
 O sistema proposto oferece utilidade direta para múltiplos atores da cadeia logística, gerando valor econômico e operacional.
 **Os usuários-alvo do sistema incluem:**
 - **Operadores logísticos:** Gerenciam cadeias de suprimentos e se beneficiam de dados em tempo real para otimizar rotas e reduzir custos (a automação do registro de etapas (ex: início do transporte terrestre) elimina a necessidade de apontamentos manuais, reduzindo erros e custos administrativos).
@@ -34,7 +22,7 @@ A figura 1, ilustra o estudo de caso em questão.
 ![diagrama](/assets/estudoCaso.png)
 <h4 align = "right"> Figura 1 - Caso de Uso. Fonte: Curso UNIFEI-IESTI01- TinyML </h4>
 
-# 3. Requisitos
+Requisitos
 ## 3.1 Requisitos Funcionais
 
 - RF01: Coletar dados do acelerômetro MPU6500 (eixos X, Y, Z) a 60Hz;
@@ -45,7 +33,7 @@ A figura 1, ilustra o estudo de caso em questão.
 - RF06: Operar em modo de baixo consumo quando parado;
 - RF07: Utilizar Sistema Operacional de Tempo Real (RTOS).
 
-## 3.2 Requisitos Não Funcionais
+Requisitos Não Funcionais
 
 - RNF01: Taxa de acerto ≥ 90% em condições reais (dados de testes);
 - RNF02: Latência de inferência ≤ 200ms;
