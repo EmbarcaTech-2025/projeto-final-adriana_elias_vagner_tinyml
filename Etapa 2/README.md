@@ -94,4 +94,7 @@ Em suma, a estrutura proposta utiliza os pontos fortes do FreeRTOS para criar um
 
 _________________________________________________________________________________________
 
+## Próxima etapa
+
+Construir e testar o protótipo funcional, identificando ajustes necessários.
 
