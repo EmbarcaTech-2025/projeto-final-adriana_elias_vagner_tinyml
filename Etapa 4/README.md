@@ -4,7 +4,9 @@
 
 **Autores:** 
 Adriana R. Castro de Paula
+
 Elias Kento Tomiyama
+
 Vagner Sanches Vasconcelos   
  
 **Local:** Campinas-SP  
