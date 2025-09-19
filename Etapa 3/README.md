@@ -9,7 +9,7 @@ Construir e testar o protótipo funcional, identificando ajustes necessários.
     - **Implementando MQTT:** Configurar cliente Paho MQTT, conectar ao broker (ex.: Mosquitto) e publicar mensagens com QoS 2.
     - **Otimizando energia:** Ativar modo sleep do RP2040 quando parado, reduzindo frequência de amostragem e desativando Wi-Fi.
 
-** Modelo TinyML:
+# Modelo TinyML:
 
 - Coletando dados: Simular movimentos em laboratório (parado, subindo/descendo com elevação manual, esquerda/direita com deslocamento linear, ziguezague com oscilações). Coletar 100 amostras por classe (1 min cada, 60 Hz).
 
@@ -28,9 +28,17 @@ Janelamento: Janelas de 1s (60 amostras), sobreposição de 50%.
 
 # Testes:
 
-- Unitários: Verificar cada tarefa (aquisição, pré-processamento, inferência, exibição, transmissão).
-- Integração: Testar interação entre tarefas e comunicação MQTT.
+- Unitários: Aquisição de dados: Verificar frequência de 60 Hz, 
+    - Pré-processamento: Validar filtro e janelamento.
+    - Exibição: Confirmar atualização do SSD1306.
+    - Transmissão: Testar mensagens MQTT com QoS 2.
+
+- Testes de Integração:
+    - Verificar interação entre tarefas FreeRTOS.
+    - Testar inferência com modelo integrado.
+
 - Campo: Simular movimentos reais (ex.: deslocar BitDogLab em carrinho para esquerda/direita, elevar para subindo/descendo).
+
 - Métricas:
           - Acurácia: Comparar predições com rótulos reais.
           - Latência: Medir tempo de inferência.
@@ -44,22 +52,11 @@ Janelamento: Janelas de 1s (60 amostras), sobreposição de 50%.
 https://youtu.be/r4KT6auRS9Y?si=LlxuRj-Y9J4jt735
 
 
+## Ajustes planejados
 
-Plano de Testes
-- Testes Unitários:
-    - Aquisição de dados: Verificar frequência de 60 Hz.
-    - Pré-processamento: Validar filtro e janelamento.
-    - Exibição: Confirmar atualização do SSD1306.
-    - Transmissão: Testar mensagens MQTT com QoS 2.
-- Testes de Integração:
-    - Verificar interação entre tarefas FreeRTOS.
-    - Testar inferência com modelo integrado.
-- Testes de Campo:
-    - Simular movimentos (parado, elevação, deslocamento linear, oscilações).
-    - Medir acurácia, latência e consumo.
 - Testes de Estresse:
     - Operação por 48 horas em 0°C e 50°C.
     - Simular falhas Wi-Fi para verificar reconexão.
-
-
+ 
+- Ajustes no código e melhorias na modulação
 
