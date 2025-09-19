@@ -52,7 +52,7 @@ Janelamento: Janelas de 1s (60 amostras), sobreposição de 50%.
 https://youtu.be/r4KT6auRS9Y?si=LlxuRj-Y9J4jt735
 
 
-## Ajustes planejados
+## Ajustes Etapa 4
 
 - Testes de Estresse:
     - Operação por 48 horas em 0°C e 50°C.
